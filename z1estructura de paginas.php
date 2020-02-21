@@ -16,7 +16,7 @@ $page = "Inicio" ?>
 
     <!-- HEADER -->
     <header>
-        <?php include 'layout/3header.php' ?>
+        <?php include 'layout/header.php' ?>
     </header>
     <!-- HEADER -->
 
@@ -29,11 +29,16 @@ $page = "Inicio" ?>
 
     <!-- FOOTER -->
     <footer class="mt-5">
-        <?php include 'layout/4footer.php' ?>
+        <?php include 'layout/footer.php' ?>
     </footer>
     <!-- FOOTER -->
 
-    <?php include 'layout/2archivos_footer.php' ?>
+    <!-- ARCHIVOS FOOTER -->
+    <section>
+        <?php include 'layout/archivos_footer.php' ?>
+    </section>
+    <!-- ARCHIVOS FOOTER -->
+
 
 </body>
 

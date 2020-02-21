@@ -1,0 +1,315 @@
+body {
+    font-family: Verdana;
+}
+
+a,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+// VARIABLES COLORES
+.azul {
+    color: $azul;
+}
+
+.bg_azul {
+    background-color: $azul;
+}
+
+.magenta {
+    color: $magenta;
+}
+
+.bg_magenta {
+    background-color: $magenta;
+}
+
+.gris {
+    color: $gris;
+}
+
+.bg_gris {
+    background-color: $gris;
+}
+
+.blanco {
+    color: $blanco;
+}
+
+.bg_blanco {
+    background-color: $blanco;
+}
+
+.negro {
+    color: $negro;
+}
+
+.bg_negro {
+    background-color: $negro;
+}
+// VARIABLES COLORES
+
+
+a {
+    color: black;
+    transition: all 250ms;
+    
+    &:hover {
+        text-decoration: none;
+        color: $azul;
+    }
+
+}
+
+// HEADER
+#redes {
+
+    border-bottom: 1px solid #80808059;
+
+    a {
+        &:hover {
+            color:$magenta;
+        }
+    }
+}
+
+header {
+
+    
+    box-shadow: 0 15px 20px 0 #d4628433;
+    
+    .activo {
+        color: $azul!important;
+    }
+
+    a{
+        color: black!important;
+
+        &:hover {
+            color: $azul!important;
+        }
+    }
+
+    .imagen_logo {
+
+        height: 115px;
+        width: 220px;
+
+    }
+
+    .logopse {
+        height: 70px;
+        width: 75px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+}
+// HEADER
+
+
+#carrusel {
+
+    .carousel-inner {
+        height: 720px;
+    }
+
+    h5 {
+        top: 50%;
+    }
+
+    img { 
+        filter: brightness(0.5);;
+    }
+
+}
+
+#boton_minimizar_maximizar {
+    bottom: 25px;
+    z-index: 500;
+    left: calc(50% - 25px);
+    border-radius: 50%; 
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: 1px solid $azul;
+}
+
+
+#buscador {
+    position: absolute;
+    left: calc(50% - 570px);
+    bottom: 23px;
+    z-index: 500;
+
+    .container {
+        background-color: $azul;
+        transition: all 250ms;
+        // top: 188px;
+    }
+}
+
+#servicios {
+
+    .servicio {
+
+        &:hover {
+            
+            .contenedor_icono {
+
+                border-color: $blanco;
+                background-color: $azul;
+
+                .icono{
+                    transform: rotate(360deg);
+                    color: $blanco;
+                }
+            }
+
+            .contenedor_texto {
+    
+                background-color: $azul;
+                color: white;
+
+                a{
+                    color: white;
+                    border: 1px solid $blanco;
+                    background-color: $magenta;
+                }
+            }
+
+           
+               
+        }
+
+
+        .contenedor_icono {
+
+            z-index: 500;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            border-color: $azul;
+            
+            .icono{
+                font-size: 50px;
+                transition: all 500ms;
+            }
+        }
+    
+        .contenedor_texto {
+    
+            border-top-left-radius: 45px;
+            border-bottom-right-radius: 45px;
+            top: -50px;
+            transition: all 250ms;
+    
+            h4 {
+                margin-top: 65px;
+            }
+
+            p {
+                max-width: 250px;
+            }
+
+            a {
+                color: $azul;
+                border: 1px solid $azul;
+                transition: all 250ms;
+            }
+    
+    }
+   
+        
+    }
+
+}
+
+#propiedades_destacadas {
+
+    .imagen {
+        z-index: 100;
+        background-image: url(../images/slide_1.jpg);
+        background-attachment: fixed;
+    }
+
+    .fondo_negro {
+        z-index: 200;
+        background-color: rgba(0, 0, 0, 0.473);
+    }
+
+    h2 {
+        z-index: 300;
+        position: relative;
+    }
+
+    .container {
+        z-index: 300;
+        position: relative;
+    }
+
+}
+
+
+#asesores {
+
+    .carta {
+        height: 360px;
+        overflow: hidden;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+
+        .nombre_asesor {
+            bottom: 0;
+            background-color: $azul;
+            transform: scale(1);
+            transition: all 250ms;
+        }
+
+        .caja_hover {
+            background-color: #25253bc7;
+            border: 1px solid white;
+            height: 90%;
+            width: 90%;
+            top: 5%;
+            left: 8%;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            transform: scale(0);
+            transition: all 250ms;
+
+        }
+
+        .caja_icono {
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid white;
+            height: 45px;
+            width: 45px;
+            color: $blanco;
+
+            &:hover {
+                color: $magenta;
+                background-color: white;
+            }
+        }
+
+        &:hover {
+
+            .nombre_asesor {
+                transform: scale(0);
+            }
+
+            .caja_hover {
+                transform: scale(1);
+            }
+
+        }
+    }
+
+    
+}
+

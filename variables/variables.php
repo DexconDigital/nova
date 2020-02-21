@@ -19,11 +19,11 @@ $pse = [
 
 // redes sociales
 $redes_sociales = [
-	// "facebook" => [
-		// "link" => "https://www.facebook.com/andinainmobiliariamed/",
-		// "icono" => "fab fa-facebook-f",
-		// "imagen" => "images/facebook.png"
-	// ],
+	"facebook" => [
+		"link" => "https://www.facebook.com/andinainmobiliariamed/",
+		"icono" => "fab fa-facebook-f",
+		"imagen" => "images/facebook.png"
+	],
 	// "twitter" => [
 		// "link" => "https://twitter.com/inmobiliariagya",
 		// "icono" => "fab fa-twitter",
