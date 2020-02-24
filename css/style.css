@@ -11855,16 +11855,16 @@ a, p, h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 .azul {
-  color: #63B1D7; }
+  color: #1FACE1; }
 
 .bg_azul {
-  background-color: #63B1D7; }
+  background-color: #1FACE1; }
 
 .magenta {
-  color: #D46284; }
+  color: #DF2B6A; }
 
 .bg_magenta {
-  background-color: #D46284; }
+  background-color: #DF2B6A; }
 
 .gris {
   color: gray; }
@@ -11891,22 +11891,36 @@ a {
   transition: all 250ms; }
   a:hover {
     text-decoration: none;
-    color: #63B1D7; }
+    color: #1FACE1; }
+
+.boton1 {
+  background-color: #1FACE1;
+  color: white; }
+  .boton1:hover {
+    background-color: #DF2B6A;
+    color: white; }
+
+.boton2 {
+  background-color: #DF2B6A;
+  color: white; }
+  .boton2:hover {
+    background-color: #1FACE1;
+    color: white; }
 
 #redes {
   border-bottom: 1px solid #80808059; }
   #redes a:hover {
-    color: #D46284; }
+    color: #DF2B6A; }
 
 header {
   -webkit-box-shadow: 0 15px 20px 0 #d4628433;
   box-shadow: 0 15px 20px 0 #d4628433; }
   header .activo {
-    color: #63B1D7 !important; }
+    color: #DF2B6A !important; }
   header a {
     color: black !important; }
     header a:hover {
-      color: #63B1D7 !important; }
+      color: #1FACE1 !important; }
   header .imagen_logo {
     height: 115px;
     width: 220px; }
@@ -11937,35 +11951,40 @@ header {
   height: 50px;
   width: 50px;
   cursor: pointer;
-  border: 1px solid #63B1D7; }
+  border: 1px solid #1FACE1; }
 
 #buscador {
   position: absolute;
-  left: calc(50% - 570px);
-  bottom: 23px;
+  left: calc(50% - 480px);
+  bottom: -307px;
   z-index: 500; }
   #buscador .container {
-    background-color: #63B1D7;
+    background-color: #1FACE1;
     -webkit-transition: all 250ms;
     -o-transition: all 250ms;
     transition: all 250ms; }
 
 #servicios .servicio:hover .contenedor_icono {
   border-color: white;
-  background-color: #63B1D7; }
+  background-color: #1FACE1;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms; }
   #servicios .servicio:hover .contenedor_icono .icono {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
     color: white; }
+  #servicios .servicio:hover .contenedor_icono:hover {
+    background-color: #DF2B6A; }
 
 #servicios .servicio:hover .contenedor_texto {
-  background-color: #63B1D7;
+  background-color: #1FACE1;
   color: white; }
   #servicios .servicio:hover .contenedor_texto a {
     color: white;
     border: 1px solid white;
-    background-color: #D46284; }
+    background-color: #DF2B6A; }
 
 #servicios .servicio .contenedor_icono {
   z-index: 500;
@@ -11973,7 +11992,7 @@ header {
   width: 100px;
   border: 1px solid black;
   border-radius: 50%;
-  border-color: #63B1D7; }
+  border-color: #1FACE1; }
   #servicios .servicio .contenedor_icono .icono {
     font-size: 50px;
     -webkit-transition: all 500ms;
@@ -11992,11 +12011,44 @@ header {
   #servicios .servicio .contenedor_texto p {
     max-width: 250px; }
   #servicios .servicio .contenedor_texto a {
-    color: #63B1D7;
-    border: 1px solid #63B1D7;
-    -webkit-transition: all 250ms;
-    -o-transition: all 250ms;
-    transition: all 250ms; }
+    color: #1FACE1;
+    border: 1px solid #1FACE1;
+    background-color: transparent; }
+    #servicios .servicio .contenedor_texto a:hover {
+      background-color: #1FACE1; }
+
+#propiedades_destacadas .titulo {
+  top: 20px;
+  left: 20px; }
+
+#propiedades_destacadas .iconos {
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px; }
+
+#propiedades_destacadas .precio {
+  font-size: 14px; }
+
+#propiedades_destacadas .codigo {
+  font-size: 13px; }
+
+#propiedades_destacadas .carousel-item {
+  border: 12px solid #1FACE1;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px; }
+  #propiedades_destacadas .carousel-item img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5); }
+
+#propiedades_destacadas .izquierda_destacadas {
+  position: absolute;
+  top: calc(50% - 18.5px);
+  left: 20px; }
+
+#propiedades_destacadas .derecha_destacadas {
+  position: absolute;
+  top: calc(50% - 18.5px);
+  right: 20px; }
 
 #propiedades_destacadas .imagen {
   z-index: 100;
@@ -12022,7 +12074,7 @@ header {
   border-bottom-right-radius: 40px; }
   #asesores .carta .nombre_asesor {
     bottom: 0;
-    background-color: #63B1D7;
+    background-color: #1FACE1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -12052,7 +12104,7 @@ header {
     width: 45px;
     color: white; }
     #asesores .carta .caja_icono:hover {
-      color: #D46284;
+      color: #DF2B6A;
       background-color: white; }
   #asesores .carta:hover .nombre_asesor {
     -webkit-transform: scale(0);
@@ -12062,3 +12114,27 @@ header {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
+
+#nova_transaccional {
+  background-image: url(../images/slide_2.jpg);
+  background-attachment: fixed; }
+  #nova_transaccional .fondo_negro {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.473);
+    top: 0; }
+  #nova_transaccional .container {
+    z-index: 200; }
+    #nova_transaccional .container a img {
+      width: 200px;
+      border: 1px solid #1FACE1;
+      border-top-left-radius: 45px;
+      border-bottom-right-radius: 45px; }
+    #nova_transaccional .container a:hover .boton1 {
+      background-color: #DF2B6A; }
+
+#slide_imagenes .carousel-inner {
+  height: 450px !important; }
+
+#slide_imagenes .carousel-item img {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px; }

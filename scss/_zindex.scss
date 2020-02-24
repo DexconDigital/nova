@@ -60,6 +60,34 @@ a {
 
 }
 
+// BOTONES
+
+.boton1 {
+    background-color: $azul;
+    color: $blanco;
+
+    &:hover {
+        background-color: $magenta;
+        color: $blanco;
+    }
+}
+
+.boton2 {
+    background-color: $magenta;
+    color: $blanco;
+
+    &:hover {
+        background-color: $azul;
+        color: $blanco;
+    }
+}
+
+
+
+
+// BOTONES
+
+
 // HEADER
 #redes {
 
@@ -78,7 +106,7 @@ header {
     box-shadow: 0 15px 20px 0 #d4628433;
     
     .activo {
-        color: $azul!important;
+        color: $magenta!important;
     }
 
     a{
@@ -140,9 +168,9 @@ header {
 
 #buscador {
     position: absolute;
-    left: calc(50% - 570px);
-    bottom: 23px;
-    z-index: 500;
+    left: calc(50% - 480px);
+    bottom: -307px;
+    z-index: 500;       
 
     .container {
         background-color: $azul;
@@ -161,11 +189,17 @@ header {
 
                 border-color: $blanco;
                 background-color: $azul;
+                transition: all 250ms;
 
                 .icono{
                     transform: rotate(360deg);
                     color: $blanco;
                 }
+
+                &:hover {
+                    background-color: $magenta;
+                }
+
             }
 
             .contenedor_texto {
@@ -173,10 +207,10 @@ header {
                 background-color: $azul;
                 color: white;
 
-                a{
-                    color: white;
-                    border: 1px solid $blanco;
-                    background-color: $magenta;
+                a {
+                color: $blanco;
+                border: 1px solid $blanco;
+                background-color: $magenta;
                 }
             }
 
@@ -218,8 +252,14 @@ header {
             a {
                 color: $azul;
                 border: 1px solid $azul;
-                transition: all 250ms;
+                background-color: transparent;
+
+                &:hover {
+                background-color: $azul;
+                }
             }
+
+
     
     }
    
@@ -229,6 +269,50 @@ header {
 }
 
 #propiedades_destacadas {
+
+    .titulo {
+        top: 20px;
+        left: 20px;
+    }
+
+    .iconos {
+        bottom: 20px;
+        left: 20px;
+        font-size: 14px;
+    }
+
+    .precio {
+        font-size: 14px;
+    }
+
+    .codigo {
+        font-size: 13px;
+    }
+    
+    .carousel-item {
+        border: 12px solid $azul;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+
+        img {
+            filter: brightness(0.5);
+        }
+    }
+
+    .izquierda_destacadas {
+
+        position: absolute;
+        top: calc(50% - 18.5px);
+        left: 20px;
+    }
+
+    .derecha_destacadas {
+
+        position: absolute;
+        top: calc(50% - 18.5px);
+        right: 20px;
+    }
+
 
     .imagen {
         z-index: 100;
@@ -312,4 +396,60 @@ header {
 
     
 }
+
+#nova_transaccional {
+
+    background-image: url(../images/slide_2.jpg);
+    background-attachment: fixed;
+
+    .fondo_negro {
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.473);
+        top: 0;
+    }
+    
+    .container {
+        z-index: 200;
+
+        a{
+
+            img {
+                width: 200px;
+                border: 1px solid $azul;
+                border-top-left-radius: 45px;
+                border-bottom-right-radius: 45px;
+            }
+    
+            &:hover {
+                
+                .boton1 {
+                    background-color: $magenta;
+                }
+            }
+
+        }
+
+    
+
+        
+    }
+
+}
+
+#slide_imagenes {
+
+    .carousel-inner {
+        height: 450px!important;
+    }
+
+    .carousel-item {
+        img {
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    }
+
+
+}
+
 

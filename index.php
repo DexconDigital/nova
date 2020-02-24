@@ -106,9 +106,9 @@ $page = "Inicio" ?>
                         </li>
 
                         <li class="d-flex align-items-center nav-item">
-                            <a class="nav-link <?php if ($page == 'Contáctenos') {
+                            <a class="nav-link <?php if ($page == 'Contáctanos') {
                                                     echo 'activo';
-                                                } ?>" href="contactenos.php"> Contáctenos </a>
+                                                } ?>" href="contactenos.php"> Contáctanos </a>
                         </li>
 
 
@@ -146,7 +146,7 @@ $page = "Inicio" ?>
 
 
     <!-- CARRUSEL -->
-    <section id="carrusel">
+    <section id="carrusel" class="position-relative">
 
         <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -266,10 +266,12 @@ $page = "Inicio" ?>
     </section>
     <!-- BUSCADOR -->
 
-
+    <!-- BOTON PARA MOSTRAR BUSCADOR -->
     <div id="boton_minimizar_maximizar" class="d-flex align-items-center justify-content-center position-relative text-center">
         <i class="icono azul fas fa-times"></i>
     </div>
+    <!-- BOTON PARA MOSTRAR BUSCADOR -->
+
 
 
     <!-- SERVICIOS -->
@@ -278,6 +280,7 @@ $page = "Inicio" ?>
         <h2 class="text-center font-weight-bold mb-5">Servicios</h2>
 
         <div class="d-flex">
+
             <!-- CARD -->
             <div class="servicio col-4 d-flex align-items-center flex-column">
 
@@ -288,7 +291,7 @@ $page = "Inicio" ?>
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['arriendos']['titulo'] ?> </h4>
                     <p class="text-justify px-3 pb-5"> Somos capaces de ofrecer el mejor asesoramiento para la venta de tu inmueble... </p>
-                    <a class="d-block text-center mb-5 p-2" href=""> Leer más </a>
+                    <a class="d-block text-center btn boton1 blanco mb-5 p-2" href=""> Leer más </a>
                 </div>
 
             </div>
@@ -304,7 +307,7 @@ $page = "Inicio" ?>
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h4>
                     <p class="text-justify px-3 pb-5"> Una completa oferta inmobiliaria, contamos con una mezcla entre diseño y funcionalidad... </p>
-                    <a class="d-block text-center mb-5 p-2" href=""> Leer más </a>
+                    <a class="d-block btn boton1 text-center mb-5 p-2" href=""> Leer más </a>
                 </div>
 
             </div>
@@ -320,7 +323,7 @@ $page = "Inicio" ?>
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['avaluos']['titulo'] ?> </h4>
                     <p class="text-justify px-3 pb-5"> Realizamos avalúos cumpliendo con toda la normatividad del país, asegurando... </p>
-                    <a class="d-block text-center mb-5 p-2" href=""> Leer más </a>
+                    <a class="d-block btn boton1 text-center mb-5 p-2" href=""> Leer más </a>
                 </div>
 
             </div>
@@ -340,45 +343,185 @@ $page = "Inicio" ?>
 
         <div class="position-absolute h-100 w-100 fondo_negro"></div>
 
-        <h2 class="blanco text-center font-weight-bold my-5 "> Nuestras propiedades destacadas </h2>
+        <h2 class="blanco text-center font-weight-bold my-5 "> Nuestras <span class="azul">propiedades</span> <span class="magenta">destacadas</span> </h2>
 
         <div class="blanco d-flex container align-items-center">
 
-            <div class="col-6">
+            <!-- DESCRIPCIÓN -->
+            <div class="col-6 d-flex align-items-center justify-content-center flex-column">
                 <h5 class="font-weight-bold"> Encuentra aquí lo que estás buscando </h5>
-                <p class="mt-3"> te presentamos nuestras propiedades destacadas en arriendo y en venta, si no
-                    encuentras lo que estás buscando, te invitamos a conocer nuestra oferta total de inmuebles </p>
+                <p class="mt-3"> Te presentamos nuestras propiedades destacadas en arriendo y en venta, si no
+                    encuentras lo que estás buscando, te invitamos a conocer nuestra oferta total de inmuebles. </p>
+                <a href="inmuebles.php" class="btn boton2 mt-3"> Todos los inmuebles </a>
             </div>
+            <!-- DESCRIPCIÓN -->
 
+
+            <!-- CARDS -->
             <div class="col-6">
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
+                <div id="carrusel_destacadas" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
+
+                        <!-- CARD -->
                         <div class="carousel-item active">
+
+                            <!-- IMAGEN INMUEBLE -->
                             <img src="images/slide_1.jpg" class="d-block w-100" alt="...">
+                            <!-- IMAGEN INMUEBLE -->
+
+                            <!-- DIRECCIÓN -->
+                            <div class="position-absolute titulo d-flex flex-column align-items-baseline">
+                                <div class="d-flex">
+                                    <i class="azul mr-1 fas fa-map-marker-alt"></i>
+                                    <p> Manizales - Caldas </p>
+                                </div>
+                                <p class="mt-1 codigo"> Código: 3546 </p>
+                            </div>
+                            <!-- DIRECCIÓN -->
+
+                            <!-- ICONOS -->
+                            <div class="position-absolute iconos d-flex align-items-baseline flex-wrap">
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-chart-area"></i>
+                                    <p> 200mts<sup>2 </p>
+                                </div>
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-bed"></i>
+                                    <p> 5 </p>
+                                </div>
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-bath"></i>
+                                    <p> 2 </p>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-warehouse"></i>
+                                    <p> 3 </p>
+                                </div>
+
+                                <a href="#" class="ml-2 btn boton2 precio"> $500.000.000 </a>
+                                <!-- ICONOS -->
+
+
+                            </div>
                         </div>
+                        <!-- CARD -->
+
+                        <!-- CARD -->
                         <div class="carousel-item">
+
+                            <!-- IMAGEN INMUEBLE -->
                             <img src="images/slide_2.jpg" class="d-block w-100" alt="...">
+                            <!-- IMAGEN INMUEBLE -->
+
+                            <!-- DIRECCIÓN -->
+                            <div class="position-absolute titulo d-flex flex-column align-items-baseline">
+                                <div class="d-flex">
+                                    <i class="azul mr-1 fas fa-map-marker-alt"></i>
+                                    <p> Bogota - Bogota D.C </p>
+                                </div>
+                                <p class="mt-1 codigo"> Código: 4955 </p>
+
+                            </div>
+                            <!-- DIRECCIÓN -->
+
+                            <!-- ICONOS -->
+                            <div class="position-absolute iconos d-flex align-items-baseline flex-wrap">
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-chart-area"></i>
+                                    <p> 500mts<sup>2 </p>
+                                </div>
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-bed"></i>
+                                    <p> 3 </p>
+                                </div>
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-bath"></i>
+                                    <p> 1 </p>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-warehouse"></i>
+                                    <p> 1 </p>
+                                </div>
+
+                                <a href="#" class="ml-2 btn boton2 precio"> $100.000.000 </a>
+                                <!-- ICONOS -->
+
+
+                            </div>
                         </div>
+                        <!-- CARD -->
+
+                        <!-- CARD -->
                         <div class="carousel-item">
+
+                            <!-- IMAGEN INMUEBLE -->
                             <img src="images/slide_3.jpg" class="d-block w-100" alt="...">
+                            <!-- IMAGEN INMUEBLE -->
+
+                            <!-- DIRECCIÓN -->
+                            <div class="position-absolute titulo d-flex flex-column align-items-baseline">
+                                <div class="d-flex">
+                                    <i class="azul mr-1 fas fa-map-marker-alt"></i>
+                                    <p> Medellín - Medellín </p>
+                                </div>
+                                <p class="mt-1 codigo"> Código: 1023 </p>
+                            </div>
+                            <!-- DIRECCIÓN -->
+
+                            <!-- ICONOS -->
+                            <div class="position-absolute iconos d-flex align-items-baseline flex-wrap">
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-chart-area"></i>
+                                    <p> 600mts<sup>2 </p>
+                                </div>
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-bed"></i>
+                                    <p> 2 </p>
+                                </div>
+
+                                <div class="mr-2 d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-bath"></i>
+                                    <p> 1 </p>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <i class="mr-1 azul icono fas fa-warehouse"></i>
+                                    <p> 0 </p>
+                                </div>
+
+                                <a href="#" class="ml-2 btn boton2 precio"> $1.500.000.000 </a>
+                                <!-- ICONOS -->
+
+
+                            </div>
                         </div>
+                        <!-- CARD -->
+
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+
+                    <a class="btn boton2 izquierda_destacadas" href="#carrusel_destacadas" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+
+                    <a class="btn boton2 derecha_destacadas" href="#carrusel_destacadas" role="button" data-slide="next">
+                        <i class="fas fa-chevron-right"></i>
                     </a>
+
                 </div>
             </div>
+            <!-- CARDS -->
+
         </div>
 
 
@@ -451,7 +594,7 @@ $page = "Inicio" ?>
 
                 <!-- NOMBRE ASESOR -->
                 <div class="nombre_asesor blanco w-100 py-3 position-absolute">
-                    <p class="text-center pr-3"> SERGIO ARENAS </p>
+                    <p class="text-center pr-3"> MELANY CONTRERAS </p>
                 </div>
                 <!-- NOMBRE ASESOR -->
 
@@ -459,11 +602,11 @@ $page = "Inicio" ?>
                 <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
 
                     <!-- NOMBRE ASESOR -->
-                    <p class="text-center pr-3 mb-2"> SERGIO ARENAS </p>
+                    <p class="text-center pr-3 mb-2"> MELANY CONTRERAS </p>
                     <!-- NOMBRE ASESOR -->
 
                     <!-- PUESTO ASESOR -->
-                    <h4 class="magenta mb-5"> Gerente </h4>
+                    <h4 class="magenta mb-5"> Asesora </h4>
                     <!-- PUESTO ASESOR -->
 
                     <!-- ICONOS DE REDES SOCIALES -->
@@ -501,7 +644,7 @@ $page = "Inicio" ?>
 
                 <!-- NOMBRE ASESOR -->
                 <div class="nombre_asesor blanco w-100 py-3 position-absolute">
-                    <p class="text-center pr-3"> SERGIO ARENAS </p>
+                    <p class="text-center pr-3"> ROBERTO CASAS </p>
                 </div>
                 <!-- NOMBRE ASESOR -->
 
@@ -509,11 +652,11 @@ $page = "Inicio" ?>
                 <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
 
                     <!-- NOMBRE ASESOR -->
-                    <p class="text-center pr-3 mb-2"> SERGIO ARENAS </p>
+                    <p class="text-center pr-3 mb-2"> ROBERTO CASAS </p>
                     <!-- NOMBRE ASESOR -->
 
                     <!-- PUESTO ASESOR -->
-                    <h4 class="magenta mb-5"> Gerente </h4>
+                    <h4 class="magenta mb-5"> Jefe de Piso </h4>
                     <!-- PUESTO ASESOR -->
 
                     <!-- ICONOS DE REDES SOCIALES -->
@@ -532,7 +675,7 @@ $page = "Inicio" ?>
 
                     </div>
                     <!-- ICONOS DE REDES SOCIALES -->
-  
+
                 </div>
                 <!-- CARD (HOVER) -->
 
@@ -548,7 +691,7 @@ $page = "Inicio" ?>
 
                 <!-- NOMBRE ASESOR -->
                 <div class="nombre_asesor blanco w-100 py-3 position-absolute">
-                    <p class="text-center pr-3"> SERGIO ARENAS </p>
+                    <p class="text-center pr-3"> LUIS ORTIZ </p>
                 </div>
                 <!-- NOMBRE ASESOR -->
 
@@ -556,11 +699,11 @@ $page = "Inicio" ?>
                 <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
 
                     <!-- NOMBRE ASESOR -->
-                    <p class="text-center pr-3 mb-2"> SERGIO ARENAS </p>
+                    <p class="text-center pr-3 mb-2"> LUIS ORTIZ </p>
                     <!-- NOMBRE ASESOR -->
 
                     <!-- PUESTO ASESOR -->
-                    <h4 class="magenta mb-5"> Gerente </h4>
+                    <h4 class="magenta mb-5"> Administrador </h4>
                     <!-- PUESTO ASESOR -->
 
                     <!-- ICONOS DE REDES SOCIALES -->
@@ -593,11 +736,98 @@ $page = "Inicio" ?>
 
 
     <!-- NOVA TRANSACCIONAL -->
-    <section>
-        <div></div>
-        
+    <section id="nova_transaccional" class="position-relative mt-5 py-5">
+
+        <div class="fondo_negro position-absolute w-100 h-100"></div>
+
+        <div class="container position-relative d-flex flex-wrap text-break">
+
+            <h2 class="col-12 text-center mb-5 blanco font-weight-bold"> Bienvenido a <span class="azul"> Nova </span> <span class="magenta">Transaccional</span> </h2>
+
+            <!-- CARD -->
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1" class="blanco col-4 d-flex flex-column align-items-center">
+
+                <h4 class="font-weight-bold mb-2 blanco"> Propietarios </h2>
+
+                    <div>
+                        <img class="" src="images/slide_1.jpg" alt="">
+                    </div>
+
+                    <div class="blanco mt-2 btn boton1"> Ingresa </div>
+
+            </a>
+            <!-- CARD -->
+
+            <!-- CARD -->
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=2" class="blanco col-4 d-flex flex-column align-items-center">
+
+                <h4 class="font-weight-bold mb-2 blanco"> Arrendatarios </h2>
+
+                    <div>
+                        <img class="" src="images/slide_2.jpg" alt="">
+                    </div>
+
+                    <div class="blanco mt-2 btn boton1"> Ingresa </div>
+
+            </a>
+            <!-- CARD -->
+
+            <!-- CARD -->
+            <a target="_blank" href="#" class="blanco col-4 d-flex flex-column align-items-center">
+
+                <h4 class="font-weight-bold mb-2 blanco"> Pagos PSE </h4>
+
+                <div>
+                    <img class="" src="images/slide_3.jpg" alt="">
+                </div>
+
+                <div class="blanco mt-2 btn boton1"> Ingresa </div>
+
+            </a>
+            <!-- CARD -->
+
+
+
+        </div>
+
     </section>
     <!-- NOVA TRANSACCIONAL -->
+
+    <!-- SLIDE DE IMAGENES -->
+    <section id="slide_imagenes" class="container mt-5">
+
+        <h2 class="font-weight-bold text-center py-5"> Un inmueble para cada necesidad </h2>
+
+        <div id="slide_de_imagenes" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slide_de_imagenes" data-slide-to="0" class="active"></li>
+                <li data-target="#slide_de_imagenes" data-slide-to="1"></li>
+                <li data-target="#slide_de_imagenes" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide_3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#slide_de_imagenes" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slide_de_imagenes" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+
+
 
 
 
