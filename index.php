@@ -199,72 +199,75 @@ $page = "Inicio" ?>
     <!-- CARRUSEL -->
 
     <!-- BUSCADOR -->
-    <section id="buscador" class="overflow-hidden">
-        <div class="pt-3 pb-4 container position-relative rounded">
+    <section class="position-relative">
+        <section id="buscador" class="overflow-hidden">
+            <div class="pt-3 pb-4 container position-relative rounded">
 
-            <div class="col-12">
-                <div class="row ">
+                <div class="col-12">
+                    <div class="row ">
 
-                    <div class="col-3 form-group">
-                        <input placeholder="Código" type="number" class="form-control" id="codigo_buscar" aria-describedby="emailHelp">
+                        <div class="col-3 form-group">
+                            <input placeholder="Código" type="number" class="form-control" id="codigo_buscar" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="col-3 form-group">
+                            <select class="form-control" id="tipo_inmueble_buscar">
+                                <option selected default> Tipo de Inmueble </option>
+                            </select>
+                        </div>
+
+                        <div class="col-3 form-group">
+                            <select class="form-control" id="tipo_gestion_buscar">
+                                <option selected default> Tipo de Gestión </option>
+                            </select>
+                        </div>
+
+                        <div class="col-3 form-group">
+                            <select class="form-control" id="ciudad_buscar">
+                                <option selected default> Ciudad </option>
+                            </select>
+                        </div>
+
+                        <div class="col-3 form-group">
+                            <select class="form-control" id="barrio_buscar">
+                                <option selected default> Barrio </option>
+                            </select>
+                        </div>
+
+                        <div class="col-3 form-group">
+                            <input placeholder="Baños" type="number" class="form-control" id="banios_buscar" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="col-3 form-group">
+                            <input placeholder="Alcobas" type="number" class="form-control" id="alcobas_buscar" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="col-3 form-group">
+                            <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="col-3 form-group">
+                            barrea de area
+                        </div>
+
+                        <div class="col-3 form-group">
+                            barrea de area
+                        </div>
+
+                        <div class="col-6 d-flex align-items center justify-content-center">
+                            <button type="button" id="buscar" class="col-3 btn boton"> Buscar </button>
+                        </div>
+
+
+
                     </div>
-
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="tipo_inmueble_buscar">
-                            <option selected default> Tipo de Inmueble </option>
-                        </select>
-                    </div>
-
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="tipo_gestion_buscar">
-                            <option selected default> Tipo de Gestión </option>
-                        </select>
-                    </div>
-
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="ciudad_buscar">
-                            <option selected default> Ciudad </option>
-                        </select>
-                    </div>
-
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="barrio_buscar">
-                            <option selected default> Barrio </option>
-                        </select>
-                    </div>
-
-                    <div class="col-3 form-group">
-                        <input placeholder="Baños" type="number" class="form-control" id="banios_buscar" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="col-3 form-group">
-                        <input placeholder="Alcobas" type="number" class="form-control" id="alcobas_buscar" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="col-3 form-group">
-                        <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="col-3 form-group">
-                        barrea de area
-                    </div>
-
-                    <div class="col-3 form-group">
-                        barrea de area
-                    </div>
-
-                    <div class="col-6 d-flex align-items center justify-content-center">
-                        <button type="button" id="buscar" class="col-3 btn boton"> Buscar </button>
-                    </div>
-
-
-
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </section>
     </section>
     <!-- BUSCADOR -->
+
 
     <!-- BOTON PARA MOSTRAR BUSCADOR -->
     <div id="boton_minimizar_maximizar" class="d-flex align-items-center justify-content-center position-relative text-center">
@@ -799,33 +802,223 @@ $page = "Inicio" ?>
         <h2 class="font-weight-bold text-center py-5"> Un inmueble para cada necesidad </h2>
 
         <div id="slide_de_imagenes" class="carousel slide" data-ride="carousel">
+
             <ol class="carousel-indicators">
                 <li data-target="#slide_de_imagenes" data-slide-to="0" class="active"></li>
                 <li data-target="#slide_de_imagenes" data-slide-to="1"></li>
                 <li data-target="#slide_de_imagenes" data-slide-to="2"></li>
             </ol>
+
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/slide_1.jpg" class="d-block w-100" alt="...">
+
+                <div class="carousel-item h-100 active">
+                    <img src="images/slide_1.jpg" class="h-100 d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="images/slide_2.jpg" class="d-block w-100" alt="...">
+
+                <div class="carousel-item h-100">
+                    <img src="images/slide_2.jpg" class="h-100 d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="images/slide_3.jpg" class="d-block w-100" alt="...">
+
+                <div class="carousel-item h-100">
+                    <img src="images/slide_3.jpg" class="h-100 d-block w-100" alt="...">
                 </div>
+
             </div>
-            <a class="carousel-control-prev" href="#slide_de_imagenes" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+
+            <a class="btn boton2 izquierda_imagenes" href="#slide_de_imagenes" role="button" data-slide="prev">
+                <i class="fas fa-chevron-left"></i>
             </a>
-            <a class="carousel-control-next" href="#slide_de_imagenes" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+
+            <a class="btn boton2 derecha_imagenes" href="#slide_de_imagenes" role="button" data-slide="next">
+                <i class="fas fa-chevron-right"></i>
             </a>
+
         </div>
 
     </section>
+    <!-- SLIDE DE IMAGENES -->
+
+    <!-- BANNER DE ESTADISTICAS -->
+    <section id="banner_estadisticas" class="position-relative py-5 mt-5">
+
+        <!-- IMAGEN DE FONDO -->
+        <div class="position-absolute w-100 h-100 imagen"> </div>
+        <!-- IMAGEN DE FONDO -->
+
+        <!-- OPACIDAD DE LA IMAGEN -->
+        <div class="position-absolute w-100 h-100 fondo_negro"></div>
+        <!-- OPACIDAD DE LA IMAGEN -->
+
+        <!-- ICONOS -->
+        <div class="contenido container position-relative d-flex align-items-center justify-content-around w-100 h-100 blanco">
+
+
+            <!-- ICONO 1 -->
+            <div id="animacion1" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <i class="icono magenta fas fa-warehouse"></i>
+                </div>
+
+                <p class="mb-2"> Total de Inmuebles </p>
+                <p> 65 </p>
+
+            </div>
+            <!-- ICONO 1 -->
+
+
+            <!-- ICONO 2 -->
+            <div id="animacion2" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <i class="icono magenta fas fa-bath"></i>
+                </div>
+
+                <p class="mb-2"> Total en Arriendo </p>
+                <p> 65 </p>
+
+            </div>
+            <!-- ICONO 2 -->
+
+
+            <!-- ICONO 3 -->
+            <div id="animacion3" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <i class="icono magenta fas fa-bed"></i>
+                </div>
+
+                <p class="mb-2"> Total en Venta </p>
+                <p> 65 </p>
+
+            </div>
+            <!-- ICONO 3 -->
+
+
+            <!-- ICONO 4 -->
+            <div id="animacion4" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <i class="icono magenta fas fa-warehouse"></i>
+                </div>
+
+                <p class="mb-2"> Total en Arriendo/Venta </p>
+                <p> 65 </p>
+
+            </div>
+            <!-- ICONO 4 -->
+
+
+        </div>
+        <!-- ICONOS -->
+
+
+    </section>
+    <!-- BANNER DE ESTADISTICAS -->
+
+    <!-- ÚLTIMAS NOTICIAS -->
+    <section id="ultimas_noticias" class="container mt-5 d-flex flex-wrap">
+
+        <!-- CARD -->
+        <div class="col-4">
+            <div class="card">
+
+                <div class="imagen">
+                    <img src="images/no_image.png" class="card-img-top" alt="...">
+                </div>
+
+                <div class="">
+
+                    <div class="py-3 caja border-bottom d-flex align-items-baseline">
+                        <i class="mx-3 azul fas fa-calendar-alt"></i>
+                        <p class="pr-3 text-muted"> 02/02/2020 </p>
+                    </div>
+
+                    <div class="caja py-3 border-bottom">
+                        <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
+                        <p class="px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- CARD -->
+
+        <!-- CARD -->
+        <div class="col-4">
+            <div class="card">
+
+                <div class="imagen">
+                    <img src="images/no_image.png" class="card-img-top" alt="...">
+                </div>
+
+                <div class="">
+
+                    <div class="py-3 caja border-bottom d-flex align-items-baseline">
+                        <i class="mx-3 azul fas fa-calendar-alt"></i>
+                        <p class="pr-3 text-muted"> 02/02/2020 </p>
+                    </div>
+
+                    <div class="caja py-3 border-bottom">
+                        <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
+                        <p class="px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- CARD -->
+
+
+        <!-- CARD -->
+        <div class="col-4">
+            <div class="card">
+
+                <div class="imagen">
+                    <img src="images/no_image.png" class="card-img-top" alt="...">
+                </div>
+
+                <div class="">
+
+                    <div class="py-3 caja border-bottom d-flex align-items-baseline">
+                        <i class="mx-3 azul fas fa-calendar-alt"></i>
+                        <p class="pr-3 text-muted"> 02/02/2020 </p>
+                    </div>
+
+                    <div class="caja py-3 border-bottom">
+                        <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
+                        <p class="px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- CARD -->
+
+
+
+
+
+    </section>
+    <!-- ÚLTIMAS NOTICIAS -->
+
+    <section>
+        <?php include 'layout/footer.php' ?>
+    </section>
+
+
 
 
 
@@ -849,10 +1042,9 @@ $page = "Inicio" ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
 
+    <script src="js/banner_estadisticas.js"></script>
 
-
-    <script src="js/buscador.js">
-    </script>
+    <script src="js/buscador.js"></script>
 
 
 
