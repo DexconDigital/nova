@@ -12372,3 +12372,65 @@ footer {
   100% {
     -webkit-filter: none;
     filter: none; } }
+
+#banner {
+  height: 250px; }
+  #banner .imagen {
+    background: url(../images/slide_1.jpg) center center;
+    background-attachment: fixed; }
+  #banner .fondo_negro {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+#mision_vision .carta {
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border: 1px solid gray; }
+  #mision_vision .carta .caja_icono {
+    background: -webkit-gradient(linear, left top, left bottom, from(#1FACE1), to(#DF2B6A));
+    background: -webkit-linear-gradient(#1FACE1, #DF2B6A);
+    background: -o-linear-gradient(#1FACE1, #DF2B6A);
+    background: linear-gradient(#1FACE1, #DF2B6A);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 25px; }
+
+#buscas_inmueble {
+  background-color: #1FACE1; }
+
+#valores {
+  margin-top: 8rem; }
+  #valores .imagen {
+    width: 700px;
+    height: 325px;
+    bottom: -12px; }
+  #valores .circulo {
+    border: 5px dotted gray;
+    border-radius: 50%;
+    height: 500px;
+    width: 45%; }
+    #valores .circulo .caja_icono {
+      position: absolute;
+      bottom: 50%;
+      left: -35px;
+      width: 70px;
+      height: 70px;
+      z-index: 500;
+      font-size: 33px;
+      border-radius: 50%;
+      border: 3px solid #1FACE1;
+      background-color: white;
+      -webkit-transition: all 250ms;
+      -o-transition: all 250ms;
+      transition: all 250ms; }
+      #valores .circulo .caja_icono .icono {
+        -webkit-transition: all 250ms;
+        -o-transition: all 250ms;
+        transition: all 250ms; }
+      #valores .circulo .caja_icono:hover {
+        background-color: #1FACE1;
+        border: 3px solid white;
+        -webkit-box-shadow: 0 0 8px 1px gray;
+        box-shadow: 0 0 8px 1px gray; }
+        #valores .circulo .caja_icono:hover .icono {
+          color: white; }
