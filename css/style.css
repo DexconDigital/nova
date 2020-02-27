@@ -12409,28 +12409,128 @@ footer {
     border-radius: 50%;
     height: 500px;
     width: 45%; }
-    #valores .circulo .caja_icono {
-      position: absolute;
-      bottom: 50%;
-      left: -35px;
-      width: 70px;
-      height: 70px;
-      z-index: 500;
-      font-size: 33px;
-      border-radius: 50%;
-      border: 3px solid #1FACE1;
-      background-color: white;
-      -webkit-transition: all 250ms;
-      -o-transition: all 250ms;
-      transition: all 250ms; }
-      #valores .circulo .caja_icono .icono {
+    #valores .circulo .caja_icono1 {
+      bottom: 70%;
+      left: -95px; }
+      #valores .circulo .caja_icono1 .caja {
+        width: 70px;
+        height: 70px;
+        z-index: 500;
+        font-size: 33px;
+        border-radius: 50%;
+        border: 3px solid #1FACE1;
+        background-color: white;
         -webkit-transition: all 250ms;
         -o-transition: all 250ms;
         transition: all 250ms; }
-      #valores .circulo .caja_icono:hover {
-        background-color: #1FACE1;
-        border: 3px solid white;
-        -webkit-box-shadow: 0 0 8px 1px gray;
-        box-shadow: 0 0 8px 1px gray; }
-        #valores .circulo .caja_icono:hover .icono {
-          color: white; }
+        #valores .circulo .caja_icono1 .caja .icono {
+          -webkit-transition: all 250ms;
+          -o-transition: all 250ms;
+          transition: all 250ms; }
+        #valores .circulo .caja_icono1 .caja:hover {
+          background-color: #1FACE1;
+          border: 3px solid white;
+          -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray; }
+          #valores .circulo .caja_icono1 .caja:hover .icono {
+            color: white; }
+    #valores .circulo .caja_icono2 {
+      bottom: 29%;
+      left: -127px; }
+      #valores .circulo .caja_icono2 .caja {
+        width: 70px;
+        height: 70px;
+        z-index: 500;
+        font-size: 33px;
+        border-radius: 50%;
+        border: 3px solid #1FACE1;
+        background-color: white;
+        -webkit-transition: all 250ms;
+        -o-transition: all 250ms;
+        transition: all 250ms; }
+        #valores .circulo .caja_icono2 .caja .icono {
+          -webkit-transition: all 250ms;
+          -o-transition: all 250ms;
+          transition: all 250ms; }
+        #valores .circulo .caja_icono2 .caja:hover {
+          background-color: #1FACE1;
+          border: 3px solid white;
+          -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray; }
+          #valores .circulo .caja_icono2 .caja:hover .icono {
+            color: white; }
+    #valores .circulo .caja_icono3 {
+      top: -65px;
+      left: calc(50% - 67px); }
+      #valores .circulo .caja_icono3 .caja {
+        width: 70px;
+        height: 70px;
+        z-index: 500;
+        font-size: 33px;
+        border-radius: 50%;
+        border: 3px solid #1FACE1;
+        background-color: white;
+        -webkit-transition: all 250ms;
+        -o-transition: all 250ms;
+        transition: all 250ms; }
+        #valores .circulo .caja_icono3 .caja .icono {
+          -webkit-transition: all 250ms;
+          -o-transition: all 250ms;
+          transition: all 250ms; }
+        #valores .circulo .caja_icono3 .caja:hover {
+          background-color: #1FACE1;
+          border: 3px solid white;
+          -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray; }
+          #valores .circulo .caja_icono3 .caja:hover .icono {
+            color: white; }
+    #valores .circulo .caja_icono4 {
+      bottom: 70%;
+      right: -198px; }
+      #valores .circulo .caja_icono4 .caja {
+        width: 70px;
+        height: 70px;
+        z-index: 500;
+        font-size: 33px;
+        border-radius: 50%;
+        border: 3px solid #1FACE1;
+        background-color: white;
+        -webkit-transition: all 250ms;
+        -o-transition: all 250ms;
+        transition: all 250ms; }
+        #valores .circulo .caja_icono4 .caja .icono {
+          -webkit-transition: all 250ms;
+          -o-transition: all 250ms;
+          transition: all 250ms; }
+        #valores .circulo .caja_icono4 .caja:hover {
+          background-color: #1FACE1;
+          border: 3px solid white;
+          -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray; }
+          #valores .circulo .caja_icono4 .caja:hover .icono {
+            color: white; }
+    #valores .circulo .caja_icono5 {
+      bottom: 29%;
+      right: -170px; }
+      #valores .circulo .caja_icono5 .caja {
+        width: 70px;
+        height: 70px;
+        z-index: 500;
+        font-size: 33px;
+        border-radius: 50%;
+        border: 3px solid #1FACE1;
+        background-color: white;
+        -webkit-transition: all 250ms;
+        -o-transition: all 250ms;
+        transition: all 250ms; }
+        #valores .circulo .caja_icono5 .caja .icono {
+          -webkit-transition: all 250ms;
+          -o-transition: all 250ms;
+          transition: all 250ms; }
+        #valores .circulo .caja_icono5 .caja:hover {
+          background-color: #1FACE1;
+          border: 3px solid white;
+          -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray; }
+          #valores .circulo .caja_icono5 .caja:hover .icono {
+            color: white; }

@@ -65,33 +65,178 @@
         height: 500px;
         width: 45%;
 
-        .caja_icono {
-            position: absolute;
-            bottom: 50%;
-            left: -35px;
-            width: 70px;
-            height: 70px;
-            z-index: 500;
-            font-size: 33px;
-            border-radius: 50%;
-            border:  3px solid $azul;
-            background-color: white;
-            transition: all 250ms;
+        .caja_icono1 {
+            bottom: 70%;
+            left: -95px;
+           
 
-            .icono {
+            .caja {
+                width: 70px;
+                height: 70px;
+                z-index: 500;
+                font-size: 33px;
+                border-radius: 50%;
+                border:  3px solid $azul;
+                background-color: white;
                 transition: all 250ms;
 
-            }
-
-            &:hover {
-
-                background-color: $azul;
-                border:  3px solid $blanco;
-                box-shadow: 0 0 8px 1px gray;
                 .icono {
-                    color: white;
+                    transition: all 250ms;
+    
+                }
+    
+                &:hover {
+    
+                    background-color: $azul;
+                    border:  3px solid $blanco;
+                    box-shadow: 0 0 8px 1px gray;
+                    .icono {
+                        color: white;
+                    }
                 }
             }
+
+            
+            
+        }
+
+        .caja_icono2 {
+            bottom: 29%;
+            left: -127px;
+           
+
+            .caja {
+                width: 70px;
+                height: 70px;
+                z-index: 500;
+                font-size: 33px;
+                border-radius: 50%;
+                border:  3px solid $azul;
+                background-color: white;
+                transition: all 250ms;
+
+                .icono {
+                    transition: all 250ms;
+    
+                }
+    
+                &:hover {
+    
+                    background-color: $azul;
+                    border:  3px solid $blanco;
+                    box-shadow: 0 0 8px 1px gray;
+                    .icono {
+                        color: white;
+                    }
+                }
+            }
+
+            
+            
+        }
+
+        .caja_icono3 {
+            top: -65px;
+            left: calc(50% - 67px);
+           
+
+            .caja {
+                width: 70px;
+                height: 70px;
+                z-index: 500;
+                font-size: 33px;
+                border-radius: 50%;
+                border:  3px solid $azul;
+                background-color: white;
+                transition: all 250ms;
+
+                .icono {
+                    transition: all 250ms;
+    
+                }
+    
+                &:hover {
+    
+                    background-color: $azul;
+                    border:  3px solid $blanco;
+                    box-shadow: 0 0 8px 1px gray;
+                    .icono {
+                        color: white;
+                    }
+                }
+            }
+
+            
+            
+        }
+
+        .caja_icono4 {
+            bottom: 70%;
+            right: -198px;
+           
+
+            .caja {
+                width: 70px;
+                height: 70px;
+                z-index: 500;
+                font-size: 33px;
+                border-radius: 50%;
+                border:  3px solid $azul;
+                background-color: white;
+                transition: all 250ms;
+
+                .icono {
+                    transition: all 250ms;
+    
+                }
+    
+                &:hover {
+    
+                    background-color: $azul;
+                    border:  3px solid $blanco;
+                    box-shadow: 0 0 8px 1px gray;
+                    .icono {
+                        color: white;
+                    }
+                }
+            }
+
+            
+            
+        }
+
+        .caja_icono5 {
+            bottom: 29%;
+            right: -170px;
+           
+
+            .caja {
+                width: 70px;
+                height: 70px;
+                z-index: 500;
+                font-size: 33px;
+                border-radius: 50%;
+                border:  3px solid $azul;
+                background-color: white;
+                transition: all 250ms;
+
+                .icono {
+                    transition: all 250ms;
+    
+                }
+    
+                &:hover {
+    
+                    background-color: $azul;
+                    border:  3px solid $blanco;
+                    box-shadow: 0 0 8px 1px gray;
+                    .icono {
+                        color: white;
+                    }
+                }
+            }
+
+            
             
         }
 

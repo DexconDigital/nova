@@ -106,7 +106,7 @@ $page = "Nosotros" ?>
 
             <p class="mt-2 text-center"> Contamos con personal talentoso y comprometido dispuesto a ayudarte a cumplir con tus necesidades inmobiliarias </p>
 
-            <div class="mt-3 w-100 d-flex align-items-center justify-content-center"><a href="" class="btn boton2"> Ver asesores </a></div>
+            <div id="boton_ver_asesores" class="mt-3 w-100 d-flex align-items-center justify-content-center"><a class="btn boton_footer"> Ver asesores </a></div>
 
         </div>
 
@@ -120,9 +120,62 @@ $page = "Nosotros" ?>
 
         <div class="position-relative circulo">
 
-            <div class="d-flex align-items-center justify-content-center caja_icono"> 
-                <i class="icono magenta <?php echo $iconos_nosotros['valores']['lealtad'] ?>"></i>
+
+            <div class="caja_icono1 position-absolute d-flex align-items-center">
+
+                <h4 class="magenta mr-2"> Lealtad </h4>
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['lealtad'] ?>"></i>
+                </div>
+
             </div>
+
+            <div class="caja_icono2 position-absolute d-flex align-items-center">
+
+                <h4 class="magenta mr-2"> Respeto </h4>
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['respeto'] ?>"></i>
+                </div>
+
+            </div>
+
+
+            <div class="caja_icono3 position-absolute d-flex flex-column align-items-center">
+
+                <h4 class="magenta mb-2"> Honestidad </h4>
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['honestidad'] ?>"></i>
+                </div>
+
+            </div>
+
+
+            <div class="caja_icono4 position-absolute d-flex align-items-center">
+
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['responsabilidad'] ?>"></i>
+                </div>
+
+                <h4 class="magenta ml-2"> Responsabilidad </h4>
+            </div>
+
+
+            <div class="caja_icono5 position-absolute d-flex align-items-center">
+
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['pertenencia'] ?>"></i>
+                </div>
+
+                <h4 class="magenta ml-2"> Pertenencia </h4>
+            </div>
+
+
+
 
 
         </div>
@@ -131,13 +184,224 @@ $page = "Nosotros" ?>
             <img class="w-100 h-100" src="images/edificio.png" alt="">
         </div>
 
-
-
-
-
-
     </section>
     <!-- VALORES -->
+
+
+    <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
+    <h5 class="container text-center mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
+    <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
+
+
+    <!-- ALIADOS -->
+    <!-- ALIADOS -->
+
+
+    <!-- ASESORES -->
+    <section id="asesores" class="pt-5">
+
+        <h2 class="text-center font-weight-bold pt-5"> Conoce nuestros asesores </h2>
+
+        <div class="d-flex flex-wrap mt-5 container">
+
+            <!-- CARDS -->
+            <div class="col-3 carta position-relative">
+
+                <!-- IMAGEN ASESOR -->
+                <img class="position-absolute w-100 h-100" src="images/asesor1.jpg" alt="">
+                <!-- IMAGEN ASESOR -->
+
+                <!-- NOMBRE ASESOR -->
+                <div class="nombre_asesor blanco w-100 py-3 position-absolute">
+                    <p class="text-center pr-3"> SERGIO ARENAS </p>
+                </div>
+                <!-- NOMBRE ASESOR -->
+
+                <!-- CARD (HOVER) -->
+                <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
+
+                    <!-- NOMBRE ASESOR -->
+                    <p class="text-center pr-3 mb-2"> SERGIO ARENAS </p>
+                    <!-- NOMBRE ASESOR -->
+
+                    <!-- PUESTO ASESOR -->
+                    <h4 class="magenta mb-5"> Gerente </h4>
+                    <!-- PUESTO ASESOR -->
+
+                    <!-- ICONOS DE REDES SOCIALES -->
+                    <div class="d-flex">
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-facebook-f"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-instagram"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-twitter"> </i>
+                        </a>
+
+                    </div>
+                    <!-- ICONOS DE REDES SOCIALES -->
+
+
+
+                </div>
+                <!-- CARD (HOVER) -->
+
+
+            </div>
+            <!-- CARDS -->
+
+            <!-- CARDS -->
+            <div class="col-3 carta position-relative">
+
+                <!-- IMAGEN ASESOR -->
+                <img class="position-absolute w-100 h-100" src="images/asesor2.jpg" alt="">
+                <!-- IMAGEN ASESOR -->
+
+                <!-- NOMBRE ASESOR -->
+                <div class="nombre_asesor blanco w-100 py-3 position-absolute">
+                    <p class="text-center pr-3"> MELANY CONTRERAS </p>
+                </div>
+                <!-- NOMBRE ASESOR -->
+
+                <!-- CARD (HOVER) -->
+                <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
+
+                    <!-- NOMBRE ASESOR -->
+                    <p class="text-center pr-3 mb-2"> MELANY CONTRERAS </p>
+                    <!-- NOMBRE ASESOR -->
+
+                    <!-- PUESTO ASESOR -->
+                    <h4 class="magenta mb-5"> Asesora </h4>
+                    <!-- PUESTO ASESOR -->
+
+                    <!-- ICONOS DE REDES SOCIALES -->
+                    <div class="d-flex">
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-facebook-f"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-instagram"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-twitter"> </i>
+                        </a>
+
+                    </div>
+                    <!-- ICONOS DE REDES SOCIALES -->
+
+
+
+                </div>
+                <!-- CARD (HOVER) -->
+
+
+            </div>
+            <!-- CARDS -->
+
+            <!-- CARDS -->
+            <div class="col-3 carta position-relative">
+
+                <!-- IMAGEN ASESOR -->
+                <img class="position-absolute w-100 h-100" src="images/asesor3.jpg" alt="">
+                <!-- IMAGEN ASESOR -->
+
+                <!-- NOMBRE ASESOR -->
+                <div class="nombre_asesor blanco w-100 py-3 position-absolute">
+                    <p class="text-center pr-3"> ROBERTO CASAS </p>
+                </div>
+                <!-- NOMBRE ASESOR -->
+
+                <!-- CARD (HOVER) -->
+                <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
+
+                    <!-- NOMBRE ASESOR -->
+                    <p class="text-center pr-3 mb-2"> ROBERTO CASAS </p>
+                    <!-- NOMBRE ASESOR -->
+
+                    <!-- PUESTO ASESOR -->
+                    <h4 class="magenta mb-5"> Jefe de Piso </h4>
+                    <!-- PUESTO ASESOR -->
+
+                    <!-- ICONOS DE REDES SOCIALES -->
+                    <div class="d-flex">
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-facebook-f"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-instagram"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-twitter"> </i>
+                        </a>
+
+                    </div>
+                    <!-- ICONOS DE REDES SOCIALES -->
+
+                </div>
+                <!-- CARD (HOVER) -->
+
+            </div>
+            <!-- CARDS -->
+
+            <!-- CARDS -->
+            <div class="col-3 carta position-relative">
+
+                <!-- IMAGEN ASESOR -->
+                <img class="position-absolute w-100 h-100" src="images/asesor4.jpg" alt="">
+                <!-- IMAGEN ASESOR -->
+
+                <!-- NOMBRE ASESOR -->
+                <div class="nombre_asesor blanco w-100 py-3 position-absolute">
+                    <p class="text-center pr-3"> LUIS ORTIZ </p>
+                </div>
+                <!-- NOMBRE ASESOR -->
+
+                <!-- CARD (HOVER) -->
+                <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
+
+                    <!-- NOMBRE ASESOR -->
+                    <p class="text-center pr-3 mb-2"> LUIS ORTIZ </p>
+                    <!-- NOMBRE ASESOR -->
+
+                    <!-- PUESTO ASESOR -->
+                    <h4 class="magenta mb-5"> Administrador </h4>
+                    <!-- PUESTO ASESOR -->
+
+                    <!-- ICONOS DE REDES SOCIALES -->
+                    <div class="d-flex">
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-facebook-f"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-instagram"> </i>
+                        </a>
+
+                        <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
+                            <i class="icono fab fa-twitter"> </i>
+                        </a>
+
+                    </div>
+                    <!-- ICONOS DE REDES SOCIALES -->
+
+                </div>
+                <!-- CARD (HOVER) -->
+
+            </div>
+            <!-- CARDS -->
+
+
+        </div>
+    </section>
+    <!-- ASESORES -->
 
 
 
@@ -155,6 +419,32 @@ $page = "Nosotros" ?>
         <?php include 'layout/archivos_footer.php' ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('#boton_ver_asesores').on('click',function(){
+
+                // $(document).animate({scrollTop: $('#boton_ver_asesores')});
+
+                $("html,body").animate({				
+				scrollTop: 2210},2000);
+
+               
+            });
+
+            $(document).scroll(function(){
+
+                console.log($(document).scrollTop());
+
+            });
+
+
+
+        });
+
+    </script>
 
 
 </body>
