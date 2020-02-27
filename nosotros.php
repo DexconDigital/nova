@@ -429,7 +429,7 @@ $page = "Nosotros" ?>
                 // $(document).animate({scrollTop: $('#boton_ver_asesores')});
 
                 $("html,body").animate({				
-				scrollTop: 2210},2000);
+				scrollTop: 2110},1500);
 
                
             });
