@@ -15,9 +15,7 @@ $page = "Servicios" ?>
 <body>
 
     <!-- HEADER -->
-    <header>
-        <?php include 'layout/header.php' ?>
-    </header>
+    <?php include 'layout/header.php' ?>
     <!-- HEADER -->
 
     <!-- BANNER -->

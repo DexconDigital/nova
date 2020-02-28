@@ -21,8 +21,8 @@
                     </a>
                 </div>
 
-                <p> -Matrícula inmobiliaria M.A.V.U. No 0071-17 </p>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, praesentium? </p>
+                <p class="mb-2"> -Matrícula inmobiliaria M.A.V.U. No 0071-17 </p>
+                <p> NOVA INMOBILIARIA es una empresa conformada por jóvenes emprendedores, con amplia trayectoria en el sector inmobiliario y legal. </p>
 
 
 
@@ -34,8 +34,8 @@
 
                 <p class="font-weight-bold mb-4"> Descarga Formularios </p>
 
-                <div class="w-100 mb-2 "> <a href="" class="w-100 btn boton_footer"> El Libertador </a></div>
-                <div class="w-100"> <a href="" class="w-100 btn boton_footer"> Sura </a></div>
+                <div class="w-100 mb-2 "> <a target="_blank" href="http://www.ellibertador.co/wps/portal/el-libertador/home" class="w-100 btn boton_footer"> El Libertador </a></div>
+                <div class="w-100"> <a target="_blank" href="https://www.sura.com/seguro-arrendamiento/secciones/descargas.aspx" class="w-100 btn boton_footer"> Sura </a></div>
 
             </div>
             <!-- DESCARGA DE FORMULARIOS -->
@@ -52,6 +52,8 @@
             </div>
             <!-- HORARIOS DE ATENCIÓN -->
 
+
+            <!-- DATOS DE CONTACTO -->
             <div class="col-3 d-flex flex-wrap">
 
                 <p class="font-weight-bold w-100 text-center"> Datos de contacto </p>
@@ -78,18 +80,27 @@
 
                 <div class="d-flex align-items-center justify-content-center w-100">
 
-                    <a href="<?php echo $redes_sociales['instagram']['link'] ?>" class="">
+                    <a target="_blank" href="<?php echo $redes_sociales['instagram']['link'] ?>" class="">
                         <i class="icono fab fa-instagram"></i>
                     </a>
 
-                    <a href="<?php echo $redes_sociales['facebook']['link'] ?>" class="ml-3 mr-5">
-                        <i class="icono fab fa-facebook-f"> </i>
+                    <a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>" class="ml-3 mr-5">
+                        <i class="icono <?php echo $datos_contacto['whatsapp']['icono'] ?>"> </i>
                     </a>
 
                 </div>
 
 
             </div>
+            <!-- DATOS DE CONTACTO -->
+
+
+            <!-- COPYRIGHT -->
+            <section id="copy" class="mt-5">
+                <p> Diseñado y Desarrollado por <a target="_blank" href="https://www.dexcondigital.com/">Dexcon Digital</a> ©Copyright 2020 para Inmobiliaria Nova. Todos
+                    los derechos reservados. </p>
+            </section>
+            <!-- COPYRIGHT -->
 
 
 

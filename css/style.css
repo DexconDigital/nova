@@ -6386,7 +6386,7 @@ input[type="button"].btn-block {
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: transparent; }
+    background-color: #007bff; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #6c757d;
     pointer-events: none;
@@ -12264,13 +12264,19 @@ header {
 #ultimas_noticias .card {
   -webkit-transition: all 300ms;
   -o-transition: all 300ms;
-  transition: all 300ms; }
+  transition: all 300ms;
+  border-top-left-radius: 50px; }
   #ultimas_noticias .card .imagen {
-    overflow: hidden; }
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px; }
     #ultimas_noticias .card .imagen img {
       -webkit-transition: all 300ms;
       -o-transition: all 300ms;
       transition: all 300ms; }
+  #ultimas_noticias .card .descripcion {
+    max-height: 71px;
+    overflow: hidden; }
   #ultimas_noticias .card:hover {
     -webkit-box-shadow: 0 6px 8px 1px gray;
     box-shadow: 0 6px 8px 1px gray; }
@@ -12299,6 +12305,10 @@ footer {
     background-color: transparent; }
   footer .icono {
     font-size: 22px; }
+  footer #copy a {
+    color: black; }
+    footer #copy a:hover {
+      color: #1FACE1; }
 
 .subir {
   background-color: #1FACE1;
@@ -12372,6 +12382,35 @@ footer {
   100% {
     -webkit-filter: none;
     filter: none; } }
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s; }
+
+.slider:hover {
+  opacity: 1; }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer; }
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer; }
 
 #banner {
   height: 250px; }
@@ -12699,9 +12738,18 @@ footer {
       -o-transition: all 500ms;
       transition: all 500ms;
       border-top-left-radius: 25px;
-      border-bottom-right-radius: 25px; }
+      border-bottom-right-radius: 25px;
+      -webkit-filter: brightness(0.8);
+      filter: brightness(0.8); }
+  #inmuebles .card .gestion_inmueble {
+    z-index: 500;
+    top: 20px;
+    left: 20px; }
   #inmuebles .card .descripcion {
     height: 96px;
+    overflow: hidden; }
+  #inmuebles .card .direccion {
+    max-height: 48px;
     overflow: hidden; }
   #inmuebles .card:hover {
     -webkit-box-shadow: 0 6px 8px 1px gray;
@@ -12710,3 +12758,32 @@ footer {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
+
+#buscador2 .container {
+  background-color: #1FACE1;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms; }
+
+#ultimas_noticias .d-flex {
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms; }
+  #ultimas_noticias .d-flex .imagen img {
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    -webkit-box-shadow: 6px 6px 6px 1px grey;
+    box-shadow: 6px 6px 6px 1px grey; }
+  #ultimas_noticias .d-flex:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 19px 17px 6px 1px grey;
+    box-shadow: 19px 17px 6px 1px grey; }
+
+#ultimas_noticias .descripcion {
+  height: 120px;
+  overflow: hidden; }

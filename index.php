@@ -121,16 +121,19 @@ $page = "Inicio" ?>
                         </div>
 
                         <div class="col-3 form-group">
-                            barrea de area
+                            <p> Precio: </p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                         </div>
 
                         <div class="col-3 form-group">
-                            barrea de area
+                            <p> Área: </p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                         </div>
 
-                        <div class="col-6 d-flex align-items center justify-content-center">
-                            <button type="button" id="buscar" class="col-3 btn boton"> Buscar </button>
+                        <div class="col-6 h-100 m-auto d-flex align-items center justify-content-center">
+                            <button type="button" id="buscar" class="col-6 btn boton_footer"> Buscar </button>
                         </div>
+
 
 
 
@@ -249,7 +252,8 @@ $page = "Inicio" ?>
 
                             <!-- DIRECCIÓN -->
                             <div class="position-absolute titulo d-flex flex-column align-items-baseline">
-                                <div class="d-flex">
+                                <p> <span class="azul">Apartamento</span> en <span class="magenta">Arriendo</span> </p>
+                                <div class="d-flex align-items-baseline">
                                     <i class="azul mr-1 fas fa-map-marker-alt"></i>
                                     <p> Manizales - Caldas </p>
                                 </div>
@@ -297,6 +301,7 @@ $page = "Inicio" ?>
 
                             <!-- DIRECCIÓN -->
                             <div class="position-absolute titulo d-flex flex-column align-items-baseline">
+                                <p> <span class="azul">Apartamento</span> en <span class="magenta">Arriendo</span> </p>
                                 <div class="d-flex">
                                     <i class="azul mr-1 fas fa-map-marker-alt"></i>
                                     <p> Bogota - Bogota D.C </p>
@@ -346,11 +351,16 @@ $page = "Inicio" ?>
 
                             <!-- DIRECCIÓN -->
                             <div class="position-absolute titulo d-flex flex-column align-items-baseline">
+
+                                <p> <span class="azul">Apartamento</span> en <span class="magenta"> Venta </span> </p>
+
                                 <div class="d-flex">
                                     <i class="azul mr-1 fas fa-map-marker-alt"></i>
                                     <p> Medellín - Medellín </p>
                                 </div>
+
                                 <p class="mt-1 codigo"> Código: 1023 </p>
+
                             </div>
                             <!-- DIRECCIÓN -->
 
@@ -791,14 +801,16 @@ $page = "Inicio" ?>
     <!-- BANNER DE ESTADISTICAS -->
 
     <!-- ÚLTIMAS NOTICIAS -->
+    <h2 class="font-weight-bold text-center my-5 "> Últimas Noticias </h2>
     <section id="ultimas_noticias" class="container mt-5 d-flex flex-wrap">
 
+
         <!-- CARD -->
         <div class="col-4">
             <div class="card">
 
                 <div class="imagen">
-                    <img src="images/no_image.png" class="card-img-top" alt="...">
+                    <img src="images/copy1.jpg" class="card-img-top" alt="...">
                 </div>
 
                 <div class="">
@@ -810,7 +822,7 @@ $page = "Inicio" ?>
 
                     <div class="caja py-3 border-bottom">
                         <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
-                        <p class="px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
+                        <p class="descripcion px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
                     </div>
 
                     <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
@@ -827,7 +839,7 @@ $page = "Inicio" ?>
             <div class="card">
 
                 <div class="imagen">
-                    <img src="images/no_image.png" class="card-img-top" alt="...">
+                    <img src="images/copy2.jpg" class="card-img-top" alt="...">
                 </div>
 
                 <div class="">
@@ -839,7 +851,7 @@ $page = "Inicio" ?>
 
                     <div class="caja py-3 border-bottom">
                         <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
-                        <p class="px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
+                        <p class="descripcion px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
                     </div>
 
                     <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
@@ -857,7 +869,7 @@ $page = "Inicio" ?>
             <div class="card">
 
                 <div class="imagen">
-                    <img src="images/no_image.png" class="card-img-top" alt="...">
+                    <img src="images/copy3.jpg" class="card-img-top" alt="...">
                 </div>
 
                 <div class="">
@@ -869,7 +881,7 @@ $page = "Inicio" ?>
 
                     <div class="caja py-3 border-bottom">
                         <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
-                        <p class="px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
+                        <p class="descripcion px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
                     </div>
 
                     <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>

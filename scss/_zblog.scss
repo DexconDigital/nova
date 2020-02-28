@@ -1,0 +1,35 @@
+#ultimas_noticias {
+
+    .d-flex {
+
+        transition: all 300ms;
+
+        .imagen {        
+
+            img {
+                transition: all 400ms;
+                border-top-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+                box-shadow: 6px 6px 6px 1px grey;
+
+            }
+        }
+        
+        
+        &:hover {
+
+            img {
+                transform: scale(1.05);
+                box-shadow: 19px 17px 6px 1px grey;
+
+            }
+        }
+
+    }
+
+    .descripcion {
+        height: 120px;
+        overflow: hidden;
+    }
+
+}

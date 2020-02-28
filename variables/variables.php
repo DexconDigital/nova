@@ -30,7 +30,7 @@ $redes_sociales = [
 		// "imagen" => "images/twitter.png"
 	// ],
 	"instagram" => [
-		"link" => "Instagram https://www.instagram.com/novainm/?hl=es-la",
+		"link" => "https://www.instagram.com/novainm/?hl=es-la",
 		"icono" => "fab fa-instagram",
 		"imagen" => "images/instagram.png"
 	],

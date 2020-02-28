@@ -4,12 +4,12 @@
 
         <div class="container d-flex align-items-center justify-content-end">
 
-            <a href="<?php echo $redes_sociales['instagram']['link'] ?>" class="">
+            <a target="_blank" href="<?php echo $redes_sociales['instagram']['link'] ?>" class="">
                 <i class="fab fa-instagram"></i>
             </a>
 
-            <a href="<?php echo $redes_sociales['facebook']['link'] ?>" class="ml-3 mr-5">
-                <i class="fab fa-facebook-f"> </i>
+            <a target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>" class="ml-3 mr-5">
+                <i class="<?php echo $datos_contacto['whatsapp']['icono'] ?>"> </i>
             </a>
 
             <div class="mr-3 d-flex align-items-center">
@@ -82,9 +82,9 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                            <a class="dropdown-item" href="#"> Arrendatarios </a>
-                            <a class="dropdown-item" href="#"> Propietarios </a>
-                            <a class="dropdown-item" href="#"> Pagos PSE </a>
+                            <a class="dropdown-item" target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=2"> Arrendatarios </a>
+                            <a class="dropdown-item" target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1"> Propietarios </a>
+                            <a class="dropdown-item"  href="#"> Pagos PSE </a>
                         </div>
                     </li>
 
@@ -108,18 +108,6 @@
                     <!-- LOGO PSE -->
 
 
-
-                    <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li> -->
 
                 </ul>
 

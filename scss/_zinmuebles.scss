@@ -17,14 +17,24 @@
                 transition: all 500ms;
                 border-top-left-radius: 25px;
                 border-bottom-right-radius: 25px;
+                filter: brightness(0.8);
             }
         }
 
-        .descripcion {
+        .gestion_inmueble {
+            z-index: 500;
+            top: 20px;
+            left: 20px;
+        }
 
+        .descripcion {
             height: 96px;
             overflow: hidden;
+        }
 
+        .direccion {
+            max-height: 48px;
+            overflow: hidden;
         }
         
         
@@ -40,4 +50,13 @@
 
     }
 
+}
+
+#buscador2 {   
+
+    .container {
+        background-color: $azul;
+        transition: all 250ms;
+        // top: 188px;
+    }
 }
