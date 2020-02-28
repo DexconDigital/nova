@@ -20,27 +20,53 @@
 
     .formulario {
 
-        .texto {
+        .nombre,.mail,.telefono {
+            input {
+                
+                border-left: none;
+                border-top: none;
+                border-right: none;
+                border-bottom: 1px solid gray;
+            }
+        }
 
-           border-left: none;
-           border-top: none;
-           border-right: none;
-            border-bottom: 1px solid gray;
+        .nombre {
+
+            &::after {
+                content: "\f007";
+                font-family: iconos_solid;
+                position: absolute;
+                top: 40%;
+                right: 25px;
+            }
 
             
 
         }
+        
+        .mail {
+            &::after {
+                content: "\f0e0";
+                font-family: iconos_solid;
+                position: absolute;
+                top: 40%;
+                right: 25px;
+            }
 
-        input {
+        }
 
-            &::before {
-                content: "holi";
-               
-                position: relative;
-                height: 20px;
-                width: 20px;
+        .telefono {
+
+            &::after {
+                content: "\f879";
+                font-family: iconos_solid;
+                position: absolute;
+                top: 40%;
+                right: 25px;
             }
         }
+
+      
 
 
     }

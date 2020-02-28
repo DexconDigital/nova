@@ -11849,15 +11849,11 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 @font-face {
-  font-family: 'iconos';
-  src: url(../fonts/iconos.otf); }
-
-@font-face {
-  font-family: 'iconos1';
+  font-family: iconos_regular;
   src: url(../fonts/iconos1.otf); }
 
 @font-face {
-  font-family: 'iconos2';
+  font-family: iconos_solid;
   src: url(../fonts/iconos2.otf); }
 
 body {
@@ -12812,14 +12808,29 @@ footer {
     box-shadow: 0 0 6px 1px gray;
     padding: 20px; }
 
-#contactenos .formulario .texto {
+#contactenos .formulario .nombre input, #contactenos .formulario .mail input, #contactenos .formulario .telefono input {
   border-left: none;
   border-top: none;
   border-right: none;
   border-bottom: 1px solid gray; }
 
-#contactenos .formulario input::before {
-  content: "holi";
-  position: relative;
-  height: 20px;
-  width: 20px; }
+#contactenos .formulario .nombre::after {
+  content: "\f007";
+  font-family: iconos_solid;
+  position: absolute;
+  top: 40%;
+  right: 25px; }
+
+#contactenos .formulario .mail::after {
+  content: "\f0e0";
+  font-family: iconos_solid;
+  position: absolute;
+  top: 40%;
+  right: 25px; }
+
+#contactenos .formulario .telefono::after {
+  content: "\f879";
+  font-family: iconos_solid;
+  position: absolute;
+  top: 40%;
+  right: 25px; }

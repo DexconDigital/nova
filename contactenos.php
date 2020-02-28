@@ -87,7 +87,27 @@ $page = "Contáctanos" ?>
 
             <form action="" class="d-flex flex-wrap formulario mt-5">
 
-                <input type="text" placeholder="Nombre" class="col-6 texto form-control">
+                <div class="mb-3 nombre col-6">
+                    <input type="text" placeholder="Nombre" class="form-control">
+                </div>
+
+                
+                <div class="mb-3 mail col-6">
+                    <input type="mail" placeholder="Mail" class="form-control">
+                </div>
+
+
+                
+                <div class="mb-3 telefono col-6">
+                    <input type="number" placeholder="Teléfono" class="form-control">
+                </div>
+
+
+                
+                <div class="mb-3 texto col-12">
+                    <textarea class="form-control"> </textarea>
+                </div>
+
 
               
 
