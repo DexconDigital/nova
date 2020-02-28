@@ -22,7 +22,7 @@ $page = "Nosotros" ?>
     <!-- BANNER -->
     <section id="banner" class="position-relative">
 
-        <div class="imagen position-absolute w-100 h-100"></div>
+        <div class="imagen_nosotros position-absolute w-100 h-100"></div>
         <div class="fondo_negro position-absolute w-100 h-100"></div>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
@@ -114,8 +114,12 @@ $page = "Nosotros" ?>
     </section>
     <!-- ¿BUSCAS TU INMUEBLE IDEAL? -->
 
+
+    <h2 class="text-center font-weight-bold mt-5"> Valores Corporativos </h2>
+
     <!-- VALORES -->
     <section id="valores" class="container position-relative d-flex align-items-center justify-content-center">
+
 
 
         <div class="position-relative circulo">
@@ -189,18 +193,111 @@ $page = "Nosotros" ?>
 
 
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
-    <h5 class="container text-center mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
+    <h5 id="texto_valores" class="container text-center mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
 
 
     <!-- ALIADOS -->
+    <section id="aliados" class="position-relative py-5 mt-5">
+
+        <div class="position-absolute w-100 h-100 imagen"></div>
+
+        <div class="position-absolute w-100 h-100 fondo_negro"></div>
+
+        <h2 class="blanco font-weight-bold text-center position-relative my-5"> Nuestros <span class="magenta">Aliados</span> </h2>
+
+        <div class="container position-relative">
+
+            <div id="carrusel_aliados" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner h-100">
+
+                    <div class="carousel-item h-100 active" data-interval="10000">
+
+                        <div class="d-flex align-items-center justify-content-center h-100">
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['0'] ?>" class="libertador h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['1'] ?>" class="bordes h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['2'] ?>" class="bordes h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['3'] ?>" class="bordes h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item h-100" data-interval="10000">
+
+                        <div class="d-flex align-items-center justify-content-center h-100">
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['4'] ?>" class="bordes h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['5'] ?>" class="bordes h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['6'] ?>" class="bordes h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                            <div class=" col-3">
+                                <div class="caja_imagen d-flex align-items-center justify-content-center m-auto p-0">
+                                    <img src="<?php echo $logos_aliados['7'] ?>" class="bordes h-auto d-block" alt="...">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <a class="btn boton2 izquierda_aliados" href="#carrusel_aliados" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+
+                <a class="btn boton2 derecha_aliados" href="#carrusel_aliados" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+
+
+            </div>
+        </div>
+
+    </section>
     <!-- ALIADOS -->
 
 
     <!-- ASESORES -->
     <section id="asesores" class="pt-5">
 
-        <h2 class="text-center font-weight-bold pt-5"> Conoce nuestros asesores </h2>
+        <h2 class="text-center font-weight-bold pt-5"> Conoce Nuestros Asesores </h2>
 
         <div class="d-flex flex-wrap mt-5 container">
 
@@ -420,33 +517,4 @@ $page = "Nosotros" ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
 
-    <script>
-
-        $(document).ready(function(){
-
-            $('#boton_ver_asesores').on('click',function(){
-
-                // $(document).animate({scrollTop: $('#boton_ver_asesores')});
-
-                $("html,body").animate({				
-				scrollTop: 2110},1500);
-
-               
-            });
-
-            $(document).scroll(function(){
-
-                console.log($(document).scrollTop());
-
-            });
-
-
-
-        });
-
-    </script>
-
-
-</body>
-
-</html>
+    <script src=js/scroll_asesores.js> </script> </body> </html>

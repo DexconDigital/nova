@@ -1,0 +1,116 @@
+#servicios2 {
+
+    .servicio {
+
+        &:hover {
+            
+            .contenedor_icono {
+
+                border-color: $blanco;
+                background-color: $azul;
+                transition: all 250ms;
+
+                .icono{
+                    transform: rotate(360deg);
+                    color: $blanco;
+                }
+
+                &:hover {
+                    background-color: $magenta;
+                }
+
+            }
+
+            .contenedor_texto {
+    
+                background-color: $azul;
+                color: white;
+
+                a {
+                color: $blanco;
+                border: 1px solid $blanco;
+                background-color: $magenta;
+                }
+            }
+
+           
+               
+        }
+
+
+        .contenedor_icono {
+
+            z-index: 500;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            border-color: $azul;
+            
+            .icono{
+                font-size: 50px;
+                transition: all 500ms;
+            }
+        }
+    
+        .contenedor_texto {
+    
+            border-top-left-radius: 45px;
+            border-bottom-right-radius: 45px;
+            top: -50px;
+            transition: all 250ms;
+    
+            h4 {
+                margin-top: 65px;
+            }
+
+            a {
+                color: $azul;
+                border: 1px solid $azul;
+                background-color: transparent;
+
+                &:hover {
+                background-color: $azul;
+                }
+            }
+
+
+    
+    }
+   
+        
+    }
+
+}
+
+#solicitud_inmueble {
+
+    // .imagen {
+    //     background: url('../images/copy.jpg') center center;
+
+    // }
+
+    .fondo{
+
+        background: linear-gradient(45deg, $magenta, $azul);
+        // background-color: rgba(0,0,0,.5);
+
+    }
+
+    .contenido {
+        height: 200px;
+    }
+
+    .btn {
+        padding: 25px;
+        border: 1px solid white;
+    }
+
+}
+
+.rojo {
+    color: red;
+}
+
+
+

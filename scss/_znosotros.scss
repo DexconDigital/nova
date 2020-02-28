@@ -2,6 +2,34 @@
 
     height: 250px;
 
+    .imagen_nosotros {
+
+        background: url(../images/slide_1.jpg) center center;
+        background-attachment: fixed;
+
+    }
+
+    .imagen_servicios {
+
+        background: url(../images/slide_2.jpg) center center;
+        background-attachment: fixed;
+
+    }
+
+    .imagen {
+
+        background: url(../images/slide_1.jpg) center center;
+        background-attachment: fixed;
+
+    }
+
+    .imagen {
+
+        background: url(../images/slide_1.jpg) center center;
+        background-attachment: fixed;
+
+    }
+
     .imagen {
 
         background: url(../images/slide_1.jpg) center center;
@@ -49,6 +77,7 @@
 
 #valores {
 
+    opacity: 0;
     margin-top: 8rem;
 
     .imagen {
@@ -240,6 +269,86 @@
             
         }
 
+    }
+
+    @keyframes animacion_valores {
+        from {
+            top: 650px;
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes animacion_texto_valores {
+        from {
+            left: -100%;
+            opacity: 0;
+        }
+
+        to {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+}
+
+#texto_valores {
+    position: relative;
+    opacity: 0;
+}
+
+#aliados {
+
+    .imagen {
+        width: 170px;
+        height: 127px;
+        background: url('../images/slide_1.jpg') center center;
+        background-attachment: fixed;
+    }
+
+    .fondo_negro {
+        background-color: rgba(0,0,0,.5);
+    }
+
+    .carousel {
+        height: 200px;
+    }
+
+    .libertador {
+        height: 55%;
+        width: 90%;
+    }
+
+
+    .caja_imagen {
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 5px solid $azul;
+        background-color: white;
+        height: 130px;
+
+        .bordes {
+
+            width: 85%;
+    
+        }
+    }
+
+    .izquierda_aliados {
+        position: absolute;
+        left: -40px; 
+        top: calc(50% - 19px);
+    }
+
+    .derecha_aliados {
+        position: absolute;
+        right: -40px; 
+        top: calc(50% - 19px);
     }
 
 }

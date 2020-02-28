@@ -220,7 +220,7 @@ $page = "Inicio" ?>
 
         <div class="position-absolute h-100 w-100 fondo_negro"></div>
 
-        <h2 class="blanco text-center font-weight-bold my-5 "> Nuestras <span class="azul">propiedades</span> <span class="magenta">destacadas</span> </h2>
+        <h2 class="blanco text-center font-weight-bold my-5 "> Nuestras <span class="azul"> Propiedades</span> <span class="magenta"> Destacadas </span> </h2>
 
         <div class="blanco d-flex container align-items-center">
 
@@ -408,7 +408,7 @@ $page = "Inicio" ?>
     <!-- ASESORES -->
     <section id="asesores" class="pt-5">
 
-        <h2 class="text-center font-weight-bold pt-5"> Conoce nuestros asesores </h2>
+        <h2 class="text-center font-weight-bold pt-5"> Conoce Nuestros Asesores </h2>
 
         <div class="d-flex flex-wrap mt-5 container">
 
@@ -673,7 +673,7 @@ $page = "Inicio" ?>
     <!-- SLIDE DE IMAGENES -->
     <section id="slide_imagenes" class="container mt-5">
 
-        <h2 class="font-weight-bold text-center py-5"> Un inmueble para cada necesidad </h2>
+        <h2 class="font-weight-bold text-center py-5"> Un Inmueble Para Cada Necesidad </h2>
 
         <div id="slide_de_imagenes" class="carousel slide" data-ride="carousel">
 

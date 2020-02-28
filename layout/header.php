@@ -76,10 +76,16 @@
                                             } ?>" href="inmuebles.php"> Inmuebles </a>
                     </li>
 
-                    <li class="d-flex align-items-center nav-item">
-                        <a class="nav-link <?php if ($page == 'Nova Interactiva') {
-                                                echo 'activo';
-                                            } ?>" href="nova.php"> Nova Interactiva </a>
+                    <li class="nav-item dropdown m-auto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nova Interactiva
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="#"> Arrendatarios </a>
+                            <a class="dropdown-item" href="#"> Propietarios </a>
+                            <a class="dropdown-item" href="#"> Pagos PSE </a>
+                        </div>
                     </li>
 
                     <li class="d-flex align-items-center nav-item">

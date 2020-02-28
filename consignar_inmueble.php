@@ -1,5 +1,5 @@
 <?php require 'variables/variables.php';
-$page = "Inicio" ?>
+$page = "Consigna tu inmueble" ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,24 +10,30 @@ $page = "Inicio" ?>
     <?php include 'layout/archivos_header.php' ?>
 
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
-
-
-
 </head>
 
 <body>
 
+    <!-- HEADER -->
+    <header>
+        <?php include 'layout/header.php' ?>
+    </header>
+    <!-- HEADER -->
 
-    <a id="caja_boton1" href="" class="mt-5 position-relative">
-
-        <div class="caja1 position-absolute w-100 h-100"></div>
-        <div class="caja2 position-absolute w-100 h-100"></div>
-        <div class="texto position-relative d-inline w-100 h-100"> TEXsadsadasdasTO </div>
-
-    </a>
-
+  <h1 class="text-center mt-5"> Página en implementación... </h1>
 
 
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="mt-5">
+        <?php include 'layout/footer.php' ?>
+    </footer>
+    <!-- FOOTER -->
 
     <!-- ARCHIVOS FOOTER -->
     <section>
