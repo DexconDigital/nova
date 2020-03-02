@@ -31,7 +31,7 @@ $page = "Inicio" ?>
                 </ol> -->
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item h-100 active">
-                        <img src="images/imagen_18.jpg" class="d-block h-100 w-100" alt="...">
+                        <img style="object-fit:fill" src="images/imagen_18.jpg" class="d-block h-100 w-100" alt="...">
                         <div class="carousel-caption h-100 d-none d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute w-100 h-100">
                                 <h2> <span class="azul">La nueva cara del</span> <span class="magenta">buen servicio</span> </h5>
@@ -665,7 +665,7 @@ $page = "Inicio" ?>
                 <h4 class="font-weight-bold mb-2 blanco"> Pagos PSE </h4>
 
                 <div>
-                    <img class="" src="images/slide_3.jpg" alt="">
+                    <img class="" src="images/imagen_7.jpg" alt="">
                 </div>
 
                 <div class="blanco mt-2 btn boton1"> Ingresa </div>
@@ -700,16 +700,9 @@ $page = "Inicio" ?>
                 </div>
 
                 <div class="carousel-item h-100">
-                    <img src="images/imagen_4.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item h-100">
                     <img src="images/imagen_5.jpg" class="h-100 d-block w-100" alt="...">
                 </div>
 
-                <div class="carousel-item h-100">
-                    <img src="images/imagen_6.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
 
                 <div class="carousel-item h-100">
                     <img src="images/imagen_8.jpg" class="h-100 d-block w-100" alt="...">

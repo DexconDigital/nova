@@ -18,6 +18,21 @@ $page = "Solicitar Inmueble" ?>
     <?php include 'layout/header.php' ?>
     <!-- HEADER -->
 
+    <!-- BANNER -->
+    <section id="banner" class="position-relative">
+
+        <div class="imagen_consignar position-absolute w-100 h-100"></div>
+        <div class="fondo_negro position-absolute w-100 h-100"></div>
+
+        <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
+
+            <h1 class="font-weight-bold"> CONSIGNAR INMUEBLE </h1>
+
+        </div>
+
+    </section>
+    <!-- BANNER -->
+
     <section class="mt-5 text-justify container">
 
         <h2 class="text-center font-weight-bold mb-5"> Consigna tu <span class="magenta">inmueble</span> </h2>
