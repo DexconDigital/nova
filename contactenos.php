@@ -21,7 +21,7 @@ $page = "Contáctanos" ?>
     <!-- BANNER -->
     <section id="banner" class="position-relative">
 
-        <div class="imagen position-absolute w-100 h-100"></div>
+        <div class="imagen_contactanos position-absolute w-100 h-100"></div>
         <div class="fondo_negro position-absolute w-100 h-100"></div>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
@@ -120,10 +120,29 @@ $page = "Contáctanos" ?>
 
             <!-- FORMULARIO DE CONTACTO -->
 
+            <!-- HORARIO -->
+            <div class="horario mt-5 align-items-center d-flex justify-content-center">
+
+                <i class="icono mr-5 <?php echo  $datos_contacto['horario']['icono'] ?>"></i>
+                <p> De lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 5:00 p.m. <br/>Sábados de 8:00 a.m. a 12:00 p.m. </p>
+
+
+            </div>
+            <!-- HORARIO -->
+
 
         </div>
 
     </section>
+
+
+    <!-- MAPA -->
+
+    <section id="mapa" class="mb-n5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.481014148166!2d-75.603552!3d6.2319927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7469462bb7c77f0!2sNOVA%20INMOBILIARIA!5e0!3m2!1ses!2sco!4v1583178566836!5m2!1ses!2sco" class="w-100 h-100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </section>
+
+    <!-- MAPA -->
 
 
 

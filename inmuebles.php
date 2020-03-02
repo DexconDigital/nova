@@ -21,7 +21,7 @@ $page = "Inmuebles" ?>
     <!-- BANNER -->
     <section id="banner" class="position-relative">
 
-        <div class="imagen position-absolute w-100 h-100"></div>
+        <div class="imagen_inmuebles position-absolute w-100 h-100"></div>
         <div class="fondo_negro position-absolute w-100 h-100"></div>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">

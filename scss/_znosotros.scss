@@ -2,31 +2,44 @@
 
     height: 250px;
 
+    .imagen_inmuebles {
+        background: url(../images/imagen_17.jpg);
+        background-attachment: fixed;
+        background-position-y: -24em;
+        background-size: cover;
+    }
+
     .imagen_nosotros {
 
-        background: url(../images/slide_1.jpg) center center;
+        background: url(../images/imagen_14.jpg) center center;
         background-attachment: fixed;
-
+        background-position: center;
+        background-size: cover;
     }
 
     .imagen_servicios {
 
-        background: url(../images/slide_2.jpg) center center;
+        background: url(../images/imagen_3.jpg) center center;
         background-attachment: fixed;
+        background-position-y: -45em;
+        background-size: cover;
+    }
+
+    .imagen_blog {
+
+        background: url(../images/imagen_7.jpg) center center;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
 
     }
 
-    .imagen {
+    .imagen_contactanos {
 
-        background: url(../images/slide_1.jpg) center center;
+        background: url(../images/imagen_12.jpg) center center;
         background-attachment: fixed;
-
-    }
-
-    .imagen {
-
-        background: url(../images/slide_1.jpg) center center;
-        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
 
     }
 
@@ -307,7 +320,7 @@
     .imagen {
         width: 170px;
         height: 127px;
-        background: url('../images/slide_1.jpg') center center;
+        background: url('../images/imagen_16.jpg') center center;
         background-attachment: fixed;
     }
 

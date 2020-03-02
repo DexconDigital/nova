@@ -349,8 +349,10 @@ header {
 
     .imagen {
         z-index: 100;
-        background-image: url(../images/slide_1.jpg);
+        background-image: url(../images/imagen_20.jpg);
         background-attachment: fixed;
+        background-size: cover;
+        background-position-y: -33em;
     }
 
     .fondo_negro {
@@ -432,8 +434,10 @@ header {
 
 #nova_transaccional {
 
-    background-image: url(../images/imagen1.webp);
+    background: url(../images/imagen_11.jpg) center center;
     background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -30em;
 
     .fondo_negro {
         z-index: 100;
@@ -501,7 +505,7 @@ header {
 #banner_estadisticas {
 
     .imagen {
-        background: url(../images/slide_2.jpg) center center;
+        background: url(../images/imagen_10.jpg) center center;
         background-attachment: fixed;
         top: 0;
     }

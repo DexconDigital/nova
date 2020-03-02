@@ -1,7 +1,12 @@
 #contactenos {
 
+    z-index: 200;
+
     .container {
         box-shadow: 0 0 6px 1px gray;
+        z-index: 200;
+        position: relative;
+        background-color: white;
 
         .imagen {
             height: 135px;
@@ -103,6 +108,21 @@
       
 
 
+    }
+
+}
+
+#mapa {
+    z-index: 100;
+    position: relative;
+    margin-top: -200px;
+    height:600px;
+}
+
+.horario {
+
+    .icono {
+        font-size: 35px;
     }
 
 }

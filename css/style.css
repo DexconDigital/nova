@@ -12076,8 +12076,10 @@ header {
 
 #propiedades_destacadas .imagen {
   z-index: 100;
-  background-image: url(../images/slide_1.jpg);
-  background-attachment: fixed; }
+  background-image: url(../images/imagen_20.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -33em; }
 
 #propiedades_destacadas .fondo_negro {
   z-index: 200;
@@ -12140,8 +12142,10 @@ header {
     transform: scale(1); }
 
 #nova_transaccional {
-  background-image: url(../images/imagen1.webp);
-  background-attachment: fixed; }
+  background: url(../images/imagen_11.jpg) center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -30em; }
   #nova_transaccional .fondo_negro {
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.473);
@@ -12174,7 +12178,7 @@ header {
   right: 20px; }
 
 #banner_estadisticas .imagen {
-  background: url(../images/slide_2.jpg) center center;
+  background: url(../images/imagen_10.jpg) center center;
   background-attachment: fixed;
   top: 0; }
 
@@ -12429,18 +12433,31 @@ footer {
 
 #banner {
   height: 250px; }
+  #banner .imagen_inmuebles {
+    background: url(../images/imagen_17.jpg);
+    background-attachment: fixed;
+    background-position-y: -24em;
+    background-size: cover; }
   #banner .imagen_nosotros {
-    background: url(../images/slide_1.jpg) center center;
-    background-attachment: fixed; }
+    background: url(../images/imagen_14.jpg) center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
   #banner .imagen_servicios {
-    background: url(../images/slide_2.jpg) center center;
-    background-attachment: fixed; }
-  #banner .imagen {
-    background: url(../images/slide_1.jpg) center center;
-    background-attachment: fixed; }
-  #banner .imagen {
-    background: url(../images/slide_1.jpg) center center;
-    background-attachment: fixed; }
+    background: url(../images/imagen_3.jpg) center center;
+    background-attachment: fixed;
+    background-position-y: -45em;
+    background-size: cover; }
+  #banner .imagen_blog {
+    background: url(../images/imagen_7.jpg) center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
+  #banner .imagen_contactanos {
+    background: url(../images/imagen_12.jpg) center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
   #banner .imagen {
     background: url(../images/slide_1.jpg) center center;
     background-attachment: fixed; }
@@ -12641,7 +12658,7 @@ footer {
 #aliados .imagen {
   width: 170px;
   height: 127px;
-  background: url("../images/slide_1.jpg") center center;
+  background: url("../images/imagen_16.jpg") center center;
   background-attachment: fixed; }
 
 #aliados .fondo_negro {
@@ -12804,59 +12821,66 @@ footer {
   height: 120px;
   overflow: hidden; }
 
-#contactenos .container {
-  -webkit-box-shadow: 0 0 6px 1px gray;
-  box-shadow: 0 0 6px 1px gray; }
-  #contactenos .container .imagen {
-    height: 135px;
-    width: 240px;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+#contactenos {
+  z-index: 200; }
+  #contactenos .container {
     -webkit-box-shadow: 0 0 6px 1px gray;
     box-shadow: 0 0 6px 1px gray;
-    padding: 20px; }
+    z-index: 200;
+    position: relative;
+    background-color: white; }
+    #contactenos .container .imagen {
+      height: 135px;
+      width: 240px;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      -webkit-box-shadow: 0 0 6px 1px gray;
+      box-shadow: 0 0 6px 1px gray;
+      padding: 20px; }
+  #contactenos .formulario .nombre input, #contactenos .formulario .mail input, #contactenos .formulario .telefono input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid gray; }
+  #contactenos .formulario .form-control {
+    border-radius: inherit; }
+    #contactenos .formulario .form-control:focus {
+      border-bottom-color: #1FACE1;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  #contactenos .formulario .nombre::after {
+    content: "\f007";
+    color: #DF2B6A;
+    font-family: iconos_solid;
+    position: absolute;
+    top: 30%;
+    right: 25px; }
+  #contactenos .formulario .mail::after {
+    content: "\f0e0";
+    color: #DF2B6A;
+    font-family: iconos_solid;
+    position: absolute;
+    top: 30%;
+    right: 25px; }
+  #contactenos .formulario .telefono::after {
+    content: "\f879";
+    color: #DF2B6A;
+    font-family: iconos_solid;
+    position: absolute;
+    top: 30%;
+    right: 25px; }
+  #contactenos .formulario .texto textarea {
+    height: 230px; }
+  #contactenos .formulario .color_a_contacto {
+    color: #1FACE1; }
+    #contactenos .formulario .color_a_contacto:hover {
+      color: #DF2B6A; }
 
-#contactenos .formulario .nombre input, #contactenos .formulario .mail input, #contactenos .formulario .telefono input {
-  border-left: none;
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid gray; }
+#mapa {
+  z-index: 100;
+  position: relative;
+  margin-top: -200px;
+  height: 600px; }
 
-#contactenos .formulario .form-control {
-  border-radius: inherit; }
-  #contactenos .formulario .form-control:focus {
-    border-bottom-color: #1FACE1;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-
-#contactenos .formulario .nombre::after {
-  content: "\f007";
-  color: #DF2B6A;
-  font-family: iconos_solid;
-  position: absolute;
-  top: 30%;
-  right: 25px; }
-
-#contactenos .formulario .mail::after {
-  content: "\f0e0";
-  color: #DF2B6A;
-  font-family: iconos_solid;
-  position: absolute;
-  top: 30%;
-  right: 25px; }
-
-#contactenos .formulario .telefono::after {
-  content: "\f879";
-  color: #DF2B6A;
-  font-family: iconos_solid;
-  position: absolute;
-  top: 30%;
-  right: 25px; }
-
-#contactenos .formulario .texto textarea {
-  height: 230px; }
-
-#contactenos .formulario .color_a_contacto {
-  color: #1FACE1; }
-  #contactenos .formulario .color_a_contacto:hover {
-    color: #DF2B6A; }
+.horario .icono {
+  font-size: 35px; }
