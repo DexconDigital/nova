@@ -352,7 +352,7 @@ header {
         background-image: url(../images/imagen_20.jpg);
         background-attachment: fixed;
         background-size: cover;
-        background-position-y: -33em;
+        background-position: center center;
     }
 
     .fondo_negro {
@@ -637,7 +637,7 @@ header {
 
 footer {
 
-    background: url(../images/slide_1.jpg) center center;
+    background: url(../images/imagen_8.jpg) center center;
     background-attachment: fixed;
 
     .caja_negra {

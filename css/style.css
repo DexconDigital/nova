@@ -12079,7 +12079,7 @@ header {
   background-image: url(../images/imagen_20.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position-y: -33em; }
+  background-position: center center; }
 
 #propiedades_destacadas .fondo_negro {
   z-index: 200;
@@ -12305,7 +12305,7 @@ header {
       transform: scale(1.2); }
 
 footer {
-  background: url(../images/slide_1.jpg) center center;
+  background: url(../images/imagen_8.jpg) center center;
   background-attachment: fixed; }
   footer .caja_negra {
     background-color: rgba(0, 0, 0, 0.5);
@@ -12436,7 +12436,6 @@ footer {
   #banner .imagen_inmuebles {
     background: url(../images/imagen_17.jpg);
     background-attachment: fixed;
-    background-position-y: -24em;
     background-size: cover; }
   #banner .imagen_nosotros {
     background: url(../images/imagen_14.jpg) center center;
@@ -12446,7 +12445,6 @@ footer {
   #banner .imagen_servicios {
     background: url(../images/imagen_3.jpg) center center;
     background-attachment: fixed;
-    background-position-y: -45em;
     background-size: cover; }
   #banner .imagen_blog {
     background: url(../images/imagen_7.jpg) center center;

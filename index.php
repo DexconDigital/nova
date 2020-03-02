@@ -31,7 +31,7 @@ $page = "Inicio" ?>
                 </ol> -->
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item h-100 active">
-                        <img src="images/slide_1.jpg" class="d-block h-100 w-100" alt="...">
+                        <img src="images/imagen_18.jpg" class="d-block h-100 w-100" alt="...">
                         <div class="carousel-caption h-100 d-none d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute w-100 h-100">
                                 <h2> <span class="azul">La nueva cara del</span> <span class="magenta">buen servicio</span> </h5>
@@ -39,7 +39,7 @@ $page = "Inicio" ?>
                         </div>
                     </div>
                     <div class="carousel-item h-100">
-                        <img src="images/slide_2.jpg" class="d-block h-100 w-100" alt="...">
+                        <img src="images/imagen_2.jpg" class="d-block h-100 w-100" alt="...">
                         <div class="carousel-caption h-100 d-none d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute h-100 w-100">
                                 <h2> <span class="azul">Un enfoque personalizado</span> <span class="magenta">de atención</span> </h5>
@@ -47,7 +47,7 @@ $page = "Inicio" ?>
                         </div>
                     </div>
                     <div class="carousel-item h-100">
-                        <img src="images/slide_3.jpg" class="d-block h-100 w-100" alt="...">
+                        <img style="object-fit:fill" src="images/imagen_21.jpg" class="d-block h-100 w-100" alt="...">
                         <div class="carousel-caption h-100 d-none d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute h-100 w-100">
                                 <h2> <span class="azul">La mejor experiencia</span> <span class="magenta">a tu servicio</span> </h2>
@@ -632,12 +632,12 @@ $page = "Inicio" ?>
             <h2 class="col-12 text-center mb-5 blanco font-weight-bold"> Bienvenido a <span class="azul"> Nova </span> <span class="magenta">Transaccional</span> </h2>
 
             <!-- CARD -->
-            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1" class="blanco col-4 d-flex flex-column align-items-center">
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1" class="justify-content-between blanco col-4 d-flex flex-column align-items-center">
 
                 <h4 class="font-weight-bold mb-2 blanco"> Propietarios </h2>
 
                     <div>
-                        <img class="" src="images/slide_1.jpg" alt="">
+                        <img class="" src="images/imagen_13.jpg" alt="">
                     </div>
 
                     <div class="blanco mt-2 btn boton1"> Ingresa </div>
@@ -646,12 +646,12 @@ $page = "Inicio" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=2" class="blanco col-4 d-flex flex-column align-items-center">
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=2" class="justify-content-between blanco col-4 d-flex flex-column align-items-center">
 
                 <h4 class="font-weight-bold mb-2 blanco"> Arrendatarios </h2>
 
                     <div>
-                        <img class="" src="images/slide_2.jpg" alt="">
+                        <img class="" src="images/imagen_14.jpg" alt="">
                     </div>
 
                     <div class="blanco mt-2 btn boton1"> Ingresa </div>
@@ -660,7 +660,7 @@ $page = "Inicio" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <a target="_blank" href="#" class="blanco col-4 d-flex flex-column align-items-center">
+            <a target="_blank" href="#" class="justify-content-between blanco col-4 d-flex flex-column align-items-center">
 
                 <h4 class="font-weight-bold mb-2 blanco"> Pagos PSE </h4>
 
@@ -696,15 +696,35 @@ $page = "Inicio" ?>
             <div class="carousel-inner">
 
                 <div class="carousel-item h-100 active">
-                    <img src="images/slide_1.jpg" class="h-100 d-block w-100" alt="...">
+                    <img src="images/imagen_1.jpg" class="h-100 d-block w-100" alt="...">
                 </div>
 
                 <div class="carousel-item h-100">
-                    <img src="images/slide_2.jpg" class="h-100 d-block w-100" alt="...">
+                    <img src="images/imagen_4.jpg" class="h-100 d-block w-100" alt="...">
                 </div>
 
                 <div class="carousel-item h-100">
-                    <img src="images/slide_3.jpg" class="h-100 d-block w-100" alt="...">
+                    <img src="images/imagen_5.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_6.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_8.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_9.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_15.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_16.jpg" class="h-100 d-block w-100" alt="...">
                 </div>
 
             </div>

@@ -15,9 +15,7 @@ $page = "Solicitar Inmueble" ?>
 <body>
 
     <!-- HEADER -->
-    <header>
-        <?php include 'layout/header.php' ?>
-    </header>
+    <?php include 'layout/header.php' ?>
     <!-- HEADER -->
 
     <section class="mt-5 text-justify container">
