@@ -11856,6 +11856,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: iconos_solid;
   src: url(../fonts/iconos2.otf); }
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
 body {
   font-family: Verdana; }
 
@@ -12133,7 +12140,7 @@ header {
     transform: scale(1); }
 
 #nova_transaccional {
-  background-image: url(../images/slide_2.jpg);
+  background-image: url(../images/imagen1.webp);
   background-attachment: fixed; }
   #nova_transaccional .fondo_negro {
     z-index: 100;
@@ -12730,7 +12737,8 @@ footer {
   border: 1px solid white; }
 
 .rojo {
-  color: red; }
+  color: red;
+  font-size: 12px; }
 
 #inmuebles .card {
   border-top-left-radius: 25px;
@@ -12814,23 +12822,41 @@ footer {
   border-right: none;
   border-bottom: 1px solid gray; }
 
+#contactenos .formulario .form-control {
+  border-radius: inherit; }
+  #contactenos .formulario .form-control:focus {
+    border-bottom-color: #1FACE1;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
 #contactenos .formulario .nombre::after {
   content: "\f007";
+  color: #DF2B6A;
   font-family: iconos_solid;
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 25px; }
 
 #contactenos .formulario .mail::after {
   content: "\f0e0";
+  color: #DF2B6A;
   font-family: iconos_solid;
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 25px; }
 
 #contactenos .formulario .telefono::after {
   content: "\f879";
+  color: #DF2B6A;
   font-family: iconos_solid;
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 25px; }
+
+#contactenos .formulario .texto textarea {
+  height: 230px; }
+
+#contactenos .formulario .color_a_contacto {
+  color: #1FACE1; }
+  #contactenos .formulario .color_a_contacto:hover {
+    color: #DF2B6A; }

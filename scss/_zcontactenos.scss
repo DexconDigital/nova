@@ -30,26 +30,44 @@
             }
         }
 
-        .nombre {
+        .form-control {
 
-            &::after {
-                content: "\f007";
-                font-family: iconos_solid;
-                position: absolute;
-                top: 40%;
-                right: 25px;
+            border-radius: inherit;
+
+            &:focus {
+
+                border-bottom-color: $azul;
+                box-shadow: none;
+
             }
 
-            
+        }
+
+
+        .nombre {
+
+           
+            &::after {
+                content: "\f007";
+                color: $magenta;
+                font-family: iconos_solid;
+                position: absolute;
+                top: 30%;
+                right: 25px;
+
+            }
 
         }
+
+      
         
         .mail {
             &::after {
                 content: "\f0e0";
+                color: $magenta;
                 font-family: iconos_solid;
                 position: absolute;
-                top: 40%;
+                top: 30%;
                 right: 25px;
             }
 
@@ -59,10 +77,26 @@
 
             &::after {
                 content: "\f879";
+                color: $magenta;
                 font-family: iconos_solid;
                 position: absolute;
-                top: 40%;
+                top: 30%;
                 right: 25px;
+            }
+        }
+
+        .texto {
+
+            textarea {
+                height: 230px;
+            }
+        }
+
+        .color_a_contacto {
+            color: $azul;
+
+            &:hover {
+                color: $magenta;
             }
         }
 

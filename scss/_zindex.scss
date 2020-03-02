@@ -10,6 +10,14 @@
 }
 
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+  -webkit-appearance:none;
+}
+input[type="number"]{
+  -moz-appearance:textfield;
+}
+
 body {
     font-family: Verdana;
 }
@@ -424,7 +432,7 @@ header {
 
 #nova_transaccional {
 
-    background-image: url(../images/slide_2.jpg);
+    background-image: url(../images/imagen1.webp);
     background-attachment: fixed;
 
     .fondo_negro {

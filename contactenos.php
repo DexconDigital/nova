@@ -91,26 +91,30 @@ $page = "Contáctanos" ?>
                     <input type="text" placeholder="Nombre" class="form-control">
                 </div>
 
-                
+
                 <div class="mb-3 mail col-6">
                     <input type="mail" placeholder="Mail" class="form-control">
                 </div>
 
 
-                
+
                 <div class="mb-3 telefono col-6">
                     <input type="number" placeholder="Teléfono" class="form-control">
                 </div>
 
 
-                
+
                 <div class="mb-3 texto col-12">
-                    <textarea class="form-control"> </textarea>
+                    <textarea placeholder="Mensaje" class="form-control"></textarea>
                 </div>
 
+                <div class="d-flex align-items-baseline col-12 mb-4">
+                    <input type="checkbox" class="d-flex align-items-center justify-content-center mr-2"> Confimo que he leído, entendido y acepto la <a class="ml-1 color_a_contacto" href="archivos/tratamiento_datos.pdf" download="Politica de tratamiento de datos personales"> política de tratamiento de datos personales.</a>
+                </div>
 
-              
-
+                <div class="col-12 text-center">
+                    <button class="btn boton2"> Enviar </button>
+                </div>
 
             </form>
 
