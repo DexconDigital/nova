@@ -26,7 +26,7 @@ $page = "Contáctanos" ?>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
 
-            <h1 class="font-weight-bold"> CONTÁCTANOS </h1>
+            <h1 class="font-weight-bold"> Contáctanos </h1>
 
         </div>
 
@@ -138,7 +138,7 @@ $page = "Contáctanos" ?>
 
     <!-- MAPA -->
 
-    <section id="mapa" class="mb-n5">
+    <section id="mapa" class="mb-n5 mt-5">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.481014148166!2d-75.603552!3d6.2319927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7469462bb7c77f0!2sNOVA%20INMOBILIARIA!5e0!3m2!1ses!2sco!4v1583178566836!5m2!1ses!2sco" class="w-100 h-100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
 

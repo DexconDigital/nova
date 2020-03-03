@@ -22,7 +22,7 @@
                 </div>
 
                 <p class="mb-2"> -Matrícula inmobiliaria M.A.V.U. No 0071-17 </p>
-                <p> NOVA INMOBILIARIA es una empresa conformada por jóvenes emprendedores, con amplia trayectoria en el sector inmobiliario y legal. </p>
+                <p> <span class="font-weight-bold">NOVA INMOBILIARIA</span> es una empresa conformada por jóvenes emprendedores, con amplia trayectoria en el sector inmobiliario y legal. </p>
 
 
 
@@ -59,26 +59,26 @@
                 <p class="font-weight-bold w-100 text-center"> Datos de contacto </p>
 
                 <a class="mr-3 d-flex align-items-center" target="_blank" href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>">
-                    <i class="magenta mr-2 <?php echo $datos_contacto['telefono_fijo']['icono'] ?>"></i>
+                    <i class="mr-2 <?php echo $datos_contacto['telefono_fijo']['icono'] ?>"></i>
                     <p><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></p>
                 </a>
 
                 <a class="d-flex align-items-center" target="_blank" href="tel:<?php echo $datos_contacto['celular']['link'] ?>">
-                    <i class="magenta mr-2 <?php echo $datos_contacto['celular']['icono'] ?>"></i>
+                    <i class="mr-2 <?php echo $datos_contacto['celular']['icono'] ?>"></i>
                     <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
                 </a>
 
                 <a class="mr-3 d-flex align-items-center" target="_blank" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>">
-                    <i class="magenta mr-2 <?php echo $datos_contacto['correo']['icono'] ?>"></i>
+                    <i class="mr-2 <?php echo $datos_contacto['correo']['icono'] ?>"></i>
                     <p><?php echo $datos_contacto['correo']['correo'] ?></p>
                 </a>
 
                 <div class="mr-3 d-flex align-items-baseline">
-                    <i class="magenta mr-2 <?php echo $datos_contacto['direccion']['icono'] ?>"></i>
+                    <i class="mr-2 <?php echo $datos_contacto['direccion']['icono'] ?>"></i>
                     <p><?php echo $datos_contacto['direccion']['direccion'] ?></p>
                 </div>
 
-                <div class="d-flex align-items-center justify-content-center w-100">
+                <div class="d-flex align-items-center w-100">
 
                     <a target="_blank" href="<?php echo $redes_sociales['instagram']['link'] ?>" class="">
                         <i class="icono fab fa-instagram"></i>
@@ -96,7 +96,7 @@
 
 
             <!-- COPYRIGHT -->
-            <section id="copy" class="mt-5">
+            <section id="copy" class="col-12 text-center mt-5">
                 <p> Diseñado y Desarrollado por <a target="_blank" href="https://www.dexcondigital.com/">Dexcon Digital</a> ©Copyright 2020 para Inmobiliaria Nova. Todos
                     los derechos reservados. </p>
             </section>

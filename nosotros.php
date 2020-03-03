@@ -27,7 +27,7 @@ $page = "Nosotros" ?>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
 
-            <h1 class="font-weight-bold"> NOSOTROS </h1>
+            <h1 class="font-weight-bold"> Nosotros </h1>
 
         </div>
 
@@ -193,7 +193,7 @@ $page = "Nosotros" ?>
 
 
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
-    <h5 id="texto_valores" class="container text-center mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
+    <h5 id="texto_valores" class="container mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
 
 

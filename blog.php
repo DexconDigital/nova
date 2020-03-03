@@ -26,7 +26,7 @@ $page = "Blog" ?>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
 
-            <h1 class="font-weight-bold"> BLOG </h1>
+            <h1 class="font-weight-bold"> Blog </h1>
 
         </div>
 

@@ -31,7 +31,7 @@ $page = "Inicio" ?>
                 </ol> -->
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item h-100 active">
-                        <img style="object-fit:fill" src="images/imagen_18.jpg" class="d-block h-100 w-100" alt="...">
+                        <img style="object-fit:cover" src="images/imagen_18.jpg" class="d-block h-100 w-100" alt="...">
                         <div class="carousel-caption h-100 d-none d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute w-100 h-100">
                                 <h2> <span class="azul">La nueva cara del</span> <span class="magenta">buen servicio</span> </h5>
@@ -47,7 +47,7 @@ $page = "Inicio" ?>
                         </div>
                     </div>
                     <div class="carousel-item h-100">
-                        <img style="object-fit:fill" src="images/imagen_21.jpg" class="d-block h-100 w-100" alt="...">
+                        <img style="object-fit:cover" src="images/imagen_21.jpg" class="d-block h-100 w-100" alt="...">
                         <div class="carousel-caption h-100 d-none d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute h-100 w-100">
                                 <h2> <span class="azul">La mejor experiencia</span> <span class="magenta">a tu servicio</span> </h2>
@@ -122,12 +122,12 @@ $page = "Inicio" ?>
 
                         <div class="col-3 form-group">
                             <p> Precio: </p>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange">
                         </div>
 
                         <div class="col-3 form-group">
                             <p> Área: </p>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange">
                         </div>
 
                         <div class="col-6 h-100 m-auto d-flex align-items center justify-content-center">
@@ -170,7 +170,7 @@ $page = "Inicio" ?>
 
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['arriendos']['titulo'] ?> </h4>
-                    <p class="text-justify px-3 pb-5"> Somos capaces de ofrecer el mejor asesoramiento para la venta de tu inmueble... </p>
+                    <p class="text-center px-3 pb-5"> Somos capaces de ofrecer el mejor asesoramiento para la venta de tu inmueble... </p>
                     <a class="d-block text-center btn boton1 blanco mb-5 p-2" href=""> Leer más </a>
                 </div>
 
@@ -186,7 +186,7 @@ $page = "Inicio" ?>
 
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h4>
-                    <p class="text-justify px-3 pb-5"> Una completa oferta inmobiliaria, contamos con una mezcla entre diseño y funcionalidad... </p>
+                    <p class="text-center px-3 pb-5"> Una completa oferta inmobiliaria, contamos con una mezcla entre diseño y funcionalidad... </p>
                     <a class="d-block btn boton1 text-center mb-5 p-2" href=""> Leer más </a>
                 </div>
 
@@ -202,7 +202,7 @@ $page = "Inicio" ?>
 
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['avaluos']['titulo'] ?> </h4>
-                    <p class="text-justify px-3 pb-5"> Realizamos avalúos cumpliendo con toda la normatividad del país, asegurando... </p>
+                    <p class="text-center px-3 pb-5"> Realizamos avalúos cumpliendo con toda la normatividad del país, asegurando... </p>
                     <a class="d-block btn boton1 text-center mb-5 p-2" href=""> Leer más </a>
                 </div>
 
@@ -622,14 +622,14 @@ $page = "Inicio" ?>
     <!-- ASESORES -->
 
 
-    <!-- NOVA TRANSACCIONAL -->
+    <!-- NOVA INTERACTIVA -->
     <section id="nova_transaccional" class="position-relative mt-5 py-5">
 
         <div class="fondo_negro position-absolute w-100 h-100"></div>
 
         <div class="container position-relative d-flex flex-wrap text-break">
 
-            <h2 class="col-12 text-center mb-5 blanco font-weight-bold"> Bienvenido a <span class="azul"> Nova </span> <span class="magenta">Transaccional</span> </h2>
+            <h2 class="col-12 text-center mb-5 blanco font-weight-bold"> Bienvenido a <span class="azul"> Nova </span> <span class="magenta">Interactiva</span> </h2>
 
             <!-- CARD -->
             <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1" class="justify-content-between blanco col-4 d-flex flex-column align-items-center">
@@ -754,11 +754,11 @@ $page = "Inicio" ?>
             <div id="animacion1" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <i class="icono magenta fas fa-warehouse"></i>
+                    <p class="icono font-weight-bold magenta"> 100 </i>
                 </div>
 
                 <p class="mb-2"> Total de Inmuebles </p>
-                <p> 65 </p>
+                
 
             </div>
             <!-- ICONO 1 -->
@@ -768,11 +768,12 @@ $page = "Inicio" ?>
             <div id="animacion2" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <i class="icono magenta fas fa-bath"></i>
+                <p class="icono font-weight-bold magenta"> 70 </i>
+
                 </div>
 
                 <p class="mb-2"> Total en Arriendo </p>
-                <p> 65 </p>
+                
 
             </div>
             <!-- ICONO 2 -->
@@ -782,11 +783,12 @@ $page = "Inicio" ?>
             <div id="animacion3" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <i class="icono magenta fas fa-bed"></i>
+                <p class="icono font-weight-bold magenta"> 20 </i>
+
                 </div>
 
                 <p class="mb-2"> Total en Venta </p>
-                <p> 65 </p>
+                
 
             </div>
             <!-- ICONO 3 -->
@@ -796,11 +798,10 @@ $page = "Inicio" ?>
             <div id="animacion4" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <i class="icono magenta fas fa-warehouse"></i>
+                    <p class="icono font-weight-bold magenta"> 10 </i>
                 </div>
 
                 <p class="mb-2"> Total en Arriendo/Venta </p>
-                <p> 65 </p>
 
             </div>
             <!-- ICONO 4 -->

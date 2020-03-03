@@ -113,7 +113,7 @@ $iconos_nosotros = [
 $texto_quienes_somos = [
 	"quienes_somos" => [
 		"titulo" => "Reseña Histórica",//en negrita
-		"parrafo" => "NOVA INMOBILIARIA es una empresa conformada por jóvenes emprendedores, con amplia trayectoria en el sector inmobiliario y legal, quienes a través de su experiencia y el uso de las plataformas tecnológicas pretende satisfacer las necesidades de sus clientes, tanto propietarios como inquilinos, para el beneficio de sus intereses; garantizando el cumplimiento de las obligaciones de ambas partes mediante la prestación de un servicio ágil, confiable y seguro.",
+		"parrafo" => "<span class='font-weight-bold'>NOVA INMOBILIARIA</span> es una empresa conformada por jóvenes emprendedores, con amplia trayectoria en el sector inmobiliario y legal, quienes a través de su experiencia y el uso de las plataformas tecnológicas pretende satisfacer las necesidades de sus clientes, tanto propietarios como inquilinos, para el beneficio de sus intereses; garantizando el cumplimiento de las obligaciones de ambas partes mediante la prestación de un servicio ágil, confiable y seguro.",
 		],	
 
 	"mision" => [
@@ -122,7 +122,7 @@ $texto_quienes_somos = [
 	],
 	"vision" => [
 		"titulo" => "Visión",//en negrita
-		"parrafo" => "En el 2022 Nova inmobiliaria tendrá un posicionamiento en el mercado que nos permitirá ser una empresa reconocida en el sector inmobiliario, teniendo presente siempre el mejoramiento continuo; a través de una cultura de creatividad e innovación permanente en la prestación de nuestros servicios, con responsabilidad social y ambiental, maximizando la rentabilidad de la organización.",
+		"parrafo" => "En el 2022 <span class='font-weight-bold'>NOVA INMOBILIARIA</span> tendrá un posicionamiento en el mercado que nos permitirá ser una empresa reconocida en el sector inmobiliario, teniendo presente siempre el mejoramiento continuo; a través de una cultura de creatividad e innovación permanente en la prestación de nuestros servicios, con responsabilidad social y ambiental, maximizando la rentabilidad de la organización.",
 	],
 	"valores" => [
 		"titulo" => "Valores Corporativos",//en negrita
@@ -132,7 +132,7 @@ $texto_quienes_somos = [
 			2 => "Honestidad",
 			3 => "Responsabilidad",
 			4 => "Sentido de Pertenencia",
-			5 => "Nova Inmobiliaria y cada uno de sus colaboradores están orientados hacia los principios y valores, estos son los pilares de la empresa, por lo que nuestro equipo humano lo promueve y lo aplica de manera permanente. También es nuestro objetivo el respeto por el medio ambiente y contribuimos con la conservación del mismo.",
+			5 => "<span class='font-weight-bold'>NOVA INMOBILIARIA</span> y cada uno de sus colaboradores están orientados hacia los principios y valores, estos son los pilares de la empresa, por lo que nuestro equipo humano lo promueve y lo aplica de manera permanente. También es nuestro objetivo el respeto por el medio ambiente y contribuimos con la conservación del mismo.",
 		], 
 	],
 ];

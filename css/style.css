@@ -12199,7 +12199,7 @@ header {
     height: 70px;
     width: 70px; }
     #banner_estadisticas .contenido_cards .caja_icono .icono {
-      font-size: 22px;
+      font-size: 20px;
       -webkit-transition: all 250ms;
       -o-transition: all 250ms;
       transition: all 250ms; }
@@ -12308,7 +12308,7 @@ footer {
   background: url(../images/imagen_8.jpg) center center;
   background-attachment: fixed; }
   footer .caja_negra {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0; }
   footer .rounded {
@@ -12422,7 +12422,8 @@ footer {
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #4CAF50;
+  background: #DF2B6A;
+  border-radius: 50%;
   cursor: pointer; }
 
 .slider::-moz-range-thumb {
@@ -12884,8 +12885,7 @@ footer {
 #mapa {
   z-index: 100;
   position: relative;
-  margin-top: -200px;
-  height: 600px; }
+  height: 500px; }
 
 .horario .icono {
   font-size: 35px; }
