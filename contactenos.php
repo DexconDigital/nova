@@ -139,7 +139,7 @@ $page = "Contáctanos" ?>
     <!-- MAPA -->
 
     <section id="mapa" class="mb-n5 mt-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.481014148166!2d-75.603552!3d6.2319927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7469462bb7c77f0!2sNOVA%20INMOBILIARIA!5e0!3m2!1ses!2sco!4v1583178566836!5m2!1ses!2sco" class="w-100 h-100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.21063995129!2d-75.60382848474922!3d6.235942528168255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442996e7a7331d%3A0x67741fcf63a67712!2sCl.%2032C%20%2380a-75%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1583247947367!5m2!1ses!2sco" class="w-100 h-100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
 
     <!-- MAPA -->
