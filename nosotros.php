@@ -106,7 +106,7 @@ $page = "Nosotros" ?>
 
             <p class="mt-2 text-center"> Contamos con personal talentoso y comprometido dispuesto a ayudarte a cumplir con tus necesidades inmobiliarias </p>
 
-            <div id="boton_ver_asesores" class="mt-3 w-100 d-flex align-items-center justify-content-center"><a class="btn boton_footer"> Ver asesores </a></div>
+            <div id="boton_ver_asesores" class="mt-3 w-100 d-flex align-items-center justify-content-center"><a href="contactenos.php" class="btn boton_footer"> Contáctanos </a></div>
 
         </div>
 
