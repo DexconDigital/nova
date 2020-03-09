@@ -416,37 +416,37 @@ $page = "Inicio" ?>
     <!-- PROPIEDADES DESTACADAS -->
 
     <!-- ASESORES -->
-    <section id="asesores" class="pt-5">
+    <!-- <section id="asesores" class="pt-5">
 
         <h2 class="text-center font-weight-bold pt-5"> Conoce Nuestros Asesores </h2>
 
         <div class="d-flex flex-wrap mt-5 container">
 
-            <!-- CARDS -->
+            CARDS
             <div class="col-3 carta position-relative">
 
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
                 <img class="position-absolute w-100 h-100" src="images/asesor1.jpg" alt="">
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
 
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
                 <div class="nombre_asesor blanco w-100 py-3 position-absolute">
                     <p class="text-center pr-3"> SERGIO ARENAS </p>
                 </div>
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
 
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
                 <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
 
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
                     <p class="text-center pr-3 mb-2"> SERGIO ARENAS </p>
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
 
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
                     <h4 class="magenta mb-5"> Gerente </h4>
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
 
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
                     <div class="d-flex">
                         <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
                             <i class="icono fab fa-facebook-f"> </i>
@@ -461,42 +461,42 @@ $page = "Inicio" ?>
                         </a>
 
                     </div>
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
 
 
 
                 </div>
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
 
 
             </div>
-            <!-- CARDS -->
+            CARDS
 
-            <!-- CARDS -->
+            CARDS
             <div class="col-3 carta position-relative">
 
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
                 <img class="position-absolute w-100 h-100" src="images/asesor2.jpg" alt="">
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
 
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
                 <div class="nombre_asesor blanco w-100 py-3 position-absolute">
                     <p class="text-center pr-3"> MELANY CONTRERAS </p>
                 </div>
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
 
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
                 <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
 
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
                     <p class="text-center pr-3 mb-2"> MELANY CONTRERAS </p>
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
 
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
                     <h4 class="magenta mb-5"> Asesora </h4>
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
 
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
                     <div class="d-flex">
                         <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
                             <i class="icono fab fa-facebook-f"> </i>
@@ -511,42 +511,42 @@ $page = "Inicio" ?>
                         </a>
 
                     </div>
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
 
 
 
                 </div>
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
 
 
             </div>
-            <!-- CARDS -->
+            CARDS
 
-            <!-- CARDS -->
+            CARDS
             <div class="col-3 carta position-relative">
 
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
                 <img class="position-absolute w-100 h-100" src="images/asesor3.jpg" alt="">
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
 
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
                 <div class="nombre_asesor blanco w-100 py-3 position-absolute">
                     <p class="text-center pr-3"> ROBERTO CASAS </p>
                 </div>
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
 
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
                 <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
 
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
                     <p class="text-center pr-3 mb-2"> ROBERTO CASAS </p>
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
 
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
                     <h4 class="magenta mb-5"> Jefe de Piso </h4>
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
 
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
                     <div class="d-flex">
                         <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
                             <i class="icono fab fa-facebook-f"> </i>
@@ -561,39 +561,39 @@ $page = "Inicio" ?>
                         </a>
 
                     </div>
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
 
                 </div>
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
 
             </div>
-            <!-- CARDS -->
+            CARDS
 
-            <!-- CARDS -->
+            CARDS
             <div class="col-3 carta position-relative">
 
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
                 <img class="position-absolute w-100 h-100" src="images/asesor4.jpg" alt="">
-                <!-- IMAGEN ASESOR -->
+                IMAGEN ASESOR
 
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
                 <div class="nombre_asesor blanco w-100 py-3 position-absolute">
                     <p class="text-center pr-3"> LUIS ORTIZ </p>
                 </div>
-                <!-- NOMBRE ASESOR -->
+                NOMBRE ASESOR
 
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
                 <div class="blanco d-flex align-items-center justify-content-center flex-column position-absolute caja_hover">
 
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
                     <p class="text-center pr-3 mb-2"> LUIS ORTIZ </p>
-                    <!-- NOMBRE ASESOR -->
+                    NOMBRE ASESOR
 
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
                     <h4 class="magenta mb-5"> Administrador </h4>
-                    <!-- PUESTO ASESOR -->
+                    PUESTO ASESOR
 
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
                     <div class="d-flex">
                         <a href="#" class="mx-2 p-2 d-flex align-items-center justify-content-center caja_icono">
                             <i class="icono fab fa-facebook-f"> </i>
@@ -608,22 +608,22 @@ $page = "Inicio" ?>
                         </a>
 
                     </div>
-                    <!-- ICONOS DE REDES SOCIALES -->
+                    ICONOS DE REDES SOCIALES
 
                 </div>
-                <!-- CARD (HOVER) -->
+                CARD (HOVER)
 
             </div>
-            <!-- CARDS -->
+            CARDS
 
 
         </div>
-    </section>
+    </section> -->
     <!-- ASESORES -->
 
 
     <!-- NOVA INTERACTIVA -->
-    <section id="nova_transaccional" class="position-relative mt-5 py-5">
+    <section id="nova_transaccional" style="margin-top: 6rem;" class="position-relative py-5">
 
         <div class="fondo_negro position-absolute w-100 h-100"></div>
 

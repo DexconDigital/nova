@@ -98,7 +98,7 @@ $page = "Servicios" ?>
 
         <div class="position-relative contenido d-flex align-items-center justify-content-center">
             <div class="mr-5"> <a href="solicitar_inmueble.php" class="btn boton_footer"> Solicitud de Inmueble </a></div>
-            <div> <a href="consignar_inmueble.php" class="btn boton_footer"> Consiga tu Inmueble </a></div>
+            <div> <a href="consignar_inmueble.php" class="btn boton_footer"> Consigna tu Inmueble </a></div>
         </div>
 
     </section>
