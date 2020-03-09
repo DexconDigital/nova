@@ -621,6 +621,61 @@ $page = "Inicio" ?>
     </section> -->
     <!-- ASESORES -->
 
+        <!-- SLIDE DE IMAGENES -->
+        <section id="slide_imagenes" class="container mt-5">
+
+<h2 class="font-weight-bold text-center py-5"> Un Inmueble Para Cada Necesidad </h2>
+
+<div id="slide_de_imagenes" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#slide_de_imagenes" data-slide-to="0" class="active"></li>
+        <li data-target="#slide_de_imagenes" data-slide-to="1"></li>
+        <li data-target="#slide_de_imagenes" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item h-100 active">
+            <img src="images/imagen_1.jpg" class="h-100 d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="images/imagen_5.jpg" class="h-100 d-block w-100" alt="...">
+        </div>
+
+
+        <div class="carousel-item h-100">
+            <img src="images/imagen_8.jpg" class="h-100 d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="images/imagen_9.jpg" class="h-100 d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="images/imagen_15.jpg" class="h-100 d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item h-100">
+            <img src="images/imagen_16.jpg" class="h-100 d-block w-100" alt="...">
+        </div>
+
+    </div>
+
+    <a class="btn boton2 izquierda_imagenes" href="#slide_de_imagenes" role="button" data-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+
+    <a class="btn boton2 derecha_imagenes" href="#slide_de_imagenes" role="button" data-slide="next">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+
+</div>
+
+</section>
+<!-- SLIDE DE IMAGENES -->
+
 
     <!-- NOVA INTERACTIVA -->
     <section id="nova_transaccional" style="margin-top: 6rem;" class="position-relative py-5">
@@ -680,139 +735,9 @@ $page = "Inicio" ?>
     </section>
     <!-- NOVA TRANSACCIONAL -->
 
-    <!-- SLIDE DE IMAGENES -->
-    <section id="slide_imagenes" class="container mt-5">
-
-        <h2 class="font-weight-bold text-center py-5"> Un Inmueble Para Cada Necesidad </h2>
-
-        <div id="slide_de_imagenes" class="carousel slide" data-ride="carousel">
-
-            <ol class="carousel-indicators">
-                <li data-target="#slide_de_imagenes" data-slide-to="0" class="active"></li>
-                <li data-target="#slide_de_imagenes" data-slide-to="1"></li>
-                <li data-target="#slide_de_imagenes" data-slide-to="2"></li>
-            </ol>
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item h-100 active">
-                    <img src="images/imagen_1.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item h-100">
-                    <img src="images/imagen_5.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
 
 
-                <div class="carousel-item h-100">
-                    <img src="images/imagen_8.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
 
-                <div class="carousel-item h-100">
-                    <img src="images/imagen_9.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item h-100">
-                    <img src="images/imagen_15.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item h-100">
-                    <img src="images/imagen_16.jpg" class="h-100 d-block w-100" alt="...">
-                </div>
-
-            </div>
-
-            <a class="btn boton2 izquierda_imagenes" href="#slide_de_imagenes" role="button" data-slide="prev">
-                <i class="fas fa-chevron-left"></i>
-            </a>
-
-            <a class="btn boton2 derecha_imagenes" href="#slide_de_imagenes" role="button" data-slide="next">
-                <i class="fas fa-chevron-right"></i>
-            </a>
-
-        </div>
-
-    </section>
-    <!-- SLIDE DE IMAGENES -->
-
-    <!-- BANNER DE ESTADISTICAS -->
-    <section id="banner_estadisticas" class="position-relative py-5 mt-5">
-
-        <!-- IMAGEN DE FONDO -->
-        <div class="position-absolute w-100 h-100 imagen"> </div>
-        <!-- IMAGEN DE FONDO -->
-
-        <!-- OPACIDAD DE LA IMAGEN -->
-        <div class="position-absolute w-100 h-100 fondo_negro"></div>
-        <!-- OPACIDAD DE LA IMAGEN -->
-
-        <!-- ICONOS -->
-        <div class="contenido container position-relative d-flex align-items-center justify-content-around w-100 h-100 blanco">
-
-
-            <!-- ICONO 1 -->
-            <div id="animacion1" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
-
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <p class="icono font-weight-bold magenta"> 100 </i>
-                </div>
-
-                <p class="mb-2"> Total de Inmuebles </p>
-                
-
-            </div>
-            <!-- ICONO 1 -->
-
-
-            <!-- ICONO 2 -->
-            <div id="animacion2" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
-
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                <p class="icono font-weight-bold magenta"> 70 </i>
-
-                </div>
-
-                <p class="mb-2"> Total en Arriendo </p>
-                
-
-            </div>
-            <!-- ICONO 2 -->
-
-
-            <!-- ICONO 3 -->
-            <div id="animacion3" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
-
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                <p class="icono font-weight-bold magenta"> 20 </i>
-
-                </div>
-
-                <p class="mb-2"> Total en Venta </p>
-                
-
-            </div>
-            <!-- ICONO 3 -->
-
-
-            <!-- ICONO 4 -->
-            <div id="animacion4" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
-
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <p class="icono font-weight-bold magenta"> 10 </i>
-                </div>
-
-                <p class="mb-2"> Total en Arriendo/Venta </p>
-
-            </div>
-            <!-- ICONO 4 -->
-
-
-        </div>
-        <!-- ICONOS -->
-
-
-    </section>
-    <!-- BANNER DE ESTADISTICAS -->
 
     <!-- ÚLTIMAS NOTICIAS -->
     <h2 class="font-weight-bold text-center my-5 "> Últimas Noticias </h2>
@@ -946,7 +871,7 @@ $page = "Inicio" ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
 
-    <script src="js/banner_estadisticas.js"></script>
+
 
     <script src="js/buscador.js"></script>
 

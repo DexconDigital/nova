@@ -504,16 +504,12 @@ header {
 
 #banner_estadisticas {
 
-    .imagen {
-        background: url(../images/imagen_10.jpg) center center;
-        background-attachment: fixed;
-        top: 0;
-    }
+    // .imagen {
+    //     background: url(../images/imagen_10.jpg) center center;
+    //     background-attachment: fixed;
+    //     top: 0;
+    // }
 
-    .fondo_negro {
-        background-color: rgba(0,0,0,.5);
-        top: 0;
-    }
 
     .contenido_cards {
 
@@ -527,6 +523,7 @@ header {
             transition: all 250ms;
             height: 70px;
             width: 70px;
+            border: 1px solid black;
 
             
             .icono {

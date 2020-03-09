@@ -293,6 +293,85 @@ $page = "Nosotros" ?>
     </section>
     <!-- ALIADOS -->
 
+    <!-- BANNER DE ESTADISTICAS -->
+    <section id="banner_estadisticas" class="position-relative py-5 mt-5">
+
+        <!-- IMAGEN DE FONDO -->
+        <div class="position-absolute w-100 h-100 imagen"> </div>
+        <!-- IMAGEN DE FONDO -->
+
+        <!-- OPACIDAD DE LA IMAGEN -->
+        <div class="position-absolute w-100 h-100 fondo_negro"></div>
+        <!-- OPACIDAD DE LA IMAGEN -->
+
+        <!-- ICONOS -->
+        <div class="contenido container position-relative d-flex align-items-center justify-content-around w-100 h-100 blanco">
+
+
+            <!-- ICONO 1 -->
+            <div id="animacion1" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <p class="icono font-weight-bold magenta"> 100 </i>
+                </div>
+
+                <p class="mb-2 negro"> Total de Inmuebles </p>
+
+
+            </div>
+            <!-- ICONO 1 -->
+
+
+            <!-- ICONO 2 -->
+            <div id="animacion2" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <p class="icono font-weight-bold magenta"> 70 </i>
+
+                </div>
+
+                <p class="mb-2 negro"> Total en Arriendo </p>
+
+
+            </div>
+            <!-- ICONO 2 -->
+
+
+            <!-- ICONO 3 -->
+            <div id="animacion3" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <p class="icono font-weight-bold magenta"> 20 </i>
+
+                </div>
+
+                <p class="mb-2 negro"> Total en Venta </p>
+
+
+            </div>
+            <!-- ICONO 3 -->
+
+
+            <!-- ICONO 4 -->
+            <div id="animacion4" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+
+                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                    <p class="icono font-weight-bold magenta"> 10 </i>
+                </div>
+
+                <p class="mb-2 negro"> Total en Arriendo/Venta </p>
+
+            </div>
+            <!-- ICONO 4 -->
+
+
+        </div>
+        <!-- ICONOS -->
+
+
+    </section>
+    <!-- BANNER DE ESTADISTICAS -->
+
 
 
 
@@ -312,4 +391,8 @@ $page = "Nosotros" ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
 
-    <script src=js/scroll_asesores.js> </script> </body> </html>
+    <script src=js/scroll_asesores.js> </script> <script src="js/banner_estadisticas.js"></script>
+
+</body>
+
+</html>
