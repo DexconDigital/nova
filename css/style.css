@@ -12763,7 +12763,10 @@ footer {
   overflow: hidden;
   height: 523px; }
   #inmuebles .card .imagen {
-    overflow: hidden; }
+    overflow: hidden;
+    height: 250px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px; }
     #inmuebles .card .imagen img {
       -webkit-transition: all 500ms;
       -o-transition: all 500ms;

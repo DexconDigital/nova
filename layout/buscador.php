@@ -1,4 +1,4 @@
-<section class="position-relative">
+<!-- <section class="position-relative">
         <section id="buscador" class="overflow-hidden">
             <div class="pt-3 pb-4 container position-relative rounded">
 
@@ -67,4 +67,4 @@
 
             </div>
         </section>
-    </section>
+    </section> -->

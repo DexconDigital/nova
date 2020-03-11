@@ -1,0 +1,12 @@
+{
+    "name": "vendor/andres",
+    "authors": [
+        {
+            "name": "DexconDigital",
+            "email": "49962370+DexconDigital@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "jasongrimes/paginator": "~1.0"
+    }
+}

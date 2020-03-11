@@ -1,4 +1,6 @@
 <?php require 'variables/variables.php';
+require 'controllers/indexController.php';
+
 $page = "Inicio" ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,6 +10,7 @@ $page = "Inicio" ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include 'layout/archivos_header.php' ?>
+    <link rel="stylesheet" type="text/css" href="css/rangos.css">
 
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
 </head>
@@ -86,25 +89,25 @@ $page = "Inicio" ?>
 
                         <div class="col-3 form-group">
                             <select class="form-control" id="tipo_inmueble_buscar">
-                                <option selected default> Tipo de Inmueble </option>
+                                <option selected value="0"> Tipo de Inmueble </option>
                             </select>
                         </div>
 
                         <div class="col-3 form-group">
                             <select class="form-control" id="tipo_gestion_buscar">
-                                <option selected default> Tipo de Gestión </option>
+                                <option selected value="0"> Tipo de Gestión </option>
                             </select>
                         </div>
 
                         <div class="col-3 form-group">
                             <select class="form-control" id="ciudad_buscar">
-                                <option selected default> Ciudad </option>
+                                <option selected value="0"> Ciudad </option>
                             </select>
                         </div>
 
                         <div class="col-3 form-group">
                             <select class="form-control" id="barrio_buscar">
-                                <option selected default> Barrio </option>
+                                <option selected value="0"> Barrio </option>
                             </select>
                         </div>
 
@@ -120,14 +123,27 @@ $page = "Inicio" ?>
                             <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="col-3 form-group">
-                            <p> Precio: </p>
-                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange">
+                        <div class="col-12 form-group">
+                            <!-- <p> Precio: </p>
+                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
+
+                            <div class="wrapper">
+                                <div class="range-slider" id="areas">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                                <div class="extra-controls form-inline">
+                                    <div class="form-group">
+                                        <input type="text" class="js-input-from form-control" id="area_minima_buscar" value="0" aria-describedby="emailHelp" />
+                                        <input type="text" class="js-input-to form-control" id="area_maxima_buscar" value="0" aria-describedby="emailHelp" />
+                                    </div>
+                                </div>
+                            </div> 
+
                         </div>
 
                         <div class="col-3 form-group">
-                            <p> Área: </p>
-                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange">
+                            <!-- <p> Área: </p>
+                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
                         </div>
 
                         <div class="col-6 h-100 m-auto d-flex align-items center justify-content-center">
@@ -241,159 +257,17 @@ $page = "Inicio" ?>
             <div class="col-6">
 
                 <div id="carrusel_destacadas" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
+                    <div style="height:300px" class="carousel-inner">
 
-                        <!-- CARD -->
-                        <div class="carousel-item active">
-
-                            <!-- IMAGEN INMUEBLE -->
-                            <img src="images/slide_1.jpg" class="d-block w-100" alt="...">
-                            <!-- IMAGEN INMUEBLE -->
-
-                            <!-- DIRECCIÓN -->
-                            <div class="position-absolute titulo d-flex flex-column align-items-baseline">
-                                <p> <span class="azul">Apartamento</span> en <span class="magenta">Arriendo</span> </p>
-                                <div class="d-flex align-items-baseline">
-                                    <i class="azul mr-1 fas fa-map-marker-alt"></i>
-                                    <p> Manizales - Caldas </p>
-                                </div>
-                                <p class="mt-1 codigo"> Código: 3546 </p>
-                            </div>
-                            <!-- DIRECCIÓN -->
-
-                            <!-- ICONOS -->
-                            <div class="position-absolute iconos d-flex align-items-baseline flex-wrap">
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-chart-area"></i>
-                                    <p> 200mts<sup>2 </p>
-                                </div>
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-bed"></i>
-                                    <p> 5 </p>
-                                </div>
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-bath"></i>
-                                    <p> 2 </p>
-                                </div>
-
-                                <div class="d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-warehouse"></i>
-                                    <p> 3 </p>
-                                </div>
-
-                                <a href="#" class="ml-2 btn boton2 precio"> $500.000.000 </a>
-                                <!-- ICONOS -->
-
-
-                            </div>
-                        </div>
-                        <!-- CARD -->
-
-                        <!-- CARD -->
-                        <div class="carousel-item">
-
-                            <!-- IMAGEN INMUEBLE -->
-                            <img src="images/slide_2.jpg" class="d-block w-100" alt="...">
-                            <!-- IMAGEN INMUEBLE -->
-
-                            <!-- DIRECCIÓN -->
-                            <div class="position-absolute titulo d-flex flex-column align-items-baseline">
-                                <p> <span class="azul">Apartamento</span> en <span class="magenta">Arriendo</span> </p>
-                                <div class="d-flex">
-                                    <i class="azul mr-1 fas fa-map-marker-alt"></i>
-                                    <p> Bogota - Bogota D.C </p>
-                                </div>
-                                <p class="mt-1 codigo"> Código: 4955 </p>
-
-                            </div>
-                            <!-- DIRECCIÓN -->
-
-                            <!-- ICONOS -->
-                            <div class="position-absolute iconos d-flex align-items-baseline flex-wrap">
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-chart-area"></i>
-                                    <p> 500mts<sup>2 </p>
-                                </div>
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-bed"></i>
-                                    <p> 3 </p>
-                                </div>
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-bath"></i>
-                                    <p> 1 </p>
-                                </div>
-
-                                <div class="d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-warehouse"></i>
-                                    <p> 1 </p>
-                                </div>
-
-                                <a href="#" class="ml-2 btn boton2 precio"> $100.000.000 </a>
-                                <!-- ICONOS -->
-
-
-                            </div>
-                        </div>
-                        <!-- CARD -->
-
-                        <!-- CARD -->
-                        <div class="carousel-item">
-
-                            <!-- IMAGEN INMUEBLE -->
-                            <img src="images/slide_3.jpg" class="d-block w-100" alt="...">
-                            <!-- IMAGEN INMUEBLE -->
-
-                            <!-- DIRECCIÓN -->
-                            <div class="position-absolute titulo d-flex flex-column align-items-baseline">
-
-                                <p> <span class="azul">Apartamento</span> en <span class="magenta"> Venta </span> </p>
-
-                                <div class="d-flex">
-                                    <i class="azul mr-1 fas fa-map-marker-alt"></i>
-                                    <p> Medellín - Medellín </p>
-                                </div>
-
-                                <p class="mt-1 codigo"> Código: 1023 </p>
-
-                            </div>
-                            <!-- DIRECCIÓN -->
-
-                            <!-- ICONOS -->
-                            <div class="position-absolute iconos d-flex align-items-baseline flex-wrap">
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-chart-area"></i>
-                                    <p> 600mts<sup>2 </p>
-                                </div>
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-bed"></i>
-                                    <p> 2 </p>
-                                </div>
-
-                                <div class="mr-2 d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-bath"></i>
-                                    <p> 1 </p>
-                                </div>
-
-                                <div class="d-flex align-items-center">
-                                    <i class="mr-1 azul icono fas fa-warehouse"></i>
-                                    <p> 0 </p>
-                                </div>
-
-                                <a href="#" class="ml-2 btn boton2 precio"> $1.500.000.000 </a>
-                                <!-- ICONOS -->
-
-
-                            </div>
-                        </div>
-                        <!-- CARD -->
+                        <?php
+                        if (is_array($api)) {
+                            inmuebles_destacados($api);
+                        } else {
+                            echo ' <div class="col-12">
+                    <h2 class="text-center h-100 w-100 d-flex align-items-center justify-content-center">No tiene Inmuebles Destacados</h2>
+                   </div>';
+                        }
+                        ?>
 
                     </div>
 
@@ -621,60 +495,60 @@ $page = "Inicio" ?>
     </section> -->
     <!-- ASESORES -->
 
-        <!-- SLIDE DE IMAGENES -->
-        <section id="slide_imagenes" class="container mt-5">
+    <!-- SLIDE DE IMAGENES -->
+    <section id="slide_imagenes" class="container mt-5">
 
-<h2 class="font-weight-bold text-center py-5"> Un Inmueble Para Cada Necesidad </h2>
+        <h2 class="font-weight-bold text-center py-5"> Un Inmueble Para Cada Necesidad </h2>
 
-<div id="slide_de_imagenes" class="carousel slide" data-ride="carousel">
+        <div id="slide_de_imagenes" class="carousel slide" data-ride="carousel">
 
-    <ol class="carousel-indicators">
-        <li data-target="#slide_de_imagenes" data-slide-to="0" class="active"></li>
-        <li data-target="#slide_de_imagenes" data-slide-to="1"></li>
-        <li data-target="#slide_de_imagenes" data-slide-to="2"></li>
-    </ol>
+            <ol class="carousel-indicators">
+                <li data-target="#slide_de_imagenes" data-slide-to="0" class="active"></li>
+                <li data-target="#slide_de_imagenes" data-slide-to="1"></li>
+                <li data-target="#slide_de_imagenes" data-slide-to="2"></li>
+            </ol>
 
-    <div class="carousel-inner">
+            <div class="carousel-inner">
 
-        <div class="carousel-item h-100 active">
-            <img src="images/imagen_1.jpg" class="h-100 d-block w-100" alt="...">
+                <div class="carousel-item h-100 active">
+                    <img src="images/imagen_1.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_5.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_8.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_9.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_15.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item h-100">
+                    <img src="images/imagen_16.jpg" class="h-100 d-block w-100" alt="...">
+                </div>
+
+            </div>
+
+            <a class="btn boton2 izquierda_imagenes" href="#slide_de_imagenes" role="button" data-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+
+            <a class="btn boton2 derecha_imagenes" href="#slide_de_imagenes" role="button" data-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
         </div>
 
-        <div class="carousel-item h-100">
-            <img src="images/imagen_5.jpg" class="h-100 d-block w-100" alt="...">
-        </div>
-
-
-        <div class="carousel-item h-100">
-            <img src="images/imagen_8.jpg" class="h-100 d-block w-100" alt="...">
-        </div>
-
-        <div class="carousel-item h-100">
-            <img src="images/imagen_9.jpg" class="h-100 d-block w-100" alt="...">
-        </div>
-
-        <div class="carousel-item h-100">
-            <img src="images/imagen_15.jpg" class="h-100 d-block w-100" alt="...">
-        </div>
-
-        <div class="carousel-item h-100">
-            <img src="images/imagen_16.jpg" class="h-100 d-block w-100" alt="...">
-        </div>
-
-    </div>
-
-    <a class="btn boton2 izquierda_imagenes" href="#slide_de_imagenes" role="button" data-slide="prev">
-        <i class="fas fa-chevron-left"></i>
-    </a>
-
-    <a class="btn boton2 derecha_imagenes" href="#slide_de_imagenes" role="button" data-slide="next">
-        <i class="fas fa-chevron-right"></i>
-    </a>
-
-</div>
-
-</section>
-<!-- SLIDE DE IMAGENES -->
+    </section>
+    <!-- SLIDE DE IMAGENES -->
 
 
     <!-- NOVA INTERACTIVA -->
@@ -848,23 +722,6 @@ $page = "Inicio" ?>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- ARCHIVOS FOOTER -->
     <section>
         <?php include 'layout/archivos_footer.php' ?>
@@ -874,6 +731,14 @@ $page = "Inicio" ?>
 
 
     <script src="js/buscador.js"></script>
+
+    <script src="js/carousel_destacadas.js"></script>
+
+    <script src="js/rangos.js"></script>
+    <script src="conexion_api/validadores.js"></script>
+    <script src="conexion_api/buscador.js"></script>
+    <script src="conexion_api/token_api.js"></script>
+
 
 
 

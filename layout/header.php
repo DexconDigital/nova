@@ -122,7 +122,7 @@
                     <li class="d-flex align-items-center nav-item">
                         <a class="nav-link <?php if ($page == 'Inmuebles') {
                                                 echo 'activo';
-                                            } ?>" href="inmuebles.php"> Inmuebles </a>
+                                            } ?>" href="inmuebles.php?"> Inmuebles </a>
                     </li>
 
                     <li class="nav-item dropdown m-auto">

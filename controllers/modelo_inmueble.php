@@ -5,93 +5,69 @@ function modelo_inmueble($r, $cantidad_inmuebles)
 {
     for ($i = 0; $i < $cantidad_inmuebles; $i++) {
         $imagen = existeImagen(($r[$i]['foto1']));
-        $codigo = str_ireplace("986-", "", $r[$i]['Codigo_Inmueble']);
+        $codigo = str_ireplace("978-", "", $r[$i]['Codigo_Inmueble']);
         $api = $r[$i];
 
         echo '
-        <div class="col-12 col-lg-4 col-xl-4 col-md-6">
-        <div class="carta mb-5 ">
-            <a href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex flex-wrap" id="inmuebles2">
-
-                <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-                <div class="card2 col-12 p-0 position-relative">
-
-                    <div class="imagen w-100 h-100">
-                        <img src="' . $imagen . '" class="card-img-top" alt="...">
-                    </div>
-
-                    <div class="caja_negra"> </div>
-
-                    <div class="tipo_inmueble d-flex align-items-center">
-                        <p class="ml-2"> ' . $api['Tipo_Inmueble'] . ' </p>
-                    </div>
-
-                    <div class="tipo_gestion d-flex align-items-center">
-                        <p class="mr-2"> ' . $api['Gestion'] . ' </p>
-                    </div>
-
-                </div>
-                <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-
-                <!-- DESCRIPCIÓN DE INMUEBLE -->
-                <div style="height:120px" class="contenido col-12 d-flex flex-column">
-
-                    <div>
-                        <div class="d-flex pl-3 mt-3 align-items-baseline">
-                            <i class="mr-1 fas fa-map-marker-alt"></i>
-                            <h4> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </h4>
-                        </div>
-
-                        <div class="ml-3 d-flex">
-                            <p class="mr-5">';
-                            if ($api['Gestion'] == 'Arriendo/venta') {
-                                echo '$' . $api['Canon'] . ' <br>$' . $api['Venta'];
-                            } else if ($api['Gestion'] == 'Arriendo') {
-                                echo '$' . $api['Canon'];
-                            } else {
-                                echo '$' . $api['Venta'];
-                            }
-                            echo '</p>
-                            <p class="text-muted"> Código: ' . $codigo . ' </p>
-                        </div>
-
-                    </div>
-
-                    <!-- ICONOS -->
-                    <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
-
-                        <div class="d-flex py-2 align-items-center">
-                            <i class="blanco fas fa-chart-area"></i>
-                            <p class="blanco pl-2"> ' . $api['AreaConstruida'] . 'm<sup>2</sup> </p>
-                        </div>
-
-                        <div class="d-flex py-2 align-items-center">
-                            <i class="blanco fas fa-bath"></i>
-                            <p class="blanco pl-2"> ' . $api['banios'] . ' </p>
-                        </div>
-
-                        <div class="d-flex py-2 align-items-center">
-                            <i class="blanco fas fa-bed"></i>
-                            <p class="blanco pl-2"> ' . $api['Alcobas'] . ' </p>
-                        </div>
-
-                        <div class="d-flex py-2 align-items-center">
-                            <i class="blanco fas fa-warehouse"></i>
-                            <p class="blanco pl-2"> ' . $api['garaje'] . ' </p>
-                        </div>
-
-                    </div>
-                    <div class="fondo_caracteristicas2"></div>
-                    <div class="fondo_caracteristicas3"></div>
-                    
 
 
-                </div>
-                
 
-            </a>
+
+        <div class="h-100 carousel-item">
+
+        <!-- IMAGEN INMUEBLE -->
+        <a href="./detalle_inmueble.php?co=' . $codigo . '"><img src="' . $imagen . '" class="h-100 d-block w-100" alt="..."></a>
+        <!-- IMAGEN INMUEBLE -->
+
+        <!-- DIRECCIÓN -->
+        <div class="position-absolute titulo d-flex flex-column align-items-baseline">
+            <p> <span class="azul">Apartamento</span> en <span class="magenta">Arriendo</span> </p>
+            <div class="d-flex align-items-baseline">
+                <i class="azul mr-1 fas fa-map-marker-alt"></i>
+                <p> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p>
+            </div>
+            <p class="mt-1 codigo"> Código: ' . $codigo . ' </p>
+        </div>
+        <!-- DIRECCIÓN -->
+
+        <!-- ICONOS -->
+        <div class="position-absolute iconos d-flex align-items-baseline flex-wrap">
+
+            <div class="mr-2 d-flex align-items-center">
+                <i class="mr-1 azul icono fas fa-chart-area"></i>
+                <p> ' . $api['AreaConstruida'] . 'm<sup>2 </p>
+            </div>
+
+            <div class="mr-2 d-flex align-items-center">
+                <i class="mr-1 azul icono fas fa-bed"></i>
+                <p>  ' . $api['Alcobas'] . ' </p>
+            </div>
+
+            <div class="mr-2 d-flex align-items-center">
+                <i class="mr-1 azul icono fas fa-bath"></i>
+                <p> ' . $api['banios'] . ' </p>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <i class="mr-1 azul icono fas fa-warehouse"></i>
+                <p> ' . $api['garaje'] . ' </p>
+            </div>
+
+            <a href="#" class="ml-2 btn boton2 precio"> ';
+            if ($api['Gestion'] == 'Arriendo/venta') {
+                echo '$' . $api['Canon'] . ' <br>$' . $api['Venta'];
+            } else if ($api['Gestion'] == 'Arriendo') {
+                echo '$' . $api['Canon'];
+            } else {
+                echo '$' . $api['Venta'];
+            }
+            echo ' </a>
+            <!-- ICONOS -->
+
+
         </div>
     </div>
+
 
         ';
     }
@@ -101,7 +77,7 @@ function modelo_inmueble2($r)
 {
     for ($i = 0; $i < count($r); $i++) {
         $imagen = existeImagen(($r[$i]['foto1']));
-        $codigo = str_ireplace("986-", "", $r[$i]['Codigo_Inmueble']);
+        $codigo = str_ireplace("978-", "", $r[$i]['Codigo_Inmueble']);
         $api = $r[$i];
         $descripcion = $api['descripcionlarga'];
         $limite_de_cadena = 105;
@@ -112,90 +88,95 @@ function modelo_inmueble2($r)
             $descripcion = $descripcion . '...';
         }
         echo '
-        <div class="carta my-5 ">
-        <a  href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex flex-wrap" id="inmuebles2">
 
-            
-            <div class="card2 col-12 col-md-6 col-lg-4 col-xl-4 p-0 position-relative">
 
-                <div class="imagen w-100 h-100">
-                    <img src="' . $imagen . '" class="card-img-top" alt="...">
+
+        <div class="col-4 mb-5">
+            <div class="card">
+
+                <div class="imagen">
+                    <p class="gestion_inmueble position-absolute blanco font-weight-bold"> '. $api['Tipo_Inmueble'] .' en ' . $api['Gestion'] . ' </p>
+                    <img src="' . $imagen . '" class="h-100 card-img-top" alt="...">
                 </div>
 
-                <div class="caja_negra"> </div>
+                <div class="">
 
-                <div class="tipo_inmueble d-flex align-items-center">
-                    <p class="ml-2"> '. $api['Tipo_Inmueble'] .' </p>
-                </div>
+                    <!-- ICONOS BAÑOS ALCOBAS ETC -->
+                    <div class="py-3 caja border-bottom d-flex justify-content-around align-items-baseline">
 
-                <div class="tipo_gestion d-flex align-items-center">
-                    <p class="mr-2"> ' . $api['Gestion'] . ' </p>
+
+                        <!-- AREA -->
+                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                            <i class="ml-3 mr-2 azul fas fa-chart-area"></i>
+                            <p class="pr-3"> ' . $api['AreaConstruida'] . 'm<sup>2</sup></p>
+                        </div>
+                        <!-- AREA -->
+
+                        <!-- BAÑOS -->
+                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                            <i class="mr-2 azul fas fa-bath"></i>
+                            <p class="pr-3"> ' . $api['banios'] . ' </p>
+                        </div>
+                        <!-- BAÑOS -->
+
+                        <!-- HABITACIONES -->
+                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                            <i class="mr-2 azul fas fa-bed"></i>
+                            <p class="pr-3"> ' . $api['Alcobas'] . ' </p>
+                        </div>
+                        <!-- HABITACIONES -->
+
+                        <!-- GARAGES -->
+                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+                            <i class="mx-2   azul fas fa-warehouse"></i>
+                            <p class="pr-3"> ' . $api['garaje'] . ' </p>
+                        </div>
+                        <!-- GARAGES -->
+
+
+                    </div>
+                    <!-- ICONOS BAÑOS ALCOBAS ETC -->
+
+
+
+                    <!-- DIRECCIÓN CODIGO Y DESCRIPCIÓN -->
+                    <div class="caja py-3">
+
+
+                        <div class="mb-2 px-3 d-flex align-items-baseline">
+                            <i class="mr-2 azul fas fa-map-marker-alt"> </i>
+                            <p class="direccion"> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p>
+                        </div>
+
+                        <p class="mb-2 px-3 text-muted"> Código: '. $codigo .' </p>
+                        <p class="px-3 descripcion"> '.$descripcion.' </p>
+                    </div>
+                    <!-- DIRECCIÓN CODIGO Y DESCRIPCIÓN -->
+
+
+                    <!-- PRECIO -->
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="mr-2"> <span class="azul font-weight-bold">$</span> ';
+                        if ($api['Gestion'] == 'Arriendo') {
+                            echo $api['Canon'];
+                        } else if ($api['Gestion'] == 'Venta') {
+                            echo $api['Venta'];
+                        } else {
+                            echo $api['Canon'] . '/ $' . $api['Venta'];
+                        }
+                        echo ' </p>
+                        <a href="#" class="my-2 btn boton2"> Ver Inmueble </a>
+                    </div>
+                    <!-- PRECIO -->
+
+
+
                 </div>
 
             </div>
-            
-            <div style="height:220px" class="contenido col-12 col-md-6 col-lg-8 col-xl-8">
-
-                <div class="d-flex pl-3 align-items-baseline">
-                    <i class="mr-1 fas fa-map-marker-alt"></i>
-                    <h4> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </h4>
-                </div>
-
-                <div class="ml-3 d-flex">
-                    <p class="mr-5"> $';
-                    if ($api['Gestion'] == 'Arriendo') {
-                        echo $api['Canon'];
-                    } else if ($api['Gestion'] == 'Venta') {
-                        echo $api['Venta'];
-                    } else {
-                        echo $api['Canon'] . '/ $' . $api['Venta'];
-                    }
-                    echo ' </p>
-                    <p class="text-muted"> Código: '. $codigo .' </p>
-                </div>
-
-                <div>
-                    <p> '.$descripcion.' </p>
-                </div>
-
-                <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
-
-                    <div class="d-flex py-2 align-items-center">
-                        <i class="blanco fas fa-chart-area"></i>
-                        <p class="blanco pl-2"> ' . $api['AreaConstruida'] . 'm<sup>2 </p>
-                    </div>
-
-                    <div class="d-flex py-2 align-items-center">
-                        <i class="blanco fas fa-bath"></i>
-                        <p class="blanco pl-2"> ' . $api['banios'] . ' </p>
-                    </div>
-
-                    <div class="d-flex py-2 align-items-center">
-                        <i class="blanco fas fa-bed"></i>
-                        <p class="blanco pl-2"> ' . $api['Alcobas'] . ' </p>
-                    </div>
-
-                    <div class="d-flex py-2 align-items-center">
-                        <i class="blanco fas fa-warehouse"></i>
-                        <p class="blanco pl-2"> ' . $api['garaje'] . ' </p>
-                    </div>
-
-                </div>
-
-                
-                <div class="fondo_caracteristicas2"></div>
-                
-
-                
-                <div class="fondo_caracteristicas3"></div>
-                
+        </div>
 
 
-            </div>
-            
-
-        </a>
-    </div>
  ';
     }
 }

@@ -3,33 +3,30 @@ $(document).ready(function () {
     $('#codigo_buscar').keyup(function () {
         var value = $(this).val();
         if (value.length > 0) {
-            $('#ciudad_buscar').attr("disabled", true);
-            $('#barrio_buscar').attr("disabled", true);
             $('#tipo_inmueble_buscar').attr("disabled", true);
             $('#tipo_gestion_buscar').attr("disabled", true);
-            $('#precio_minimo_buscar').attr("disabled", true);
-            $('#precio_maximo_buscar').attr("disabled", true);
-            $('#area_minima_buscar').attr("disabled", true);
-            $('#area_maxima_buscar').attr("disabled", true);
+            $('#ciudad_buscar').attr("disabled", true);
+            $('#barrio_buscar').attr("disabled", true);
             $('#banios_buscar').attr("disabled", true);
             $('#alcobas_buscar').attr("disabled", true);
             $('#garajes_buscar').attr("disabled", true);
-            $('#price').attr("disabled", true);
-            
+            $('#precio_minimo_buscar').attr("disabled", true);
+            $('#precio_maximo_buscar').attr("disabled", true);
+            $('#area_minima_buscar').attr("disabled", true);
+            $('#area_maxima_buscar').attr("disabled", true);            
 
         } else {
-            $('#ciudad_buscar').removeAttr("disabled");
-            $('#barrio_buscar').removeAttr("disabled");
             $('#tipo_inmueble_buscar').removeAttr("disabled");
             $('#tipo_gestion_buscar').removeAttr("disabled");
+            $('#ciudad_buscar').removeAttr("disabled");
+            $('#barrio_buscar').removeAttr("disabled");
+            $('#banios_buscar').removeAttr("disabled");
+            $('#alcobas_buscar').removeAttr("disabled");
+            $('#garajes_buscar').removeAttr("disabled");
             $('#precio_minimo_buscar').removeAttr("disabled");
             $('#precio_maximo_buscar').removeAttr("disabled");
             $('#area_minima_buscar').removeAttr("disabled");
             $('#area_maxima_buscar').removeAttr("disabled");
-            $('#banios_buscar').removeAttr("disabled");
-            $('#alcobas_buscar').removeAttr("disabled");
-            $('#garajes_buscar').removeAttr("disabled");
-            $('#price').removeAttr("disabled");
             
         }
     });
@@ -111,8 +108,8 @@ $(document).ready(function () {
         'dataType': "json",
         success: function (gestion) {
             //Eliminar un campo del array 
-            gestion.splice(1, 3)
-
+            gestion.splice(2, 1)
+            
             var gestion_resultados = " ";
             for (var i = 0; i < gestion.length; i++) {
 
@@ -156,10 +153,6 @@ $(document).ready(function () {
         busqueda();
     });
 
-    // Buscar por medio del boton creado en el buscador
-    $('#buscar1').click(function () {
-        busqueda();
-    });
 
 
     // buscar por medio de la tecla enter
@@ -169,33 +162,6 @@ $(document).ready(function () {
         }
     });
 
-    optionsSelect = [
-        {
-            "Id": 0,
-            "premin": 0,
-            "premax": 0
-        },
-        {
-            "Id": 1,
-            "premin": 500000,
-            "premax": 1000000
-        },
-        {
-            "Id": 2,
-            "premin": 1000000,
-            "premax": 2000000
-        },
-        {
-            "Id": 3,
-            "premin": 2000000,
-            "premax": 5000000
-        },
-        {
-            "Id": 4,
-            "premin": 5000000,
-            "premax": 12000000000
-        }
-    ];
 });
 
 
@@ -212,7 +178,6 @@ var code,
     area_minima_buscar,
     area_maxima_buscar,
     garajes_buscar;
-    price;
 
 // Esta funcion trae los campos digitados en el buscador
 var busqueda = function () {
@@ -221,33 +186,27 @@ var busqueda = function () {
     gestion_buscar = $('#tipo_gestion_buscar option:selected').val();
     tipo_inmueble_buscar = $('#tipo_inmueble_buscar option:selected').val();
     barrio_buscar = $('#barrio_buscar option:selected').val();
-    /* precio_minimo_buscar = $('#precio_minimo_buscar').val();
-    precio_maximo_buscar = $('#precio_maximo_buscar').val(); */
+    precio_minimo_buscar = $('#precio_minimo_buscar').val();
+    precio_maximo_buscar = $('#precio_maximo_buscar').val();
     area_minima_buscar = $('#area_minima_buscar').val();
     area_maxima_buscar = $('#area_maxima_buscar').val();
     alcobas_buscar = $('#alcobas_buscar').val();
     banios_buscar = $('#banios_buscar').val();
     garajes_buscar = $('#garajes_buscar').val();
-    price = $('#price').val();
     // Si no trae nada del buscador definirla en cero
 
     ciudad_buscar = existeCampo(ciudad_buscar);
     barrio_buscar = existeCampo(barrio_buscar);
     gestion_buscar = existeCampo(gestion_buscar);
     tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
-    /* precio_minimo_buscar = existeCampo(precio_minimo_buscar);
-    precio_maximo_buscar = existeCampo(precio_maximo_buscar); */
+    precio_minimo_buscar = existeCampo(precio_minimo_buscar);
+    precio_maximo_buscar = existeCampo(precio_maximo_buscar); 
     area_minima_buscar = existeCampo(area_minima_buscar);
     area_maxima_buscar = existeCampo(area_maxima_buscar);
     alcobas_buscar = existeCampo(alcobas_buscar);
     banios_buscar = existeCampo(banios_buscar);
     garajes_buscar = existeCampo(garajes_buscar);
-    var element = null;
-    for (let index = 0; index < optionsSelect.length; index++) {
-        if (price == optionsSelect[index].Id) {
-            element = optionsSelect[index];
-        }
-    }
+
 
 
     if (code !== "") {
@@ -259,8 +218,8 @@ var busqueda = function () {
             '&in=' + tipo_inmueble_buscar +
             '&aremin=' + area_minima_buscar +
             '&aremax=' + area_maxima_buscar +
-            '&premin=' + element.premin +
-            '&premax=' + element.premax +
+            '&premin=' + precio_minimo_buscar+
+            '&premax=' + precio_maximo_buscar+
             '&alcobas=' + alcobas_buscar +
             '&banios=' + banios_buscar +
             '&garajes=' + garajes_buscar +
