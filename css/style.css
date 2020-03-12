@@ -12884,3 +12884,13 @@ footer {
 
 .horario .icono {
   font-size: 35px; }
+
+.activo2 {
+  background-color: #DF2B6A; }
+
+#caracteristicas_principales .precio {
+  background-color: #DF2B6A; }
+
+#formulario_asesor .imagen_asesor {
+  height: 150px;
+  width: 200px; }

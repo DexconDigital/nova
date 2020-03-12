@@ -14,6 +14,7 @@ $(document).ready(function () {
             $('#precio_maximo_buscar').attr("disabled", true);
             $('#area_minima_buscar').attr("disabled", true);
             $('#area_maxima_buscar').attr("disabled", true);            
+            $('#price').attr("disabled", true);            
 
         } else {
             $('#tipo_inmueble_buscar').removeAttr("disabled");
@@ -27,6 +28,7 @@ $(document).ready(function () {
             $('#precio_maximo_buscar').removeAttr("disabled");
             $('#area_minima_buscar').removeAttr("disabled");
             $('#area_maxima_buscar').removeAttr("disabled");
+            $('#price').removeAttr("disabled");
             
         }
     });
@@ -162,7 +164,51 @@ $(document).ready(function () {
         }
     });
 
+    optionsSelect = [
+        {
+            "Id": 0,
+            "premin": 0,
+            "premax": 0
+        },
+        {
+            "Id": 1,
+            "premin": 500000,
+            "premax": 1000000
+        },
+        {
+            "Id": 2,
+            "premin": 1000001,
+            "premax": 5000000
+        },
+        {
+            "Id": 3,
+            "premin": 5000001,
+            "premax": 10000000
+        },
+        {
+            "Id": 4,
+            "premin": 10000001,
+            "premax": 50000000
+        },
+
+        {
+            "Id": 5,
+            "premin": 50000001,
+            "premax": 100000000
+        },
+
+
+        {
+            "Id": 6,
+            "premin": 100000001,
+            "premax": 100000000000
+        }
+
+    ];
+
 });
+
+
 
 
 // Definir las variables que se van a usar para almacenar los datos que se traen del buscador
@@ -177,7 +223,8 @@ var code,
     precio_minimo_buscar,
     area_minima_buscar,
     area_maxima_buscar,
-    garajes_buscar;
+    garajes_buscar,
+    price;
 
 // Esta funcion trae los campos digitados en el buscador
 var busqueda = function () {
@@ -186,28 +233,35 @@ var busqueda = function () {
     gestion_buscar = $('#tipo_gestion_buscar option:selected').val();
     tipo_inmueble_buscar = $('#tipo_inmueble_buscar option:selected').val();
     barrio_buscar = $('#barrio_buscar option:selected').val();
-    precio_minimo_buscar = $('#precio_minimo_buscar').val();
-    precio_maximo_buscar = $('#precio_maximo_buscar').val();
+    // precio_minimo_buscar = $('#precio_minimo_buscar').val();
+    // precio_maximo_buscar = $('#precio_maximo_buscar').val();
     area_minima_buscar = $('#area_minima_buscar').val();
     area_maxima_buscar = $('#area_maxima_buscar').val();
     alcobas_buscar = $('#alcobas_buscar').val();
     banios_buscar = $('#banios_buscar').val();
     garajes_buscar = $('#garajes_buscar').val();
+    price = $('#price').val();
+    
     // Si no trae nada del buscador definirla en cero
 
     ciudad_buscar = existeCampo(ciudad_buscar);
     barrio_buscar = existeCampo(barrio_buscar);
     gestion_buscar = existeCampo(gestion_buscar);
     tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
-    precio_minimo_buscar = existeCampo(precio_minimo_buscar);
-    precio_maximo_buscar = existeCampo(precio_maximo_buscar); 
+    // precio_minimo_buscar = existeCampo(precio_minimo_buscar);
+    // precio_maximo_buscar = existeCampo(precio_maximo_buscar); 
     area_minima_buscar = existeCampo(area_minima_buscar);
     area_maxima_buscar = existeCampo(area_maxima_buscar);
     alcobas_buscar = existeCampo(alcobas_buscar);
     banios_buscar = existeCampo(banios_buscar);
     garajes_buscar = existeCampo(garajes_buscar);
 
-
+    var element = null;
+    for (let index = 0; index < optionsSelect.length; index++) {
+        if (price == optionsSelect[index].Id) {
+            element = optionsSelect[index];
+        }
+    }
 
     if (code !== "") {
         window.location.href = 'detalle_inmueble.php?co=' + code + '';
@@ -218,8 +272,8 @@ var busqueda = function () {
             '&in=' + tipo_inmueble_buscar +
             '&aremin=' + area_minima_buscar +
             '&aremax=' + area_maxima_buscar +
-            '&premin=' + precio_minimo_buscar+
-            '&premax=' + precio_maximo_buscar+
+            '&premin=' + element.premin +
+            '&premax=' + element.premin +
             '&alcobas=' + alcobas_buscar +
             '&banios=' + banios_buscar +
             '&garajes=' + garajes_buscar +

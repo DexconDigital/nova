@@ -123,28 +123,26 @@ $page = "Inicio" ?>
                             <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="col-12 form-group">
+                        <div class="col-3 form-group">
                             <!-- <p> Precio: </p>
                             <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
 
-                            <div class="wrapper">
-                                <div class="range-slider" id="areas">
-                                    <input type="text" class="js-range-slider" value="" />
-                                </div>
-                                <div class="extra-controls form-inline">
-                                    <div class="form-group">
-                                        <input type="text" class="js-input-from form-control" id="area_minima_buscar" value="0" aria-describedby="emailHelp" />
-                                        <input type="text" class="js-input-to form-control" id="area_maxima_buscar" value="0" aria-describedby="emailHelp" />
-                                    </div>
-                                </div>
-                            </div> 
+                         <select class="form-control" name="" id="price">
+                             <option value="0"> Precio </option>
+                             <option value="1"> $500.000 a $1.000.000</option>
+                             <option value="2"> $1.000.000 a $5.000.000 </option>
+                             <option value="3"> $5.000.000 a $10.000.000</option>
+                             <option value="4"> $10.000.000 a $50.000.000</option>
+                             <option value="5"> $50.000.000 a $100.000.000</option>
+                             <option value="6"> $100.000.000 y más...</option>
+                         </select>
 
                         </div>
 
-                        <div class="col-3 form-group">
-                            <!-- <p> Área: </p>
-                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
-                        </div>
+                        <!-- <div class="col-3 form-group">
+                            <p> Área: </p>
+                            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange">
+                        </div> -->
 
                         <div class="col-6 h-100 m-auto d-flex align-items center justify-content-center">
                             <button type="button" id="buscar" class="col-6 btn boton_footer"> Buscar </button>
