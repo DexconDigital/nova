@@ -179,7 +179,7 @@ $page = "Detalle de Inmueble" ?>
             <div class="mb-3 d-flex justify-content-end align-items-center">
 
                 <div class="mr-3">
-                    <a href="#" class="btn boton1"> Descargar ficha </a>
+                    <a target="_blank" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=978-<?php echo $co ?>" class="btn boton1"> Descargar ficha </a>
                 </div>
 
                 <div class="d-flex align-items-center">
@@ -340,6 +340,12 @@ $page = "Detalle de Inmueble" ?>
                                 </button>
                             </div>
 
+                            <div class="col-12 p-0 mb-1">
+                                <button class="d-flex btn b6 boton1 col-12 collapsed" type="button" data-toggle="collapse" data-target="#seis" aria-expanded="true" aria-controls="dos">
+                                    Video
+                                </button>
+                            </div>
+
                         </div>
 
 
@@ -455,6 +461,30 @@ $page = "Detalle de Inmueble" ?>
 
                         </div>
                     </div>
+
+                    <div class="col-12 p-0">
+                        <div id="seis" class="collapse" aria-labelledby="seis" data-parent="#accordion">
+
+                            <?php if ($r['video'] != "") {
+                                echo
+                                    ' <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative"> Video </h5>
+                                    <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Video</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                        <iframe class="w-100" height="409" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                ';
+                            } ?>
+
+                        </div>
+                    </div>
+
+
                 </div>
                 <!----------INFORMACION BOTONES---------->
 

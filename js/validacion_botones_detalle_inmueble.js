@@ -9,6 +9,8 @@ $(document).ready(function(){
             $('.b3').removeClass('activo2');
             $('.b4').removeClass('activo2');
             $('.b5').removeClass('activo2');
+            $('.b6').removeClass('activo2');
+
 
 
     
@@ -27,6 +29,8 @@ $(document).ready(function(){
             $('.b3').removeClass('activo2');
             $('.b4').removeClass('activo2');
             $('.b5').removeClass('activo2');
+            $('.b6').removeClass('activo2');
+
 
     
         } else {
@@ -44,6 +48,8 @@ $(document).ready(function(){
             $('.b2').removeClass('activo2');
             $('.b4').removeClass('activo2');
             $('.b5').removeClass('activo2');
+            $('.b6').removeClass('activo2');
+
 
     
         } else {
@@ -61,6 +67,8 @@ $(document).ready(function(){
             $('.b2').removeClass('activo2');
             $('.b3').removeClass('activo2');
             $('.b5').removeClass('activo2');
+            $('.b6').removeClass('activo2');
+
     
         } else {
             $('.b4').removeClass('activo2');
@@ -77,9 +85,27 @@ $(document).ready(function(){
             $('.b2').removeClass('activo2');
             $('.b3').removeClass('activo2');
             $('.b4').removeClass('activo2');
+            $('.b6').removeClass('activo2');
     
         } else {
             $('.b5').removeClass('activo2');
+        }
+
+    });
+
+    $('.b6').on('click', function(){
+
+        if(!$('#seis').hasClass('show')) {
+
+            $('.b6').addClass('activo2');
+            $('.b1').removeClass('activo2');
+            $('.b2').removeClass('activo2');
+            $('.b3').removeClass('activo2');
+            $('.b4').removeClass('activo2');
+            $('.b5').removeClass('activo2');
+    
+        } else {
+            $('.b6').removeClass('activo2');
         }
 
     });

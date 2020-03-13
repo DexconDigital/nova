@@ -22,6 +22,7 @@
     width: 100%;
     object-fit: contain;
     margin: auto !important;
+    background: gray;
 }
 .carousel-item img{
     height: 100%;
