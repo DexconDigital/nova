@@ -14,7 +14,7 @@ $(document).ready(function () {
             $('#precio_maximo_buscar').attr("disabled", true);
             $('#area_minima_buscar').attr("disabled", true);
             $('#area_maxima_buscar').attr("disabled", true);            
-            $('#price').attr("disabled", true);            
+            $('#price').attr("disabled", true);         
 
         } else {
             $('#tipo_inmueble_buscar').removeAttr("disabled");
@@ -273,7 +273,7 @@ var busqueda = function () {
             '&aremin=' + area_minima_buscar +
             '&aremax=' + area_maxima_buscar +
             '&premin=' + element.premin +
-            '&premax=' + element.premin +
+            '&premax=' + element.premax +
             '&alcobas=' + alcobas_buscar +
             '&banios=' + banios_buscar +
             '&garajes=' + garajes_buscar +

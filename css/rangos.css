@@ -194,11 +194,7 @@
   top: 33px;
   border-top: 1px solid #0000A0;
   border-bottom: 1px solid #0000A0;
-  background: #0000A0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#0000A0), to(#8D898B));
-  background: -webkit-linear-gradient(bottom, #0000A0 0%, #8D898B 100%);
-  background: -o-linear-gradient(bottom, #0000A0 0%, #8D898B 100%);
-  background: linear-gradient(to top, #0000A0 0%, #8D898B 100%);
+  background: #DF2B6A;
   /* W3C */ }
 
 .irs-bar-edge {
@@ -231,14 +227,14 @@
   top: 30px;
   width: 15px;
   height: 15px;
-  border: 1px solid #0000A0;
+  border: 1px solid #1FACE1;
   background: #0000A0;
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, gainsboro), to(white));
   background: -webkit-linear-gradient(top, white 0%, gainsboro 20%, white 100%);
   background: -o-linear-gradient(top, white 0%, gainsboro 20%, white 100%);
   background: rgb(255, 255, 255);
   /* W3C */
-  border-radius: 0px;
+  border-radius: 15px;
   -moz-border-radius: 27px;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);

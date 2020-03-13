@@ -12459,6 +12459,11 @@ footer {
     background-attachment: fixed;
     background-position: center;
     background-size: cover; }
+  #banner .imagen_detalle_inmueble {
+    background: url(../images/imagen_15.jpg) center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
   #banner .fondo_negro {
     background-color: rgba(0, 0, 0, 0.5); }
 

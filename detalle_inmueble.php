@@ -13,6 +13,29 @@ $page = "Detalle de Inmueble" ?>
     <link rel="stylesheet" href="css/carousel.tamanos.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <meta property="og:title" content="<?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?>" />
+    <meta property="og:description" content="Inmueble ubicado en: <?php echo $r['barrio'] . ', ' . $r['ciudad'] . ', ' . $r['depto']; ?> " />
+    <meta property="og:image" itemprop="image" content="<?php echo $r['fotos'][0]['foto']; ?>" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <style>
+        #map {
+            height: 500px;
+            z-index: 20;
+        }
+
+        .leaflet-control {
+            z-index: 200;
+        }
+
+        .leaflet-control {
+            z-index: 20;
+        }
+    </style>
 
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
 </head>
@@ -28,7 +51,7 @@ $page = "Detalle de Inmueble" ?>
     <!-- BANNER -->
     <section id="banner" class="position-relative">
 
-        <div class="imagen position-absolute w-100 h-100"></div>
+        <div class="imagen_detalle_inmueble position-absolute w-100 h-100"></div>
         <div class="fondo_negro position-absolute w-100 h-100"></div>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
@@ -62,7 +85,7 @@ $page = "Detalle de Inmueble" ?>
 
         <div class="border-left px-2 border-top d-flex align-items-center">
             <i class="azul mr-2 fas fa-chart-area"></i>
-            <p> <?php echo $area_construida; ?> <sup>2</sup> </p>
+            <p> <?php echo $area_construida; ?> m<sup>2</sup> </p>
         </div>
 
         <div class="border-left px-2 border-top d-flex align-items-center">
@@ -153,15 +176,37 @@ $page = "Detalle de Inmueble" ?>
 
         <div class="col-12">
 
+            <div class="mb-3 d-flex justify-content-end align-items-center">
+
+                <div class="mr-3">
+                    <a href="#" class="btn boton1"> Descargar ficha </a>
+                </div>
+
+                <div class="d-flex align-items-center">
+
+                    <p> Comparte en: </p>
+
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.inmobiliarianova.com.co%2Fdetalle_inmueble.php%3Fco%3D986-<?php echo $co; ?>"><i class="ml-2 fab fa-facebook-f"> </i></a>
+                    <a target="_blank" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.inmobiliarianova.com.co/detalleInmueble.php?codigo%3d' . $co ?>"><i class="ml-2 fab fa-whatsapp"> </i></a>
+                    <a target="_blank" href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.inmobiliarianova.com.co%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>"><i class="ml-2 fab fa-twitter"> </i></a>
+
+                </div>
+
+            </div>
+
             <!-- TIPO DE INMUEBLE / TIPO DE GESTIÓN -->
             <h4> <?php echo $r['Tipo_Inmueble'] ?> en <?php echo $r['Gestion']; ?> </h4>
             <!-- TIPO DE INMUEBLE / TIPO DE GESTIÓN -->
 
 
             <!-- DIRECCIÓN -->
-            <div class="mt-2 d-flex align-items-baseline">
-                <i class="mr-2 fas fa-map-marker-alt"></i>
-                <p class="pb-2"> <?php echo $r['barrio'] . ', ' . $r['ciudad'] ?> </p>
+            <div class="mt-2 d-flex justify-content-between">
+
+                <div class="d-flex align-items-baseline">
+                    <i class="mr-2 fas fa-map-marker-alt"></i>
+                    <p class="pb-2"> <?php echo $r['barrio'] . ', ' . $r['ciudad'] ?> </p>
+                </div>
+
             </div>
             <!-- DIRECCIÓN -->
 
@@ -427,13 +472,22 @@ $page = "Detalle de Inmueble" ?>
     <!-- FORMULARIO Y MAPA -->
     <div id="formulario_asesor" class="container d-flex mt-5">
 
+
+        <!-- MAPA -->
         <div class="col-6">
-            <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2237422796466!2d-75.6037529855334!3d6.234210095487259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429969bf605a1%3A0xc2f64e3ad34d244d!2sCl.%2032%20%2380a-75%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1584032787734!5m2!1ses!2sco" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h4 class="mb-2 property-single-detail-title"><strong>Mapa de Ubicación</strong></h4>
+            <div class="card mapa_tamaño">
+                <div class="">
+                    <div id="map" class="w-100"></div>
+                </div>
+            </div>
         </div>
+        <!-- MAPA -->
+
 
         <div class="col-6">
 
-            <h3 class="mb-2"> Contacto con el Asesor </h3>
+            <h3 class="mb-2"> Contácto con el Asesor </h3>
 
             <div class="imagen_asesor d-flex align-ites-center m-auto justify-content-center">
                 <img class="w-100 h-100" src="<?php echo $asesor['FotoAsesor']; ?>">
@@ -552,6 +606,21 @@ $page = "Detalle de Inmueble" ?>
     <!-- Carrusel -->
 
     <script src="js/validacion_botones_detalle_inmueble.js"></script>
+
+    <!-- mapa del inmueble -->
+    <script src="mapas/leaflet.js" crossorigin=""></script>
+    <script>
+        var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
+
+        L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+        }).addTo(map);
+
+        L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
+            .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
+            .openPopup();
+    </script>
+    <!-- mapa del inmueble -->
 
 
 </body>

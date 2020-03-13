@@ -89,7 +89,7 @@ $page = "Inmuebles" ?>
                         <!-- <p> Precio: </p>
                             <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
 
-                        <select class="form-control" name="" id="price">
+                        <select id="price" class="form-control">
                             <option value="0"> Precio </option>
                             <option value="1"> $500.000 a $1.000.000</option>
                             <option value="2"> $1.000.000 a $5.000.000 </option>
@@ -101,10 +101,19 @@ $page = "Inmuebles" ?>
 
                     </div>
 
-                    <!-- <div class="col-3 form-group">
-                        <p> Área: </p>
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                    </div> -->
+                    <div class="col-3">
+                        <div class="wrapper">
+                            <div class="range-slider">
+                                <input type="text" class="js-range-slider" value="" />
+                            </div>
+                            <div class="extra-controls form-inline">
+                                <div class="form-group" style="display:none;">
+                                    <input type="text" class="js-input-from form-control" id="area_minima_buscar" value="0" aria-describedby="emailHelp" />
+                                    <input type="text" class="js-input-to form-control" id="area_maxima_buscar" value="0" aria-describedby="emailHelp" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-6 h-100 m-auto d-flex align-items center justify-content-center">
                         <button type="button" id="buscar" class="col-6 btn boton_footer"> Buscar </button>

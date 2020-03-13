@@ -305,14 +305,14 @@ $page = "Nosotros" ?>
         <!-- OPACIDAD DE LA IMAGEN -->
 
         <!-- ICONOS -->
-        <div class="contenido container position-relative d-flex align-items-center justify-content-around w-100 h-100 blanco">
+        <div id="contador" class="contenido container position-relative d-flex align-items-center justify-content-around w-100 h-100 blanco">
 
 
             <!-- ICONO 1 -->
             <div id="animacion1" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <p class="icono font-weight-bold magenta"> 100 </i>
+                    <p id="counter-propertys" class="icono font-weight-bold magenta"> </p>
                 </div>
 
                 <p class="mb-2 negro"> Total de Inmuebles </p>
@@ -326,7 +326,7 @@ $page = "Nosotros" ?>
             <div id="animacion2" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <p class="icono font-weight-bold magenta"> 70 </i>
+                    <p id="counter-rent" class="icono font-weight-bold magenta"> </p>
 
                 </div>
 
@@ -341,7 +341,7 @@ $page = "Nosotros" ?>
             <div id="animacion3" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <p class="icono font-weight-bold magenta"> 20 </i>
+                    <p id="counter-sale" class="icono font-weight-bold magenta"> </p>
 
                 </div>
 
@@ -356,7 +356,7 @@ $page = "Nosotros" ?>
             <div id="animacion4" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
-                    <p class="icono font-weight-bold magenta"> 10 </i>
+                    <p id="counter-sale-rent" class="icono font-weight-bold magenta"> </p>
                 </div>
 
                 <p class="mb-2 negro"> Total en Arriendo/Venta </p>
@@ -391,7 +391,11 @@ $page = "Nosotros" ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
 
-    <script src=js/scroll_asesores.js> </script> <script src="js/banner_estadisticas.js"></script>
+    <script src=js/scroll_asesores.js> </script> 
+    <script src="js/banner_estadisticas.js"></script>
+    <script src="js/countUp.min.js"></script>
+    <script src="js/counter-propertys.js"></script>
+    <script src="conexion_api/token_api.js"></script>
 
 </body>
 

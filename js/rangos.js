@@ -2019,15 +2019,15 @@
         },
 
         decorate: function (num, original) {
-            var decorated = "mt"
-            var metros = "",
+            var decorated = ""
+            var metros = "&nbspmts²",
                 o = this.options;
 
                 if (o.prefix) {
-                    decorated += o.prefix;
+                    decorated += o.prefix += metros;
                 }
     
-                decorated += num;
+                decorated += num += metros;
 
             if (o.max_postfix) {
                 if (o.values.length && num === o.p_values[o.max]) {
@@ -2379,7 +2379,7 @@ var $range = $(".js-range-slider"),
     $inputTo = $(".js-input-to"),
     instance,
     min = 0,
-    max = 500,
+    max = 1000,
     from = 0,
     to = 0;
 
@@ -2388,11 +2388,11 @@ $range.ionRangeSlider({
     min: min,
     max: max,
     from: 0,
-    to: 20,
+    to: 0,
     prefix: '',
     onStart: updateInputs,
     onChange: updateInputs,
-    step: 10,
+    step: 20,
     prettify_enabled: true,
     prettify_separator: ".",
   values_separator: " - ",
