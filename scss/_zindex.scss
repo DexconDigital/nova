@@ -3,7 +3,6 @@
     src: url(../fonts/iconos1.otf);
 }
 
-
 @font-face {
     font-family: iconos_solid;
     src: url(../fonts/iconos2.otf);
@@ -115,6 +114,19 @@ a {
     }
 }
 
+.boton_buscador {
+    background-color: $magenta;
+    color: $blanco;
+    transition: all 250ms;
+    border: none;
+
+    &:hover {
+        background: linear-gradient(#584093, $magenta);
+        color: $blanco!important;
+        border: none;
+    }
+}
+
 
 
 
@@ -210,6 +222,7 @@ header {
         transition: all 250ms;
         // top: 188px;
     }
+
 }
 
 #servicios {
@@ -768,6 +781,7 @@ footer {
 }
 
 .slider {
+
     -webkit-appearance: none;
     width: 100%;
     height: 25px;
@@ -776,7 +790,7 @@ footer {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-  }
+
   
   .slider:hover {
     opacity: 1;
@@ -798,6 +812,60 @@ footer {
     background: #4CAF50;
     cursor: pointer;
   }
+}
+
+@media (max-width: 320px) {
+    footer {
+        .imagen_logo {
+            height: 90px!important;
+            width: 100%!important;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #buscador {
+        left: inherit;
+    }
+
+    #slide_imagenes {
+        .carousel-inner {
+            height: 300px!important;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+   footer {
+        .imagen_logo {
+            height: 115px;
+            width: 220px;
+        }
+    }
+
+   header {
+        .logopse {
+            width:68px!important;
+        }  
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    #buscador {
+        left: 3%;
+    }
+ }
+
+@media (max-width: 1024px) {
+
+}
+
+
+
+
 
 
 

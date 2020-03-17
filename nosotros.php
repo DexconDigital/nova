@@ -38,7 +38,7 @@ $page = "Nosotros" ?>
     <section id="mision_vision" class="mt-5 container d-flex flex-wrap justify-content-center">
 
         <!-- MISION -->
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5 mb-md-0 mb-xl-0 mb-lg-0">
 
             <div class="p-3 position-relative carta d-flex flex-column align-items-center justify-content-center">
 
@@ -57,7 +57,7 @@ $page = "Nosotros" ?>
         <!-- MISION -->
 
         <!-- VISION -->
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5 mb-md-0 mb-xl-0 mb-lg-0">
 
             <div class="h-100 p-3 position-relative carta d-flex flex-column align-items-center">
 
@@ -76,7 +76,7 @@ $page = "Nosotros" ?>
         <!-- VISION -->
 
         <!-- RESEÑA HOSTORICA -->
-        <div class="col-6 mt-5">
+        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5 mb-md-0 mb-xl-0 mb-lg-0">
 
             <div class="p-3 position-relative carta d-flex flex-column align-items-center justify-content-center">
 

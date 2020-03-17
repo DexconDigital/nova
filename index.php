@@ -35,7 +35,7 @@ $page = "Inicio" ?>
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item h-100 active">
                         <img style="object-fit:cover" src="images/imagen_18.jpg" class="d-block h-100 w-100" alt="...">
-                        <div class="carousel-caption h-100 d-none d-md-block">
+                        <div class="carousel-caption h-100 d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute w-100 h-100">
                                 <h2> <span class="azul">La nueva cara del</span> <span class="magenta">buen servicio</span> </h5>
                             </div>
@@ -43,7 +43,7 @@ $page = "Inicio" ?>
                     </div>
                     <div class="carousel-item h-100">
                         <img src="images/imagen_2.jpg" class="d-block h-100 w-100" alt="...">
-                        <div class="carousel-caption h-100 d-none d-md-block">
+                        <div class="carousel-caption h-100 d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute h-100 w-100">
                                 <h2> <span class="azul">Un enfoque personalizado</span> <span class="magenta">de atención</span> </h5>
                             </div>
@@ -51,7 +51,7 @@ $page = "Inicio" ?>
                     </div>
                     <div class="carousel-item h-100">
                         <img style="object-fit:cover" src="images/imagen_21.jpg" class="d-block h-100 w-100" alt="...">
-                        <div class="carousel-caption h-100 d-none d-md-block">
+                        <div class="carousel-caption h-100 d-md-block">
                             <div class="d-flex align-items-center justify-content-center position-absolute h-100 w-100">
                                 <h2> <span class="azul">La mejor experiencia</span> <span class="magenta">a tu servicio</span> </h2>
                             </div>
@@ -83,80 +83,80 @@ $page = "Inicio" ?>
                 <div class="col-12">
                     <div class="row ">
 
-                    <div class="col-3 form-group">
-                        <input placeholder="Código" type="number" class="form-control" id="codigo_buscar" aria-describedby="emailHelp">
-                    </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                            <input placeholder="Código" type="number" class="form-control" id="codigo_buscar" aria-describedby="emailHelp">
+                        </div>
 
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="tipo_inmueble_buscar">
-                            <option selected default> Tipo de Inmueble </option>
-                        </select>
-                    </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                            <select class="form-control" id="tipo_inmueble_buscar">
+                                <option selected default> Tipo de Inmueble </option>
+                            </select>
+                        </div>
 
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="tipo_gestion_buscar">
-                            <option selected default> Tipo de Gestión </option>
-                        </select>
-                    </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                            <select class="form-control" id="tipo_gestion_buscar">
+                                <option selected default> Tipo de Gestión </option>
+                            </select>
+                        </div>
 
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="ciudad_buscar">
-                            <option selected default> Ciudad </option>
-                        </select>
-                    </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                            <select class="form-control" id="ciudad_buscar">
+                                <option selected default> Ciudad </option>
+                            </select>
+                        </div>
 
-                    <div class="col-3 form-group">
-                        <select class="form-control" id="barrio_buscar">
-                            <option selected default> Barrio </option>
-                        </select>
-                    </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                            <select class="form-control" id="barrio_buscar">
+                                <option selected default> Barrio </option>
+                            </select>
+                        </div>
 
-                    <div class="col-3 form-group">
-                        <input placeholder="Baños" type="number" class="form-control" id="banios_buscar" aria-describedby="emailHelp">
-                    </div>
+                        <div class="col-6 col-lg-3 col-xl-3 form-group">
+                            <input placeholder="Baños" type="number" class="form-control" id="banios_buscar" aria-describedby="emailHelp">
+                        </div>
 
-                    <div class="col-3 form-group">
-                        <input placeholder="Alcobas" type="number" class="form-control" id="alcobas_buscar" aria-describedby="emailHelp">
-                    </div>
+                        <div class="col-6 col-lg-3 col-xl-3 form-group">
+                            <input placeholder="Alcobas" type="number" class="form-control" id="alcobas_buscar" aria-describedby="emailHelp">
+                        </div>
 
-                    <div class="col-3 form-group">
-                        <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
-                    </div>
+                        <div class="col-6 col-lg-3 col-xl-3 form-group">
+                            <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
+                        </div>
 
 
-                    <div class="col-3 form-group">
-                        <!-- <p> Precio: </p>
+                        <div class="col-6 col-lg-3 col-xl-3 form-group">
+                            <!-- <p> Precio: </p>
                             <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
 
-                        <select id="price" class="form-control">
-                            <option value="0"> Precio </option>
-                            <option value="1"> $500.000 a $1.000.000</option>
-                            <option value="2"> $1.000.000 a $5.000.000 </option>
-                            <option value="3"> $5.000.000 a $10.000.000</option>
-                            <option value="4"> $10.000.000 a $50.000.000</option>
-                            <option value="5"> $50.000.000 a $100.000.000</option>
-                            <option value="6"> $100.000.000 y más...</option>
-                        </select>
+                            <select id="price" class="form-control">
+                                <option value="0"> Precio </option>
+                                <option value="1"> $500.000 a $1.000.000</option>
+                                <option value="2"> $1.000.000 a $5.000.000 </option>
+                                <option value="3"> $5.000.000 a $10.000.000</option>
+                                <option value="4"> $10.000.000 a $50.000.000</option>
+                                <option value="5"> $50.000.000 a $100.000.000</option>
+                                <option value="6"> $100.000.000 y más...</option>
+                            </select>
 
-                    </div>
+                        </div>
 
-                    <div class="col-3">
-                        <div class="wrapper">
-                            <div class="range-slider">
-                                <input type="text" class="js-range-slider" value="" />
-                            </div>
-                            <div class="extra-controls form-inline">
-                                <div class="form-group" style="display:none;">
-                                    <input type="text" class="js-input-from form-control" id="area_minima_buscar" value="0" aria-describedby="emailHelp" />
-                                    <input type="text" class="js-input-to form-control" id="area_maxima_buscar" value="0" aria-describedby="emailHelp" />
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                            <div class="wrapper">
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                                <div class="extra-controls form-inline">
+                                    <div class="form-group" style="display:none;">
+                                        <input type="text" class="js-input-from form-control" id="area_minima_buscar" value="0" aria-describedby="emailHelp" />
+                                        <input type="text" class="js-input-to form-control" id="area_maxima_buscar" value="0" aria-describedby="emailHelp" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-6 h-100 m-auto d-flex align-items center justify-content-center">
-                        <button type="button" id="buscar" class="col-6 btn boton_footer"> Buscar </button>
-                    </div>
+                        <div class="mb-2 mb-xl-0 mb-lg-0 col-12 col-md-6 col-lg-3 col-xl-3 h-100 mx-auto d-flex align-items center justify-content-center">
+                            <button type="button" id="buscar" class="col-12 btn boton_buscador"> Buscar </button>
+                        </div>
 
 
 
@@ -183,10 +183,10 @@ $page = "Inicio" ?>
 
         <h2 class="text-center font-weight-bold mb-5">Servicios</h2>
 
-        <div class="d-flex">
+        <div class="d-flex flex-wrap">
 
             <!-- CARD -->
-            <div class="servicio col-4 d-flex align-items-center flex-column">
+            <div class="servicio col-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center flex-column">
 
                 <div class="d-flex align-items-center justify-content-center contenedor_icono">
                     <i class="icono <?php echo $iconos_servicios['arriendos'] ?>"> </i>
@@ -202,7 +202,7 @@ $page = "Inicio" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <div class="servicio col-4 d-flex align-items-center flex-column">
+            <div class="servicio col-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center flex-column">
 
                 <div class="d-flex align-items-center justify-content-center contenedor_icono">
                     <i class="icono <?php echo $iconos_servicios['ventas'] ?>"> </i>
@@ -218,7 +218,7 @@ $page = "Inicio" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <div class="servicio col-4 d-flex align-items-center flex-column">
+            <div class="servicio col-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center flex-column">
 
                 <div class="d-flex align-items-center justify-content-center contenedor_icono">
                     <i class="icono <?php echo $iconos_servicios['avaluos'] ?>"> </i>
@@ -249,10 +249,10 @@ $page = "Inicio" ?>
 
         <h2 class="blanco text-center font-weight-bold my-5 "> Nuestras <span class="azul"> Propiedades</span> <span class="magenta"> Destacadas </span> </h2>
 
-        <div class="blanco d-flex container align-items-center">
+        <div class="blanco d-flex flex-wrap container align-items-center">
 
             <!-- DESCRIPCIÓN -->
-            <div class="col-6 d-flex align-items-center justify-content-center flex-column">
+            <div class="d-none d-md-flex d-lg-flex d-xl-flex col-12 col-md-6 col-lg-6 col-xl-6 align-items-center justify-content-center flex-column">
                 <h5 class="font-weight-bold"> Encuentra aquí lo que estás buscando </h5>
                 <p class="mt-3"> Te presentamos nuestras propiedades destacadas en arriendo y en venta, si no
                     encuentras lo que estás buscando, te invitamos a conocer nuestra oferta total de inmuebles. </p>
@@ -260,9 +260,11 @@ $page = "Inicio" ?>
             </div>
             <!-- DESCRIPCIÓN -->
 
+            <h5 class="d-flex d-md-none d-lg-none d-xl-none text-center font-weight-bold"> Encuentra aquí lo que estás buscando </h5>
+
 
             <!-- CARDS -->
-            <div class="col-6">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
 
                 <div id="carrusel_destacadas" class="carousel slide" data-ride="carousel">
                     <div style="height:300px" class="carousel-inner">
@@ -290,6 +292,15 @@ $page = "Inicio" ?>
                 </div>
             </div>
             <!-- CARDS -->
+
+            <!-- DESCRIPCIÓN -->
+            <div class="d-flex d-md-none d-lg-none d-xl-none col-12 col-md-6 col-lg-6 col-xl-6 align-items-center justify-content-center flex-column">
+                
+                <p class="mt-3 text-justify"> Te presentamos nuestras propiedades destacadas en arriendo y en venta, si no
+                    encuentras lo que estás buscando, te invitamos a conocer nuestra oferta total de inmuebles. </p>
+                <a href="inmuebles.php" class="btn boton2 mt-3"> Todos los inmuebles </a>
+            </div>
+            <!-- DESCRIPCIÓN -->
 
         </div>
 
@@ -569,7 +580,7 @@ $page = "Inicio" ?>
             <h2 class="col-12 text-center mb-5 blanco font-weight-bold"> Bienvenido a <span class="azul"> Nova </span> <span class="magenta">Interactiva</span> </h2>
 
             <!-- CARD -->
-            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1" class="justify-content-between blanco col-4 d-flex flex-column align-items-center">
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1" class="justify-content-between blanco col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0 d-flex flex-column align-items-center">
 
                 <h4 class="font-weight-bold mb-2 blanco"> Propietarios </h2>
 
@@ -583,7 +594,7 @@ $page = "Inicio" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=2" class="justify-content-between blanco col-4 d-flex flex-column align-items-center">
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=2" class="justify-content-between blanco col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0 d-flex flex-column align-items-center">
 
                 <h4 class="font-weight-bold mb-2 blanco"> Arrendatarios </h2>
 
@@ -597,7 +608,7 @@ $page = "Inicio" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <a target="_blank" href="#" class="justify-content-between blanco col-4 d-flex flex-column align-items-center">
+            <a target="_blank" href="#" class="justify-content-between blanco col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0 d-flex flex-column align-items-center">
 
                 <h4 class="font-weight-bold mb-2 blanco"> Pagos PSE </h4>
 
@@ -627,7 +638,7 @@ $page = "Inicio" ?>
 
 
         <!-- CARD -->
-        <div class="col-4">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0">
             <div class="card">
 
                 <div class="imagen">
@@ -656,7 +667,7 @@ $page = "Inicio" ?>
         <!-- CARD -->
 
         <!-- CARD -->
-        <div class="col-4">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0">
             <div class="card">
 
                 <div class="imagen">
@@ -686,7 +697,7 @@ $page = "Inicio" ?>
 
 
         <!-- CARD -->
-        <div class="col-4">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0">
             <div class="card">
 
                 <div class="imagen">
@@ -746,6 +757,14 @@ $page = "Inicio" ?>
     <script src="conexion_api/validadores.js"></script>
     <script src="conexion_api/buscador.js"></script>
     <script src="conexion_api/token_api.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            if (screen.width > 768) {
+                $('#icono_modal_direccion').removeAttr('data-target');
+            }
+        });
+    </script>
 
 
 
