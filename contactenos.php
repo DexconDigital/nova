@@ -40,16 +40,16 @@ $page = "Contáctanos" ?>
         <div class="container rounded py-5">
 
             <!-- IMAGEN E INFORMACIÓN DE CONTACTO -->
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="d-flex flex-wrap align-items-center justify-content-center">
 
                 <!-- IMAGEN -->
-                <div class="imagen">
+                <div class="mb-3 mb-md-0 mb-lg-0 mb-xl-0 col-12 col-md-auto col-lg-auto col-xl-auto imagen d-flex align-items-center justify-content-center">
                     <img class="w-100 h-100" src="images/logo.png" alt="">
                 </div>
                 <!-- IMAGEN -->
 
                 <!-- INFORMACION DE CONTACTO -->
-                <div class="col-5">
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5">
 
                     <div class="mb-2 align-items-baseline d-flex">
                         <i class="mr-2 <?php echo $datos_contacto['direccion']['icono'] ?>"></i>
@@ -87,18 +87,18 @@ $page = "Contáctanos" ?>
 
             <form action="" class="d-flex flex-wrap formulario mt-5">
 
-                <div class="mb-3 nombre col-6">
+                <div class="mb-3 nombre col-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="text" placeholder="Nombre" class="form-control">
                 </div>
 
 
-                <div class="mb-3 mail col-6">
+                <div class="mb-3 mail col-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="mail" placeholder="Mail" class="form-control">
                 </div>
 
 
 
-                <div class="mb-3 telefono col-6">
+                <div class="mb-3 telefono col-12 col-md-6 col-lg-6 col-xl-6">
                     <input type="number" placeholder="Teléfono" class="form-control">
                 </div>
 
@@ -109,7 +109,7 @@ $page = "Contáctanos" ?>
                 </div>
 
                 <div class="d-flex align-items-baseline col-12 mb-4">
-                    <input type="checkbox" class="d-flex align-items-center justify-content-center mr-2"> Confimo que he leído, entendido y acepto la <a class="ml-1 color_a_contacto" href="archivos/tratamiento_datos.pdf" download="Politica de tratamiento de datos personales"> política de tratamiento de datos personales.</a>
+                    <input type="checkbox" class="d-flex align-items-center justify-content-center mr-2"> <p>Confirmo que he leído, entendido y acepto la <a class="ml-1 color_a_contacto" href="archivos/tratamiento_datos.pdf" download="Politica de tratamiento de datos personales"> política de tratamiento de datos personales.</a></p>
                 </div>
 
                 <div class="col-12 text-center">

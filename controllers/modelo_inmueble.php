@@ -91,7 +91,7 @@ function modelo_inmueble2($r)
 
 
 
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5">
             <div class="card">
 
                 <div class="imagen">
@@ -155,7 +155,7 @@ function modelo_inmueble2($r)
 
 
                     <!-- PRECIO -->
-                    <div class="d-flex align-items-center justify-content-center">
+                    <div class="precio d-flex align-items-center justify-content-center">
                         <p class="mr-2"> <span class="azul font-weight-bold">$</span> ';
                         if ($api['Gestion'] == 'Arriendo') {
                             echo $api['Canon'];
@@ -201,7 +201,7 @@ function modelo_inmueble_similare($r)
         echo '
 
 
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5">
             <div class="card">
 
                 <div class="imagen">
@@ -265,7 +265,7 @@ function modelo_inmueble_similare($r)
 
 
                     <!-- PRECIO -->
-                    <div class="d-flex align-items-center justify-content-center">
+                    <div class="precio d-flex align-items-center justify-content-center">
                         <p class="mr-2"> <span class="azul font-weight-bold">$</span> ';
                         if ($api['Gestion'] == 'Arriendo') {
                             echo $api['Canon'];
@@ -275,7 +275,7 @@ function modelo_inmueble_similare($r)
                             echo $api['Canon'] . '/ $' . $api['Venta'];
                         }
                         echo ' </p>
-                        <a href="#" class="my-2 btn boton2"> Ver Inmueble </a>
+                        <a href="detalle_inmueble.php?co=' . $codigo . '" class="my-2 btn boton2"> Ver Inmueble </a>
                     </div>
                     <!-- PRECIO -->
 

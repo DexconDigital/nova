@@ -1,11 +1,5 @@
 {
-    "name": "vendor/andres",
-    "authors": [
-        {
-            "name": "DexconDigital",
-            "email": "49962370+DexconDigital@users.noreply.github.com"
-        }
-    ],
+    "name": "vendor/kwigstone",
     "require": {
         "jasongrimes/paginator": "~1.0"
     }

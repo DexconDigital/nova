@@ -26,7 +26,7 @@ $page = "Solicitar Inmueble" ?>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
 
-            <h1 class="font-weight-bold"> CONSIGNAR INMUEBLE </h1>
+            <h1 class="text-center font-weight-bold"> CONSIGNAR INMUEBLE </h1>
 
         </div>
 
@@ -46,22 +46,22 @@ $page = "Solicitar Inmueble" ?>
 
             <div class="d-flex flex-wrap">
 
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Nombres<span class="rojo">*</span> </p>
                     <input type="text" class="form-control" required placeholder="Nombres*">
                 </div>
 
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Email<span class="rojo">*</span> </p>
                     <input type="mail" class="form-control" required placeholder="Email*">
                 </div>
 
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Apellidos<span class="rojo">*</span> </p>
                     <input type="text" class="form-control" required placeholder="Apellidos*">
                 </div>
 
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Teléfono<span class="rojo">*</span> </p>
                     <input type="number" class="form-control" required placeholder="Teléfono*">
                 </div>
@@ -80,7 +80,7 @@ $page = "Solicitar Inmueble" ?>
             <div class="d-flex flex-wrap">
 
                 <!-- TIPO DE INMUEBLE -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Tipo de Inmueble<span class="rojo">*</span> </p>
                     <select required name="" id="" class="form-control">
                         <option disabled selected> - Tipo de Inmueble -</option>
@@ -101,7 +101,7 @@ $page = "Solicitar Inmueble" ?>
                 <!-- TIPO DE INMUEBLE -->
 
                 <!-- DEPARTAMENTO -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
 
                     <p class="mb-2"> Departamento<span class="rojo">*</span> </p>
 
@@ -115,7 +115,7 @@ $page = "Solicitar Inmueble" ?>
                 <!-- DEPARTAMENTO -->
 
                 <!-- TIPO DE SERVICIO -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Tipo de Servicio<span class="rojo">*</span> </p>
 
                     <select required name="" id="" class="form-control">
@@ -129,7 +129,7 @@ $page = "Solicitar Inmueble" ?>
 
 
                 <!-- MUNICIPIO -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
 
                     <p class="mb-2"> Municipio<span class="rojo">*</span> </p>
 
@@ -143,7 +143,7 @@ $page = "Solicitar Inmueble" ?>
                 <!-- MUNICIPIO -->
 
                 <!-- VALOR DE ARRIENDO -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Valor de Arriendo </p>
                     <input type="number" class="form-control" placeholder="Valor de Arriendo">
                 </div>
@@ -151,7 +151,7 @@ $page = "Solicitar Inmueble" ?>
 
 
                 <!-- BARRIO -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
 
                     <p class="mb-2"> Barrio </p>
 
@@ -165,14 +165,14 @@ $page = "Solicitar Inmueble" ?>
                 <!-- BARRIO -->
 
                 <!-- VALOR DE VENTA -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Valor de Venta </p>
                     <input type="number" class="form-control" placeholder="Valor de Venta">
                 </div>
                 <!-- VALOR DE VENTA -->
 
                 <!-- DIRECCIÓN -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Dirección </p>
                     <input type="text" class="form-control" placeholder="Dirección">
                 </div>
@@ -180,14 +180,14 @@ $page = "Solicitar Inmueble" ?>
 
 
                 <!-- VALOR DE ARRIENDO (USD)-->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Valor de Arriendo (USD) </p>
                     <input type="number" class="form-control" placeholder="Valor de Arriendo">
                 </div>
                 <!-- VALOR DE ARRIENDO -->
 
                 <!-- ESTRATO -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
 
                     <p class="mb-2"> Estrato </p>
 
@@ -207,14 +207,14 @@ $page = "Solicitar Inmueble" ?>
 
 
                 <!-- VALOR DE VENTA -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Valor de Venta (USD) </p>
                     <input type="number" class="form-control" placeholder="Valor de Venta">
                 </div>
                 <!-- VALOR DE VENTA -->
 
                 <!-- AREA -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Área (M<sup class="rojo">2</sup>) </p>
                     <input type="number" class="form-control" placeholder="Área">
                 </div>
@@ -239,14 +239,14 @@ $page = "Solicitar Inmueble" ?>
                 <!-- ESTADO DEL INMUEBLE -->
 
                 <!-- CODIGO FINCARAIZ -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Código FincaRaiz </p>
                     <input type="number" class="form-control">
                 </div>
                 <!-- CODIGO FINCARAIZ -->
 
                 <!-- COLOR DE PARED -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Color de pared </p>
                     <select class="form-control" name="" id="">
                         <option value="0" disabled selected> Color de pared </option>
@@ -259,28 +259,28 @@ $page = "Solicitar Inmueble" ?>
                 <!-- COLOR DE PARED -->
 
                 <!-- NUMERO DE HABITACIONES -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> N° Habitaciones </p>
                     <input type="number" class="form-control">
                 </div>
                 <!-- NUMERO DE HABITACIONES -->
 
                 <!-- NUMERO DE BAÑOS -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> N° de Baños </p>
                     <input type="number" class="form-control">
                 </div>
                 <!-- NUMERO DE BAÑOS -->
 
                 <!-- NUMERO DE PISO -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> N° de Piso </p>
                     <input type="number" class="form-control">
                 </div>
                 <!-- NUMERO DE PISO -->
 
                 <!-- ANTIGUEDAD DEL INMUEBLE -->
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
                     <p class="mb-2"> Antigüedad del Inmueble </p>
                     <input type="number" placeholder="Años" class="form-control">
                 </div>
@@ -289,121 +289,121 @@ $page = "Solicitar Inmueble" ?>
                 <!-- CHECKBOX CON CARACTERISTICAS DEL INMUEBLE -->
                 <div class="col-12 form-group d-flex flex-wrap">
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Barra estilo americano </label>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Citófono </label>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Cuarto de servicio </label>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Instalación de gas </label>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Zona de lavandería </label>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Alarma </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Baño Auxiliar </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Cocina Integral </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Depósito/Bodega </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Patio </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Amoblado </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Calentador </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Cocina tipo Americano </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Estudio </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Piso en Baldosa/Mármol </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Balcón </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Chimenea </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Comedor auxiliar </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Hall de Alcobas </label>
                     </div>
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Sauna / Turco / Jacuzzi </label>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                         <input type="checkbox" name="" class="" id=""></input>
                         <label for=""> Aire Acondicionado </label>
                     </div>

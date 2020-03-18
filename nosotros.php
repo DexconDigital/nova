@@ -118,7 +118,7 @@ $page = "Nosotros" ?>
     <h2 class="text-center font-weight-bold mt-5"> Valores Corporativos </h2>
 
     <!-- VALORES -->
-    <section id="valores" class="container position-relative d-flex align-items-center justify-content-center">
+    <section id="valores" class="d-none d-lg-flex d-md-flex d-xl-flex container position-relative align-items-center justify-content-center">
 
 
 
@@ -191,14 +191,87 @@ $page = "Nosotros" ?>
     </section>
     <!-- VALORES -->
 
+    <!-- VALORES (RESPONSIVE)-->
+    <section id="valores2" class="container position-relative d-flex d-md-none d-lg-none d-xl-none  align-items-center justify-content-center">
+
+        <div class="position-relative circulo d-flex align-items-center justify-content-center flex-wrap">
+
+
+            <div class="after caja_icono1 col-12 position-relative d-flex align-items-center justify-content-center">
+
+                <h4 style="right:62%" class="position-absolute magenta"> Lealtad </h4>
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['lealtad'] ?>"></i>
+                </div>
+
+            </div>
+
+            <div class="after caja_icono2 col-12 position-relative d-flex align-items-center justify-content-center">
+
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['respeto'] ?>"></i>
+                </div>
+
+                <h4 style="left:62%" class="position-absolute magenta"> Respeto </h4>
+            </div>
+
+
+            <div class="after caja_icono3 col-12 position-relative d-flex flex-column align-items-center justify-content-center">
+
+                <h4 style="right:62%" class="position-absolute magenta mb-2"> Honestidad </h4>
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['honestidad'] ?>"></i>
+                </div>
+
+            </div>
+
+
+            <div class="after caja_icono4 col-12 position-relative d-flex align-items-center justify-content-center">
+
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['responsabilidad'] ?>"></i>
+                </div>
+
+                <h4 style="left:62%" class="position-absolute magenta"> Responsabilidad </h4>
+            </div>
+
+
+            <div class="after caja_icono5 col-12 position-relative d-flex align-items-center justify-content-center">
+
+                <h4 style="right:62%" class="position-absolute magenta"> Pertenencia </h4>
+
+                <div class="d-flex align-items-center justify-content-center caja ">
+                    <i class="icono magenta <?php echo $iconos_nosotros['valores']['pertenencia'] ?>"></i>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div style="height:230px" class="position-absolute imagen">
+            <img class="w-100 h-100" src="images/edificio.png" alt="">
+        </div>
+
+    </section>
+    <!-- VALORES (RESPONSIVE)-->
+
 
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
-    <h5 id="texto_valores" class="container mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
+    <h5 id="texto_valores" class="d-none d-md-block d-lg-block d-xl-block container mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
+
+    <!-- TEXTO DESCRIPTIVO DE LOS VALORES (RESPONSIVE)-->
+    <h5 id="texto_valores2" class="text-justify d-block d-md-none d-lg-none d-xl-none container"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
+    <!-- TEXTO DESCRIPTIVO DE LOS VALORES (RESPONSIVE)-->
 
 
     <!-- ALIADOS -->
-    <section id="aliados" style="margin: 6rem 0" class="position-relative py-5">
+    <section id="aliados" style="margin: 6rem 0" class="d-none d-md-block d-lg-block d-xl-block position-relative py-5">
 
         <div class="position-absolute w-100 h-100 imagen"></div>
 
@@ -242,7 +315,6 @@ $page = "Nosotros" ?>
                         </div>
 
                     </div>
-
 
                     <div class="carousel-item h-100" data-interval="10000">
 
@@ -293,8 +365,104 @@ $page = "Nosotros" ?>
     </section>
     <!-- ALIADOS -->
 
+    <!-- ALIADOS (RESPONSIVE)-->
+    <section id="aliados2" style="margin: 6rem 0" class="d-block d-md-none d-lg-none d-xl-none position-relative py-5">
+
+        <div class="position-absolute w-100 h-100 imagen"></div>
+
+        <div class="position-absolute w-100 h-100 fondo_negro"></div>
+
+        <h2 class="blanco font-weight-bold text-center position-relative my-5"> Nuestros <span class="magenta">Aliados</span> </h2>
+
+        <div class="container position-relative">
+
+            <div id="carrusel_aliados2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner h-100">
+
+                    <div class="carousel-item h-100 active" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['0'] ?>" class="libertador h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['1'] ?>" class="bordes h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['2'] ?>" class="bordes h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['3'] ?>" class="bordes h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['4'] ?>" class="bordes h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['5'] ?>" class="bordes h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['6'] ?>" class="bordes h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item h-100" data-interval="10000">
+                        <div class=" col-10 m-auto">
+                            <div class="caja_imagen d-flex align-items-center justify-content-center p-0">
+                                <img src="<?php echo $logos_aliados['7'] ?>" class="bordes h-auto d-block" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <a class="btn boton2 izquierda_aliados" href="#carrusel_aliados2" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+
+                <a class="btn boton2 derecha_aliados" href="#carrusel_aliados2" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- ALIADOS (RESPONSIVE)-->
+
     <!-- BANNER DE ESTADISTICAS -->
-    <section id="banner_estadisticas" class="position-relative py-5 mt-5">
+    <section id="banner_estadisticas" class="overflow-hidden position-relative py-5 mt-5">
 
         <!-- IMAGEN DE FONDO -->
         <div class="position-absolute w-100 h-100 imagen"> </div>
@@ -305,17 +473,17 @@ $page = "Nosotros" ?>
         <!-- OPACIDAD DE LA IMAGEN -->
 
         <!-- ICONOS -->
-        <div id="contador" class="contenido container position-relative d-flex align-items-center justify-content-around w-100 h-100 blanco">
+        <div id="contador" class="contenido container position-relative d-flex flex-wrap align-items-center justify-content-around w-100 h-100 blanco">
 
 
             <!-- ICONO 1 -->
-            <div id="animacion1" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion1" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-propertys" class="icono font-weight-bold magenta"> </p>
                 </div>
 
-                <p class="mb-2 negro"> Total de Inmuebles </p>
+                <p class="mb-2 negro text-center text-md-start text-lg-start text-xl-start"> Total de Inmuebles </p>
 
 
             </div>
@@ -323,14 +491,14 @@ $page = "Nosotros" ?>
 
 
             <!-- ICONO 2 -->
-            <div id="animacion2" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion2" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-rent" class="icono font-weight-bold magenta"> </p>
 
                 </div>
 
-                <p class="mb-2 negro"> Total en Arriendo </p>
+                <p class="mb-2 negro text-center text-md-start text-lg-start text-xl-start"> Total en Arriendo </p>
 
 
             </div>
@@ -338,14 +506,14 @@ $page = "Nosotros" ?>
 
 
             <!-- ICONO 3 -->
-            <div id="animacion3" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion3" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-sale" class="icono font-weight-bold magenta"> </p>
 
                 </div>
 
-                <p class="mb-2 negro"> Total en Venta </p>
+                <p class="mb-2 negro text-center text-md-start text-lg-start text-xl-start"> Total en Venta </p>
 
 
             </div>
@@ -353,13 +521,13 @@ $page = "Nosotros" ?>
 
 
             <!-- ICONO 4 -->
-            <div id="animacion4" class="contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion4" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-sale-rent" class="icono font-weight-bold magenta"> </p>
                 </div>
 
-                <p class="mb-2 negro"> Total en Arriendo/Venta </p>
+                <p class="mb-2 negro text-center text-md-start text-lg-start text-xl-start"> Total en Arriendo/Venta </p>
 
             </div>
             <!-- ICONO 4 -->
@@ -391,8 +559,7 @@ $page = "Nosotros" ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
 
-    <script src=js/scroll_asesores.js> </script> 
-    <script src="js/banner_estadisticas.js"></script>
+    <script src=js/scroll_asesores.js> </script> <script src="js/banner_estadisticas.js"></script>
     <script src="js/countUp.min.js"></script>
     <script src="js/counter-propertys.js"></script>
     <script src="conexion_api/token_api.js"></script>

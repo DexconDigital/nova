@@ -38,10 +38,10 @@ $page = "Servicios" ?>
     <section id="servicios2" class="container mt-5">
 
 
-        <div class="d-flex">
+        <div class="d-flex flex-wrap">
 
             <!-- CARD -->
-            <div class="servicio col-4 d-flex align-items-center flex-column">
+            <div class="servicio col-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center flex-column">
 
                 <div class="d-flex align-items-center justify-content-center contenedor_icono">
                     <i class="icono <?php echo $iconos_servicios['arriendos'] ?>"> </i>
@@ -56,7 +56,7 @@ $page = "Servicios" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <div class="servicio col-4 d-flex align-items-center flex-column">
+            <div class="servicio col-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center flex-column">
 
                 <div class="d-flex align-items-center justify-content-center contenedor_icono">
                     <i class="icono <?php echo $iconos_servicios['ventas'] ?>"> </i>
@@ -71,7 +71,7 @@ $page = "Servicios" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <div class="servicio col-4 d-flex align-items-center flex-column">
+            <div class="servicio col-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-center flex-column">
 
                 <div class="d-flex align-items-center justify-content-center contenedor_icono">
                     <i class="icono <?php echo $iconos_servicios['avaluos'] ?>"> </i>
@@ -96,9 +96,9 @@ $page = "Servicios" ?>
         <!-- <div class="position-absolute w-100 h-100 imagen"></div> -->
         <div class="position-absolute w-100 h-100 fondo"></div>
 
-        <div class="position-relative contenido d-flex align-items-center justify-content-center">
-            <div class="mr-5"> <a href="solicitar_inmueble.php" class="btn boton_footer"> Solicitud de Inmueble </a></div>
-            <div> <a href="consignar_inmueble.php" class="btn boton_footer"> Consigna tu Inmueble </a></div>
+        <div class="position-relative contenido d-flex flex-wrap flex-md-row flex-lg-row flex-xl-row align-items-center justify-content-center justify-content-md-around justify-content-lg-around justify-content-xl-around">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-center justify-content-center justify-content-md-end justify-content-lg-end justify-content-xl-end"> <a href="solicitar_inmueble.php" class="btn boton_footer"> Solicitud de Inmueble </a></div>
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-center justify-content-center justify-content-md-start justify-content-lg-start justify-content-xl-start"> <a href="consignar_inmueble.php" class="btn boton_footer"> Consigna tu Inmueble </a></div>
         </div>
 
     </section>

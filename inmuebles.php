@@ -44,48 +44,48 @@ $page = "Inmuebles" ?>
             <div class="col-12">
                 <div class="row ">
 
-                    <div class="col-3 form-group">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
                         <input placeholder="Código" type="number" class="form-control" id="codigo_buscar" aria-describedby="emailHelp">
                     </div>
 
-                    <div class="col-3 form-group">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
                         <select class="form-control" id="tipo_inmueble_buscar">
                             <option selected default> Tipo de Inmueble </option>
                         </select>
                     </div>
 
-                    <div class="col-3 form-group">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
                         <select class="form-control" id="tipo_gestion_buscar">
                             <option selected default> Tipo de Gestión </option>
                         </select>
                     </div>
 
-                    <div class="col-3 form-group">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
                         <select class="form-control" id="ciudad_buscar">
                             <option selected default> Ciudad </option>
                         </select>
                     </div>
 
-                    <div class="col-3 form-group">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
                         <select class="form-control" id="barrio_buscar">
                             <option selected default> Barrio </option>
                         </select>
                     </div>
 
-                    <div class="col-3 form-group">
+                    <div class="col-6 col-lg-3 col-xl-3 form-group">
                         <input placeholder="Baños" type="number" class="form-control" id="banios_buscar" aria-describedby="emailHelp">
                     </div>
 
-                    <div class="col-3 form-group">
+                    <div class="col-6 col-lg-3 col-xl-3 form-group">
                         <input placeholder="Alcobas" type="number" class="form-control" id="alcobas_buscar" aria-describedby="emailHelp">
                     </div>
 
-                    <div class="col-3 form-group">
+                    <div class="col-6 col-lg-3 col-xl-3 form-group">
                         <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
                     </div>
 
 
-                    <div class="col-3 form-group">
+                    <div class="col-6 col-lg-3 col-xl-3 form-group">
                         <!-- <p> Precio: </p>
                             <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
 
@@ -101,7 +101,7 @@ $page = "Inmuebles" ?>
 
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                         <div class="wrapper">
                             <div class="range-slider">
                                 <input type="text" class="js-range-slider" value="" />
@@ -115,12 +115,9 @@ $page = "Inmuebles" ?>
                         </div>
                     </div>
 
-                    <div class="col-6 h-100 m-auto d-flex align-items center justify-content-center">
-                        <button type="button" id="buscar" class="col-6 btn boton_footer"> Buscar </button>
+                    <div class="mb-2 mb-xl-0 mb-lg-0 col-12 col-md-6 col-lg-3 col-xl-3 h-100 mx-auto d-flex align-items center justify-content-center">
+                        <button type="button" id="buscar" class="col-12 btn boton_buscador"> Buscar </button>
                     </div>
-
-
-
 
                 </div>
             </div>

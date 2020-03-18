@@ -225,6 +225,12 @@ header {
 
 }
 
+@media (max-width:425px){
+    #buscador {
+        position: inherit;
+    }
+}
+
 #servicios {
 
     .servicio {

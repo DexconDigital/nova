@@ -56,7 +56,7 @@ $page = "Detalle de Inmueble" ?>
 
         <div class="blanco w-100 h-100 d-flex align-items-center justify-content-center contenido position-relative">
 
-            <h1 class="font-weight-bold"> Detalle de Inmueble </h1>
+            <h1 class="text-center font-weight-bold"> Detalle de Inmueble </h1>
 
         </div>
 
@@ -65,58 +65,60 @@ $page = "Detalle de Inmueble" ?>
 
     <h2 class="text-center font-weight-bold mt-5"> Conoce en Detalle el Inmueble </h2>
 
-    <!-- PRECIO Y CARACTERISTICAS PRINCIPALES INMUEBLE -->
-    <div id="caracteristicas_principales" class="container align-items-stretch d-flex mt-5 mb-n3">
 
-        <div class="precio p-3">
-            <p class="blanco"> <?php if ($r['Gestion'] == 'Arriendo') {
-                                    echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
-                                } else if ($r['Gestion'] == 'Venta') {
-                                    echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
-                                } else {
-                                    echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
-                                }
-                                ?> </p>
+
+    <!-- PRECIO Y CARACTERISTICAS PRINCIPALES INMUEBLE (RESPONSIVE)-->
+    <div id="caracteristicas_principales" class="container align-items-stretch d-flex flex-wrap mt-5 mb-n3">
+
+        <div class="order-md-1 col-6 precio py-3 justify-content-center">
+            <p class="text-center blanco"> <?php if ($r['Gestion'] == 'Arriendo') {
+                                                echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
+                                            } else if ($r['Gestion'] == 'Venta') {
+                                                echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
+                                            } else {
+                                                echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
+                                            }
+                                            ?> </p>
         </div>
 
-        <div class="border-top d-flex align-items-center">
+        <div class="order-md-2 col-6 border-top border-right d-flex align-items-center justify-content-center">
             <p class="text-muted px-2"> Código: <?php echo $co; ?> </p>
         </div>
 
-        <div class="border-left px-2 border-top d-flex align-items-center">
+        <div class="order-md-3 col-6 col-md-3 py-3 border-left px-2 border-top d-flex align-items-center justify-content-center">
             <i class="azul mr-2 fas fa-chart-area"></i>
             <p> <?php echo $area_construida; ?> m<sup>2</sup> </p>
         </div>
 
-        <div class="border-left px-2 border-top d-flex align-items-center">
+        <div class="order-md-4 col-3 col-md-2 border-left border-right px-2 border-top d-flex align-items-center justify-content-center">
             <i class="azul mr-2 fas fa-bed"></i>
             <p> <?php echo $alcobas; ?> </p>
         </div>
 
-        <div class="border-left px-2 border-top d-flex align-items-center">
+        <div class="order-md-5 col-3 col-md-2 py-3 border-right px-2 border-top d-flex align-items-center justify-content-center">
             <i class="azul mr-2 fas fa-bath"></i>
             <p> <?php echo $banios; ?> </p>
         </div>
 
-        <div class="border-left px-2 border-top d-flex align-items-center">
+        <div class="order-md-6 col-3 col-md-2 py-3 border-left px-2 border-top d-flex align-items-center justify-content-center">
             <i class="azul mr-2 fas fa-warehouse"></i>
             <p> <?php echo $garaje; ?> </p>
         </div>
 
-        <div class="border-left px-2 border-top d-flex align-items-center">
+        <div class="order-md-9 col-3 py-3 border-right col-md-6 border-left px-2 border-top d-flex align-items-center justify-content-center">
             <i class="azul mr-2 fas fa-user-tie"></i>
-            <p> <?php if ($administracion != "") {
-                    echo 'Administración: $' . $administracion . '</li>';
-                } ?>
+            <p class="d-flex"> <?php if ($administracion != "") {
+                                    echo '<span class="d-none d-md-block">Administración: </span>$' . $administracion . '</li>';
+                                } ?>
             </p>
         </div>
 
-        <div class="border-left px-2 border-top d-flex align-items-center">
+        <div class="order-md-8 col-3 col-md-6 border-left px-2 border-top d-flex align-items-center justify-content-center">
             <i class="azul mr-2 far fa-clock"></i>
-            <p> <?php echo $edad_inmueble; ?> Años </p>
+            <p class="d-flex"> <?php echo $edad_inmueble; ?> <span class="d-none d-md-block d-lg-block d-xl-block">&nbspAños </span> </p>
         </div>
 
-        <div class="border-left px-2 border-right border-top d-flex align-items-center">
+        <div class="col-3 order-md-7 border-left px-2 border-right border-top d-flex align-items-center justify-content-center">
             <i class="azul mr-2 fas fa-chart-line"></i>
             <p> <?php echo $estrato; ?> </p>
         </div>
@@ -124,7 +126,7 @@ $page = "Detalle de Inmueble" ?>
 
 
     </div>
-    <!-- PRECIO Y CARACTERISTICAS PRINCIPALES INMUEBLE -->
+    <!-- PRECIO Y CARACTERISTICAS PRINCIPALES INMUEBLE (RESPONSIVE)-->
 
 
     <!-- CARRUSEL DE IMAGENES -->
@@ -176,13 +178,14 @@ $page = "Detalle de Inmueble" ?>
 
         <div class="col-12">
 
-            <div class="mb-3 d-flex justify-content-end align-items-center">
+            <div class="mb-3 d-flex flex-wrap flex-md-row flex-lg-row flex-xl-row justify-content-end align-items-center">
 
-                <div class="mr-3">
+
+                <div class="p-0 col-12 order-2 order-md-1 order-lg-1 order-xl-1 col-md-auto col-lg-auto mr-md-3 mr-lg-3 mr-xl-3 col-xl-auto">
                     <a target="_blank" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=978-<?php echo $co ?>" class="btn boton1"> Descargar ficha </a>
                 </div>
 
-                <div class="d-flex align-items-center">
+                <div class="p-0 col-12 order-1  mb-3 mb-md-0 mb-xl-0 mb-lg-0 order-md-2 order-lg-2 order-xl-2 col-md-auto col-lg-auto col-xl-auto d-flex align-items-center">
 
                     <p> Comparte en: </p>
 
@@ -212,11 +215,11 @@ $page = "Detalle de Inmueble" ?>
 
 
             <!-- BOTONES CON CARACTERISTICAS DE INMUEBLE (MOBIL)-->
-            <!-- <div id="accordion">
+            <div id="accordion" class="d-block d-md-none d-lg-none d-xl-none">
                 <div class="container p-0">
                     <div class="col-12">
 
-                        --------BOTONES--------
+                        <!-- --------BOTONES-------- -->
 
                         <div class="row">
 
@@ -228,27 +231,39 @@ $page = "Detalle de Inmueble" ?>
 
                             <div class="col-12 p-0 mb-1">
                                 <button class="btn b2 boton1 col-12 collapsed" type="button" data-toggle="collapse" data-target="#dos" aria-expanded="true" aria-controls="dos">
-                                    Características Internas
+                                    Características
                                 </button>
                             </div>
 
                             <div class="col-12 p-0 mb-1">
                                 <button class="btn b3 boton1 col-12 collapsed" type="button" data-toggle="collapse" data-target="#tres" aria-expanded="true" aria-controls="dos">
-                                    Características Externas
+                                    Características Internas
                                 </button>
                             </div>
 
                             <div class="col-12 p-0 mb-1">
                                 <button class="btn b4 boton1 col-12 collapsed" type="button" data-toggle="collapse" data-target="#cuatro" aria-expanded="true" aria-controls="dos">
+                                    Características Externas
+                                </button>
+                            </div>
+
+                            <div class="col-12 p-0 mb-1">
+                                <button class="btn b5 boton1 col-12 collapsed" type="button" data-toggle="collapse" data-target="#cinco" aria-expanded="true" aria-controls="dos">
                                     Características Alrededores
+                                </button>
+                            </div>
+
+                            <div class="col-12 p-0 mb-1">
+                                <button class="btn b6 boton1 col-12 collapsed" type="button" data-toggle="collapse" data-target="#seis" aria-expanded="true" aria-controls="dos">
+                                    Vídeo
                                 </button>
                             </div>
 
                         </div>
 
-                        --------BOTONES--------
+                        <!-- --------BOTONES-------- -->
 
-                        --------INFORMACION BOTONES--------
+                        <!-- --------INFORMACION BOTONES-------- -->
 
 
                         <div class="col-12 p-0">
@@ -256,7 +271,8 @@ $page = "Detalle de Inmueble" ?>
                             <div class="">
                                 <div id="uno" class="collapse show" aria-labelledby="uno" data-parent="#accordion">
 
-                                    <p class="text-justify"> *Descripción del inmueble* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae autem quos ipsam necessitatibus minus doloremque perferendis cupiditate porro id aspernatur. </p>
+                                    <h4 class="text-center font-weight-bold my-3"> Descripción </h4>
+                                    <p class="text-justify"> <?php echo $descripcion ?> </p>
 
                                 </div>
                             </div>
@@ -265,7 +281,20 @@ $page = "Detalle de Inmueble" ?>
                         <div class="col-12 p-0">
                             <div id="dos" class="collapse" aria-labelledby="dos" data-parent="#accordion">
 
-                                Características Internas
+                                <h4 class="text-center property-single-detail-title my-3"> <strong>Características</strong></h4>
+                                <ul class="d-flex flex-column align-items-start p-0">
+                                    <li>Código: <?php echo $co; ?></li>
+                                    <li>Alcobas: <?php echo $alcobas; ?></li>
+                                    <li>Baños: <?php echo $banios; ?></li>
+                                    <li>Área Construida: <?php echo $area_construida; ?>m<sup>2<sup></li>
+                                    <li>Área Privada: <?php echo $area_privada; ?>m<sup>2<sup></li>
+                                    <li>Garaje: <?php echo $garaje; ?></li>
+                                    <li>Estrato: <?php echo $estrato; ?></li>
+                                    <li>Edad Inmueble: <?php echo $edad_inmueble; ?> años</li>
+                                    <?php if ($administracion != "") {
+                                        echo '<li>Administración: $' . $administracion . '</li>';
+                                    } ?>
+                                </ul>
 
                             </div>
                         </div>
@@ -273,15 +302,86 @@ $page = "Detalle de Inmueble" ?>
                         <div class="col-12 p-0">
                             <div id="tres" class="collapse" aria-labelledby="dos" data-parent="#accordion">
 
-                                Características Externas
-
+                                <?php
+                                if (count($r['caracteristicasInternas']) > 0) {
+                                    echo
+                                        '<div class="text-center my-3 col-md-12" style="margin-bottom: 12px;">
+                            <h4 class="property-single-detail-title"><strong>Características Internas</strong></h4>
+                                <ul class="my-3 d-flex flex-column align-items-start p-0">';
+                                    for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
+                        </div>
+                        ';
+                                }
+                                ?>
                             </div>
                         </div>
 
                         <div class="col-12 p-0">
                             <div id="cuatro" class="collapse" aria-labelledby="dos" data-parent="#accordion">
 
-                                Características Alrededores
+                                <?php
+                                if (count($r['caracteristicasExternas']) > 0) {
+                                    echo
+                                        '<div class="text-center my-3 col-md-12" style="margin-bottom: 12px;">
+                            <h4 class="property-single-detail-title"><strong>Características Externas</strong></h4>
+                            <ul class="my-3 d-flex flex-column align-items-start p-0">';
+                                    for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
+                            </div>
+                                ';
+                                }
+                                ?>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 p-0">
+                            <div id="cinco" class="collapse" aria-labelledby="dos" data-parent="#accordion">
+
+                                <?php
+                                if (count($r['caracteristicasAlrededores']) > 0) {
+                                    echo
+                                        '<div class="text-center mt-3 col-md-12" style="margin-bottom: 12px;">
+                            <h4 class="my-3 property-single-detail-title"><strong>Características de los alrededores</strong></h4>
+                                <ul class="d-flex flex-column align-items-start p-0">';
+                                    for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
+                            </div>
+                            ';
+                                }
+                                ?>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 p-0">
+                            <div id="seis" class="collapse" aria-labelledby="dos" data-parent="#accordion">
+
+                                <?php if ($r['video'] != "") {
+                                    echo
+                                        ' <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative"> Video </h5>
+                                    <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Video</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                        <iframe class="w-100" height="409" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                ';
+                                } ?>
 
                             </div>
                         </div>
@@ -290,16 +390,16 @@ $page = "Detalle de Inmueble" ?>
 
                     </div>
 
-                    --------INFORMACION BOTONES--------
+                    <!-- --------INFORMACION BOTONES-------- -->
 
                 </div>
 
 
-            </div> -->
+            </div>
             <!-- BOTONES CON CARACTERISTICAS DE INMUEBLE(MOBIL) -->
 
             <!-- BOTONES CON CARACTERISTICAS DE INMUEBLE -->
-            <div id="accordion" class="d-flex">
+            <div id="accordion" class="d-none d-md-flex d-lg-flex d-xl-flex">
 
 
                 <!----------BOTONES---------->
@@ -500,11 +600,11 @@ $page = "Detalle de Inmueble" ?>
 
 
     <!-- FORMULARIO Y MAPA -->
-    <div id="formulario_asesor" class="container d-flex mt-5">
+    <div id="formulario_asesor" class="container d-flex flex-wrap mt-5">
 
 
         <!-- MAPA -->
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-5 mb-lg-0 mb-xl-0">
             <h4 class="mb-2 property-single-detail-title"><strong>Mapa de Ubicación</strong></h4>
             <div class="card mapa_tamaño">
                 <div class="">
@@ -515,7 +615,7 @@ $page = "Detalle de Inmueble" ?>
         <!-- MAPA -->
 
 
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
 
             <h3 class="mb-2"> Contácto con el Asesor </h3>
 
@@ -561,7 +661,7 @@ $page = "Detalle de Inmueble" ?>
 
     <h2 class="text-center font-weight-bold my-5"> Propiedades Similares </h2>
 
-    <section id="inmuebles" class="container mt-5 d-flex flex-wrap align-items-stretch">
+    <section id="inmuebles" class="container mt-5 d-flex flex-wrap justify-content-center align-items-stretch">
 
 
         <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>

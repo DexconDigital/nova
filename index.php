@@ -12,6 +12,8 @@ $page = "Inicio" ?>
     <?php include 'layout/archivos_header.php' ?>
     <link rel="stylesheet" type="text/css" href="css/rangos.css">
 
+
+
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
 </head>
 
@@ -75,8 +77,11 @@ $page = "Inicio" ?>
     </section>
     <!-- CARRUSEL -->
 
+
+
+
     <!-- BUSCADOR -->
-    <section class="position-relative">
+    <section class="d-none d-md-block buscador1 d-lg-block d-xl-block position-relative">
         <section id="buscador" class="overflow-hidden">
             <div class="pt-3 pb-4 container position-relative rounded">
 
@@ -169,9 +174,129 @@ $page = "Inicio" ?>
     </section>
     <!-- BUSCADOR -->
 
+    <!-- BUSCADOR (RESPONSIVE)-->
+    <section class="buscador2 d-block d-md-none d-lg-none d-xl-none">
+
+        <div class="container mt-5"><button class="boton1 btn col-12" data-toggle="modal" data-target="#modal_buscador"> Haz click aquí para buscar inmuebles </button></div>
+
+        <div class="modal fade" id="modal_buscador" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Buscador de inmuebles</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- BUSCADOR -->
+                        <section class="position-relative">
+                            <section id="buscador" class="overflow-hidden">
+                                <div class="pt-3 pb-4 container position-relative rounded">
+
+                                    <div class="col-12">
+                                        <div class="row ">
+
+                                            <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                                                <input placeholder="Código" type="number" class="form-control" id="codigo_buscar" aria-describedby="emailHelp">
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                                                <select class="form-control" id="tipo_inmueble_buscar">
+                                                    <option selected default> Tipo de Inmueble </option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                                                <select class="form-control" id="tipo_gestion_buscar">
+                                                    <option selected default> Tipo de Gestión </option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                                                <select class="form-control" id="ciudad_buscar">
+                                                    <option selected default> Ciudad </option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
+                                                <select class="form-control" id="barrio_buscar">
+                                                    <option selected default> Barrio </option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-6 col-lg-3 col-xl-3 form-group">
+                                                <input placeholder="Baños" type="number" class="form-control" id="banios_buscar" aria-describedby="emailHelp">
+                                            </div>
+
+                                            <div class="col-6 col-lg-3 col-xl-3 form-group">
+                                                <input placeholder="Alcobas" type="number" class="form-control" id="alcobas_buscar" aria-describedby="emailHelp">
+                                            </div>
+
+                                            <div class="col-6 col-lg-3 col-xl-3 form-group">
+                                                <input placeholder="Garajes " type="number" class="form-control" id="garajes_buscar" aria-describedby="emailHelp">
+                                            </div>
+
+
+                                            <div class="col-6 col-lg-3 col-xl-3 form-group">
+                                                <!-- <p> Precio: </p>
+            <input type="range" min="1" max="100" value="50" class="rounded slider" id="myRange"> -->
+
+                                                <select id="price" class="form-control">
+                                                    <option value="0"> Precio </option>
+                                                    <option value="1"> $500.000 a $1.000.000</option>
+                                                    <option value="2"> $1.000.000 a $5.000.000 </option>
+                                                    <option value="3"> $5.000.000 a $10.000.000</option>
+                                                    <option value="4"> $10.000.000 a $50.000.000</option>
+                                                    <option value="5"> $50.000.000 a $100.000.000</option>
+                                                    <option value="6"> $100.000.000 y más...</option>
+                                                </select>
+
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                                                <div class="wrapper">
+                                                    <div class="range-slider">
+                                                        <input type="text" class="js-range-slider" value="" />
+                                                    </div>
+                                                    <div class="extra-controls form-inline">
+                                                        <div class="form-group" style="display:none;">
+                                                            <input type="text" class="js-input-from form-control" id="area_minima_buscar" value="0" aria-describedby="emailHelp" />
+                                                            <input type="text" class="js-input-to form-control" id="area_maxima_buscar" value="0" aria-describedby="emailHelp" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-2 mb-xl-0 mb-lg-0 col-12 col-md-6 col-lg-3 col-xl-3 h-100 mx-auto d-flex align-items center justify-content-center">
+                                                <button type="button" id="buscar" class="col-12 btn boton_buscador"> Buscar </button>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </section>
+                        <!-- BUSCADOR -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- BUSCADOR (RESPONSIVE)-->
+
+
 
     <!-- BOTON PARA MOSTRAR BUSCADOR -->
-    <div id="boton_minimizar_maximizar" class="d-flex align-items-center justify-content-center position-relative text-center">
+    <div id="boton_minimizar_maximizar" class="d-none d-md-flex d-lg-flex d-xl-flex align-items-center justify-content-center position-relative text-center">
         <i class="icono azul fas fa-times"></i>
     </div>
     <!-- BOTON PARA MOSTRAR BUSCADOR -->
@@ -295,7 +420,7 @@ $page = "Inicio" ?>
 
             <!-- DESCRIPCIÓN -->
             <div class="d-flex d-md-none d-lg-none d-xl-none col-12 col-md-6 col-lg-6 col-xl-6 align-items-center justify-content-center flex-column">
-                
+
                 <p class="mt-3 text-justify"> Te presentamos nuestras propiedades destacadas en arriendo y en venta, si no
                     encuentras lo que estás buscando, te invitamos a conocer nuestra oferta total de inmuebles. </p>
                 <a href="inmuebles.php" class="btn boton2 mt-3"> Todos los inmuebles </a>
@@ -757,6 +882,7 @@ $page = "Inicio" ?>
     <script src="conexion_api/validadores.js"></script>
     <script src="conexion_api/buscador.js"></script>
     <script src="conexion_api/token_api.js"></script>
+    <script src="js/alternar_buscadores.js"></script>
     <script>
         $(document).ready(function() {
 

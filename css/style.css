@@ -16488,6 +16488,11 @@ header .logopse:hover {
   transition: all 250ms;
 }
 
+@media (max-width: 425px) {
+  #buscador {
+    position: inherit;
+  }
+}
 #servicios .servicio:hover .contenedor_icono {
   border-color: white;
   background-color: #1FACE1;
@@ -17305,9 +17310,187 @@ footer #copy a:hover {
   }
 }
 
+#valores2 {
+  opacity: 0;
+  margin-top: 3rem;
+}
+#valores2 .imagen {
+  height: 230px;
+  bottom: -236px;
+}
+#valores2 .after::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 55px;
+  border: 1px dashed gray;
+}
+#valores2 h4 {
+  font-size: 15px;
+}
+#valores2 .circulo {
+  height: 500px;
+}
+#valores2 .circulo .caja_icono1 .caja {
+  width: 55px;
+  height: 55px;
+  z-index: 500;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 3px solid #1FACE1;
+  background-color: white;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono1 .caja .icono {
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono1 .caja:hover {
+  background-color: #1FACE1;
+  border: 3px solid white;
+  -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray;
+}
+#valores2 .circulo .caja_icono1 .caja:hover .icono {
+  color: white;
+}
+#valores2 .circulo .caja_icono2 .caja {
+  width: 55px;
+  height: 55px;
+  z-index: 500;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 3px solid #1FACE1;
+  background-color: white;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono2 .caja .icono {
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono2 .caja:hover {
+  background-color: #1FACE1;
+  border: 3px solid white;
+  -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray;
+}
+#valores2 .circulo .caja_icono2 .caja:hover .icono {
+  color: white;
+}
+#valores2 .circulo .caja_icono3 .caja {
+  width: 55px;
+  height: 55px;
+  z-index: 500;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 3px solid #1FACE1;
+  background-color: white;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono3 .caja .icono {
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono3 .caja:hover {
+  background-color: #1FACE1;
+  border: 3px solid white;
+  -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray;
+}
+#valores2 .circulo .caja_icono3 .caja:hover .icono {
+  color: white;
+}
+#valores2 .circulo .caja_icono4 .caja {
+  width: 55px;
+  height: 55px;
+  z-index: 500;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 3px solid #1FACE1;
+  background-color: white;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono4 .caja .icono {
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono4 .caja:hover {
+  background-color: #1FACE1;
+  border: 3px solid white;
+  -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray;
+}
+#valores2 .circulo .caja_icono4 .caja:hover .icono {
+  color: white;
+}
+#valores2 .circulo .caja_icono5 .caja {
+  width: 55px;
+  height: 55px;
+  z-index: 500;
+  font-size: px;
+  border-radius: 50%;
+  border: 3px solid #1FACE1;
+  background-color: white;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono5 .caja .icono {
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
+}
+#valores2 .circulo .caja_icono5 .caja:hover {
+  background-color: #1FACE1;
+  border: 3px solid white;
+  -webkit-box-shadow: 0 0 8px 1px gray;
+          box-shadow: 0 0 8px 1px gray;
+}
+#valores2 .circulo .caja_icono5 .caja:hover .icono {
+  color: white;
+}
+@keyframes animacion_valores {
+  from {
+    top: 650px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animacion_texto_valores {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
 #texto_valores {
   position: relative;
   opacity: 0;
+}
+
+#texto_valores2 {
+  position: relative;
+  opacity: 0;
+  margin-top: 17rem;
 }
 
 #aliados .imagen {
@@ -17344,6 +17527,58 @@ footer #copy a:hover {
 #aliados .derecha_aliados {
   position: absolute;
   right: -40px;
+  top: calc(50% - 19px);
+}
+
+#aliados2 .imagen {
+  width: 170px;
+  height: 127px;
+  background: url("../images/imagen_16.jpg") center center;
+  background-attachment: fixed;
+}
+#aliados2 .fondo_negro {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#aliados2 .carousel {
+  height: 200px;
+}
+#aliados2 .libertador {
+  height: 55%;
+  width: 90%;
+}
+#aliados2 .caja_imagen {
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 5px solid #1FACE1;
+  background-color: white;
+  height: 130px;
+}
+#aliados2 .caja_imagen .bordes {
+  width: 85%;
+}
+@media (max-width: 425px) {
+  #aliados2 .caja_imagen {
+    margin-top: calc(50% - 105px);
+  }
+}
+@media (max-width: 375px) {
+  #aliados2 .caja_imagen {
+    margin-top: calc(50% - 93px);
+  }
+}
+@media (max-width: 320px) {
+  #aliados2 .caja_imagen {
+    margin-top: calc(50% - 67px);
+  }
+}
+#aliados2 .izquierda_aliados {
+  position: absolute;
+  left: -7px;
+  top: calc(50% - 19px);
+}
+#aliados2 .derecha_aliados {
+  position: absolute;
+  right: -7px;
   top: calc(50% - 19px);
 }
 
@@ -17446,6 +17681,9 @@ footer #copy a:hover {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
 }
+#inmuebles .card .precio {
+  font-size: 13px;
+}
 #inmuebles .card .gestion_inmueble {
   z-index: 500;
   top: 20px;
@@ -17521,6 +17759,12 @@ footer #copy a:hover {
           box-shadow: 0 0 6px 1px gray;
   padding: 20px;
 }
+@media (max-width: 425px) {
+  #contactenos img {
+    width: 220px !important;
+    height: 115px !important;
+  }
+}
 #contactenos .formulario .nombre input, #contactenos .formulario .mail input, #contactenos .formulario .telefono input {
   border-left: none;
   border-top: none;
@@ -17590,4 +17834,10 @@ footer #copy a:hover {
 #formulario_asesor .imagen_asesor {
   height: 150px;
   width: 200px;
+}
+
+@media (max-width: 425px) {
+  #map {
+    height: 40vh !important;
+  }
 }
