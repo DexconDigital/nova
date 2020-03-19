@@ -17013,8 +17013,8 @@ footer #copy a:hover {
     left: inherit;
   }
 
-  #slide_imagenes .carousel-inner {
-    height: 300px !important;
+  #carrusel .carousel-inner {
+    height: 60vh !important;
   }
 }
 @media (max-width: 768px) {
