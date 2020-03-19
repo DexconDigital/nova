@@ -130,7 +130,7 @@ $page = "Inmuebles" ?>
 
     <!-- ÚLTIMAS NOTICIAS -->
 
-    <h2 class="text-center font-weight-bold my-5"> Imuebles Disponibles </h2>
+    <h2 class="text-center font-weight-bold my-5"> Inmuebles Disponibles </h2>
 
     <section id="inmuebles" class="container mt-5 d-flex flex-wrap align-items-stretch">
 

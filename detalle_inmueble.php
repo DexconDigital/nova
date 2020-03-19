@@ -71,7 +71,7 @@ $page = "Detalle de Inmueble" ?>
     <div id="caracteristicas_principales" class="container align-items-stretch d-flex flex-wrap mt-5 mb-n3">
 
         <div class="order-md-1 col-6 precio py-3 justify-content-center">
-            <p class="text-center blanco"> <?php if ($r['Gestion'] == 'Arriendo') {
+            <p class="text-center blanco font-weight-bold"> <?php if ($r['Gestion'] == 'Arriendo') {
                                                 echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
                                             } else if ($r['Gestion'] == 'Venta') {
                                                 echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';

@@ -38,9 +38,9 @@ $page = "Nosotros" ?>
     <section id="mision_vision" class="mt-5 container d-flex flex-wrap justify-content-center">
 
         <!-- MISION -->
-        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5 mb-md-0 mb-xl-0 mb-lg-0">
+        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5">
 
-            <div class="p-3 position-relative carta d-flex flex-column align-items-center justify-content-center">
+            <div class="border p-3 position-relative carta d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <i class="blanco fas fa-calendar-check"></i>
@@ -57,9 +57,9 @@ $page = "Nosotros" ?>
         <!-- MISION -->
 
         <!-- VISION -->
-        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5 mb-md-0 mb-xl-0 mb-lg-0">
+        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5">
 
-            <div class="h-100 p-3 position-relative carta d-flex flex-column align-items-center">
+            <div class="h-100 border p-3 position-relative carta d-flex flex-column align-items-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <i class="blanco <?php echo $iconos_nosotros['vision'] ?>"></i>
@@ -76,9 +76,9 @@ $page = "Nosotros" ?>
         <!-- VISION -->
 
         <!-- RESEÑA HOSTORICA -->
-        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5 mb-md-0 mb-xl-0 mb-lg-0">
+        <div class="col-12 col-md-6 col-lgl-6 col-xl-6 mb-5">
 
-            <div class="p-3 position-relative carta d-flex flex-column align-items-center justify-content-center">
+            <div class="border p-3 position-relative carta d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <i class="blanco <?php echo $iconos_nosotros['reseña'] ?>"></i>
@@ -262,11 +262,11 @@ $page = "Nosotros" ?>
 
 
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
-    <h5 id="texto_valores" class="d-none d-md-block d-lg-block d-xl-block container mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
+    <p id="texto_valores" class="d-none d-md-block d-lg-block d-xl-block container mt-3"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </p>
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES -->
 
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES (RESPONSIVE)-->
-    <h5 id="texto_valores2" class="text-justify d-block d-md-none d-lg-none d-xl-none container"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </h5>
+    <p id="texto_valores2" class="text-justify d-block d-md-none d-lg-none d-xl-none container"> <?php echo $texto_quienes_somos['valores']['parrafos']['5'] ?> </p>
     <!-- TEXTO DESCRIPTIVO DE LOS VALORES (RESPONSIVE)-->
 
 
@@ -479,7 +479,7 @@ $page = "Nosotros" ?>
             <!-- ICONO 1 -->
             <div id="animacion1" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                <div class="border mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-propertys" class="icono font-weight-bold magenta"> </p>
                 </div>
 
@@ -493,7 +493,7 @@ $page = "Nosotros" ?>
             <!-- ICONO 2 -->
             <div id="animacion2" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                <div class="border mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-rent" class="icono font-weight-bold magenta"> </p>
 
                 </div>
@@ -508,7 +508,7 @@ $page = "Nosotros" ?>
             <!-- ICONO 3 -->
             <div id="animacion3" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                <div class="border mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-sale" class="icono font-weight-bold magenta"> </p>
 
                 </div>
@@ -523,7 +523,7 @@ $page = "Nosotros" ?>
             <!-- ICONO 4 -->
             <div id="animacion4" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
-                <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
+                <div class="border mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-sale-rent" class="icono font-weight-bold magenta"> </p>
                 </div>
 
