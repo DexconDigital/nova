@@ -18,22 +18,18 @@ $page = "Inicio" ?>
 <body>
 
 
-    <a id="caja_boton1" href="" class="mt-5 position-relative">
+  <h1 class="holi"> HOLI </h1>
 
-        <div class="caja1 position-absolute w-100 h-100"></div>
-        <div class="caja2 position-absolute w-100 h-100"></div>
-        <div class="texto position-relative d-inline w-100 h-100"> TEXsadsadasdasTO </div>
+<script>
 
-    </a>
+    var x = document.getElementsByClassName('holi')[0];
+    // .style.backgroundColor = 'red';
+    x.style.backgroundColor = 'red';
+
+</script>
 
 
 
-
-    <!-- ARCHIVOS FOOTER -->
-    <section>
-        <?php include 'layout/archivos_footer.php' ?>
-    </section>
-    <!-- ARCHIVOS FOOTER -->
 
 
 </body>

@@ -14,6 +14,7 @@ $page = "Inicio" ?>
 
 
 
+
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
 </head>
 
@@ -89,7 +90,7 @@ $page = "Inicio" ?>
                     <div class="row ">
 
                         <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
-                            <input placeholder="Código" type="number" class="form-control" id="codigo_buscar" aria-describedby="emailHelp">
+                            <input placeholder="Código" type="number" class="codigo_buscar form-control" id="codigo_buscar" aria-describedby="emailHelp">
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group">
@@ -160,7 +161,7 @@ $page = "Inicio" ?>
                         </div>
 
                         <div class="mb-2 mb-xl-0 mb-lg-0 col-12 col-md-6 col-lg-3 col-xl-3 h-100 mx-auto d-flex align-items center justify-content-center">
-                            <button type="button" id="buscar" class="col-12 btn boton_buscador"> Buscar </button>
+                            <button type="button" id="buscar" class="col-12 btn id_buscar boton_buscador"> Buscar </button>
                         </div>
 
 
@@ -173,6 +174,12 @@ $page = "Inicio" ?>
         </section>
     </section>
     <!-- BUSCADOR -->
+
+    <script>
+        if (screen.width < 426) {
+            document.getElementsByClassName('buscador1')[0].remove();
+        }
+    </script>
 
     <!-- BUSCADOR (RESPONSIVE)-->
     <section class="buscador2 d-block d-md-none d-lg-none d-xl-none">
@@ -292,6 +299,12 @@ $page = "Inicio" ?>
 
     </section>
     <!-- BUSCADOR (RESPONSIVE)-->
+
+    <script>
+        if (screen.width > 427) {
+            document.getElementsByClassName('buscador2')[0].remove();
+        }
+    </script>
 
 
 
