@@ -17016,6 +17016,10 @@ footer #copy a:hover {
   #carrusel .carousel-inner {
     height: 60vh !important;
   }
+
+  #slide_imagenes .carousel-inner {
+    height: 45vh !important;
+  }
 }
 @media (max-width: 768px) {
   footer .imagen_logo {

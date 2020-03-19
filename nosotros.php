@@ -477,7 +477,7 @@ $page = "Nosotros" ?>
 
 
             <!-- ICONO 1 -->
-            <div id="animacion1" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion1" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-propertys" class="icono font-weight-bold magenta"> </p>
@@ -491,7 +491,7 @@ $page = "Nosotros" ?>
 
 
             <!-- ICONO 2 -->
-            <div id="animacion2" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion2" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-rent" class="icono font-weight-bold magenta"> </p>
@@ -506,7 +506,7 @@ $page = "Nosotros" ?>
 
 
             <!-- ICONO 3 -->
-            <div id="animacion3" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion3" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-sale" class="icono font-weight-bold magenta"> </p>
@@ -521,7 +521,7 @@ $page = "Nosotros" ?>
 
 
             <!-- ICONO 4 -->
-            <div id="animacion4" class="col-6 col-lg-4 col-xl-4 contenido_cards d-flex flex-column align-items-center justify-content-center">
+            <div id="animacion4" class="col-6 col-md-4 col-lg-3 col-xl-3 contenido_cards d-flex flex-column align-items-center justify-content-center">
 
                 <div class="mb-2 d-flex align-items-center justify-content-center caja_icono">
                     <p id="counter-sale-rent" class="icono font-weight-bold magenta"> </p>
