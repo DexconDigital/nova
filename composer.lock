@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b006782983b172f3d1efe8549cb1596",
+    "content-hash": "fcb833da3eb6223736f001b460f3fff6",
     "packages": [
         {
             "name": "jasongrimes/paginator",
@@ -59,6 +59,5 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }

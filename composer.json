@@ -1,5 +1,11 @@
 {
-    "name": "vendor/kwigstone",
+    "name": "vendor/daniel",
+    "authors": [
+        {
+            "name": "william solano",
+            "email": "wdsp9898@gmail.com"
+        }
+    ],
     "require": {
         "jasongrimes/paginator": "~1.0"
     }
