@@ -4,7 +4,7 @@ require("admin/conexion.php");
 
 $con=conect();
 
-$id_inmobiliaria = 16;
+$id_inmobiliaria = 17;
 
 $qry="SELECT * FROM usuarios WHERE  id_inmobiliaria1 = '$id_inmobiliaria'";
 $sql=mysqli_query($con,$qry);

@@ -14,7 +14,7 @@ $page = "Inicio";
 $nombre_inmobiliaria = 'Polania Inmobiliaria';
 ?>
 <?php
-$id_inmobiliria = 16;
+$id_inmobiliria = 17;
 $con = Conect();
 $qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
 $sql = mysqli_query($con, $qry);
@@ -25,7 +25,7 @@ $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
 ?>
 <?php
-$id_inmobiliria = 16;
+$id_inmobiliria = 17;
 $con = Conect();
 $qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
 $sql = mysqli_query($con, $qry);
@@ -65,9 +65,10 @@ $sql = mysqli_query($con, $qry);
     .form-control:focus{
     color: #495057;
     background-color: #fff;
-    border-color: #f04f36;
+    border-color: #1FACE1;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(240, 79, 54, 0.51);
+    /* box-shadow: 0 0 0 0.2rem rgba(31, 172, 225, 0.85); */
+
     }
 </style>
 
@@ -86,7 +87,7 @@ $sql = mysqli_query($con, $qry);
                 <div class="col1">
 
                     <!-- manual de usuario -->
-                    <a href="archivo/Instructivo_Administracion_Asesores.pdf" download="Instructivo Administración Asesores.pdf">
+                    <a href="archivo/Instructivo_Administracion_Asesores.pdf" download="Instructivo Administración Noticias.pdf">
                         <li class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name="random-restored-page">
                             <div>
                                 <p class="icon-arrow-right"></p>
@@ -257,9 +258,9 @@ $sql = mysqli_query($con, $qry);
                                        <td>' . $res["id"] . '</td>
                                        <td>' . $res["nombre"] . '</td>
 
-                                      <td><a href="mi_ejemplo.php?id=' . $res["id"] . '" data-toggle="modal" data-id=' . $res["id"] . ' data-target="#editar_asesor" onclick="dataEdit(this)"><i style="color: #F27852;" class="fas fa-edit"></i></a></td>
+                                      <td><a href="mi_ejemplo.php?id=' . $res["id"] . '" data-toggle="modal" data-id=' . $res["id"] . ' data-target="#editar_asesor" onclick="dataEdit(this)"><i style="color: #1FACE1;" class="fas fa-edit"></i></a></td>
 
-                                      <td><a href="#" data-href="eliminar.php?id=' . $res["id"] . '" data-toggle="modal"            data-target="#confirm-delete"><i style="color: #BA3B38;"class="fas fa-trash-alt"></i></a></td>
+                                      <td><a href="#" data-href="eliminar.php?id=' . $res["id"] . '" data-toggle="modal"            data-target="#confirm-delete"><i style="color: #DF2B6A;"class="fas fa-trash-alt"></i></a></td>
                                            </tr>';
                                     }
 
@@ -857,7 +858,7 @@ $sql = mysqli_query($con, $qry);
 
                             <!-- <hr> -->
                             <h5>Vista previa de Publicaciones</h5>
-                            <a href="../../noticia.php" target="_blank" role="button" class="btn btn-outline-dark">Ir a la publicaión</a>
+                            <a href="../../blog.php" target="_blank" role="button" class="btn btn_publicar">Ir a la publicaión</a>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn_cancelar" data-dismiss="modal">Cerrar</button>

@@ -1,6 +1,6 @@
 <?php 
 require './conexion2.php';
-$id_inmobiliaria = 16 ;
+$id_inmobiliaria = 17 ;
 sleep(2);
 $usuarios = $mysqli->query("SELECT id_user
 FROM usuarios WHERE id_user = '$id_inmobiliaria' AND usuario = '".$_POST['usuariolg']."' 

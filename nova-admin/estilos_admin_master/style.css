@@ -93,7 +93,7 @@ html::-webkit-scrollbar {
   content: "\f011"; }
 
 .cont_logo {
-  padding: 39px!important;
+  padding: 11px!important;
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -556,7 +556,7 @@ ul {
   opacity: 0.8; }
 
 .tile img {
-  width: 90%;
+  width: 57%;
   height: 100%; }
 
 .tile2 img {
@@ -568,7 +568,7 @@ ul {
 .tile-caption {
   position: absolute;
   z-index: 1;
-  background-color: #737375;
+  background-color: #1FACE1;
   color: #fff;
   font-size: 1em;
   padding: 1em;
@@ -634,7 +634,7 @@ ul {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Color del primer div de izquierda a derecha */
 .tile-1 {
-  background-color: #F26336;
+  background-color: #DF2B6A;
   color: white;
   opacity: 0.8; }
 
@@ -644,13 +644,13 @@ ul {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Color del primer div de la segunda fila  de izquierda a derecha */
 .tile-2 {
-  background-color: #737375;
+  background-color: #1FACE1;
   color: white;
   opacity: 0.8; }
 
 .tile-2:hover {
   background-color: white;
-  color: #737375; }
+  color: #1FACE1; }
 
 .slideTextRight div:first-child {
   left: -100%; }
@@ -665,12 +665,12 @@ ul {
 /* Color del Segundo div de la segunda fila  de izquierda a derecha */
 .tile-3 {
   background-color: white;
-  color: #F26336;
+  color: #DF2B6A;
   opacity: 0.8; }
 
 .tile-3:hover {
   background-color: white;
-  color: #F26336; }
+  color: #DF2B6A; }
 
 .tile-3 p {
   font-size: 4em;
@@ -679,19 +679,19 @@ ul {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Color del segundo div de la primera fila  de izquierda a derecha */
 .tile-5 {
-  background-color: #F26336;
+  background-color: #DF2B6A;
   color: white;
   opacity: 0.8; }
 
 .tile-5:hover {
   background-color: #fff;
-  color: #F26336;
+  color: #DF2B6A;
   opacity: 0.8; }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Color del segundo div de la segunda fila  de izquierda a derecha */
 .tile-6 {
-  background-color: #F26336;
+  background-color: #DF2B6A;
   color: white;
   opacity: 0.8; }
 
@@ -793,19 +793,19 @@ ul {
 
 /* color de los cuadros de insta y fotografia */
 .faces .front {
-  background-color: #737375;
+  background-color: #1FACE1;
   color: #ddd; }
 
 .rotate3dX .front {
-  background-color: #737375;
+  background-color: #1FACE1;
   color: white; }
 
 .rotate3dY .front {
   background-color: white;
-  color: #F26336; }
+  color: #DF2B6A; }
 
 .faces .back {
-  background-color: #737375;
+  background-color: #1FACE1;
   color: white; }
 
 .front span {
@@ -1175,33 +1175,33 @@ input {
   opacity: 0.8; }
 
   .hover_footer{
-    color:#BA3B38;
+    color:#1FACE1;
     text-decoration: none;
   }
   .hover_footer:hover{
-    color: black;
+    color: #BA3B38;
     text-decoration: none;
   }
   .btn_cancelar{
-    background-color: #383336 !important;
+    background-color: gray !important;
     color: white !important;
   }
   .btn_cancelar:hover{
-    background-color: #383336 !important;
+    background-color: gray !important;
     color: white !important;
   }
   .btn_cancelar:focus{
     box-shadow: 0 0 0 0.1rem #969999 !important;
   }
   .btn_publicar{
-  background-color: #F04F36 !important;
+  background-color: #DF2B6A !important;
   color: white !important;
   }
   .btn_publicar:hover{
-    background-color: #BA3B38 !important;
+    background-color: #1FACE1 !important;
     color: white !important;
   }
   .btn_publicar:focus{
-    box-shadow: 0 0 0 0.1rem #BA3B38 !important;
+    box-shadow: 0 0 0 0.1rem #1FACE1 !important;
     
   }
