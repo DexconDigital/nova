@@ -65,14 +65,14 @@ $page = "Detalle de Blog" ?>
 
 
             <!-- DESCRIPCIÓN -->
-            <div class="mt-3 mt-md-0 mt-lg-0 mt-xl-0 text-break col-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="d-flex align-items-center justify-content-center mt-3 mt-md-0 mt-lg-0 mt-xl-0 text-break col-12 col-md-6 col-lg-6 col-xl-6">
                 <p class="text-justify"> <?php echo $noticia ?> </p>
             </div>
             <!-- DESCRIPCIÓN -->
 
         </div>
 
-        <div class="col-12">
+        <div class="col-12 mt-3">
             <p class="text-center mt-3 text-muted"> Publicado el: <?php echo $fecha_complete; ?></p>
         </div>
 
@@ -83,7 +83,7 @@ $page = "Detalle de Blog" ?>
 
         </div>
 
-        
+
     </section>
 
 
