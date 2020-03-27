@@ -58,8 +58,8 @@ $page = "Detalle de Blog" ?>
         <div class="col-12 d-flex flex-wrap mt-5">
 
             <!-- IMAGEN -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
-                <img id="cont_img_noticia" class="h-100 w-100" src="<?php echo $ruta_imagen ?>" alt="">
+            <div class="d-flex align-items-center justify-content-center col-12 col-md-6 col-lg-6 col-xl-6">
+                <img style="object-fit:contain" id="cont_img_noticia" class="w-100" src="<?php echo $ruta_imagen ?>" alt="">
             </div>
             <!-- IMAGEN -->
 
@@ -71,6 +71,8 @@ $page = "Detalle de Blog" ?>
             <!-- DESCRIPCIÓN -->
 
         </div>
+
+    
 
         <div class="col-12 mt-3">
             <p class="text-center mt-3 text-muted"> Publicado el: <?php echo $fecha_complete; ?></p>
