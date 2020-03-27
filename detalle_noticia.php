@@ -55,18 +55,18 @@ $page = "Detalle de Blog" ?>
         <!-- TITULO DE NOTICIA -->
 
 
-        <div class="col-12 d-flex flex-wrap mt-5">
+        <div  class="col-12 d-flex flex-wrap mt-5">
 
             <!-- IMAGEN -->
-            <div class="d-flex align-items-center justify-content-center col-12 col-md-6 col-lg-6 col-xl-6">
+            <div style="height:400px" class="parrafo_noticia d-flex align-items-center justify-content-center col-12 col-md-6 col-lg-6 col-xl-6">
                 <img style="object-fit:contain" id="cont_img_noticia" class="w-100" src="<?php echo $ruta_imagen ?>" alt="">
             </div>
             <!-- IMAGEN -->
 
 
             <!-- DESCRIPCIÓN -->
-            <div class="d-flex align-items-center justify-content-center mt-3 mt-md-0 mt-lg-0 mt-xl-0 text-break col-12 col-md-6 col-lg-6 col-xl-6">
-                <p class="text-justify"> <?php echo $noticia ?> </p>
+            <div style="height:400px; overflow:scroll" class="d-flex align-items-center justify-content-center mt-3 mt-md-0 mt-lg-0 mt-xl-0 text-break col-12 col-md-6 col-lg-6 col-xl-6">
+                <p  class="text-justify"> <?php echo $noticia ?> </p>
             </div>
             <!-- DESCRIPCIÓN -->
 
