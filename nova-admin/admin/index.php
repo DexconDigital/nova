@@ -245,7 +245,7 @@ $sql = mysqli_query($con, $qry);
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Titulo de publicación</th>
+                                        <th scope="col">Título de publicación</th>
                                         <th scope="col">Editar</th>
                                         <th scope="col">Eliminar</th>
                                     </tr>
