@@ -48,7 +48,7 @@ $page = "Detalle de Blog" ?>
     <!-- BANNER -->
 
 
-    <section class="container mt-5">
+    <section id="detalle_noticia" class="container mt-5">
 
         <!-- TITULO DE NOTICIA -->
         <h2 class="text-center" style="vertical-align: inherit;"><?php echo $nombre ?></h2>
@@ -58,14 +58,14 @@ $page = "Detalle de Blog" ?>
         <div  class="col-12 d-flex flex-wrap mt-5">
 
             <!-- IMAGEN -->
-            <div style="height:400px" class="parrafo_noticia d-flex align-items-center justify-content-center col-12 col-md-6 col-lg-6 col-xl-6">
+            <div style="height:400px" class="imagen d-flex align-items-center justify-content-center col-12 col-md-6 col-lg-6 col-xl-6">
                 <img style="object-fit:contain" id="cont_img_noticia" class="w-100" src="<?php echo $ruta_imagen ?>" alt="">
             </div>
             <!-- IMAGEN -->
 
 
             <!-- DESCRIPCIÓN -->
-            <div style="height:400px; overflow:scroll" class="d-flex align-items-center justify-content-center mt-3 mt-md-0 mt-lg-0 mt-xl-0 text-break col-12 col-md-6 col-lg-6 col-xl-6">
+            <div style="height:400px; overflow-x:hidden; overflow-y:scroll" class="parrafo_noticia align-items-center justify-content-center mt-2 mt-md-0 mt-lg-0 mt-xl-0 text-break col-12 col-md-6 col-lg-6 col-xl-6">
                 <p  class="text-justify"> <?php echo $noticia ?> </p>
             </div>
             <!-- DESCRIPCIÓN -->
@@ -78,7 +78,7 @@ $page = "Detalle de Blog" ?>
             <p class="text-center mt-3 text-muted"> Publicado el: <?php echo $fecha_complete; ?></p>
         </div>
 
-        <div class="col-12 mt-3">
+        <div class="text-center col-12 mt-3">
             <?php if ($ruta_archivo != $comparador . "") {
                 echo '<a style="color:black;" href="' . $ruta_archivo . '" download="Noticias.pdf"><i style="color:red;" class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto</a>';
             } ?>

@@ -910,6 +910,16 @@ footer {
     background: #d4d4d4;
   }
 
+  
+
+  #detalle_noticia {
+      @media(max-width:425px) {
+        .imagen {
+            height: 250px!important;
+        }
+      }
+  }
+
 
 
 
