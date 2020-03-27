@@ -87,7 +87,7 @@ $sql = mysqli_query($con, $qry);
                 <div class="col1">
 
                     <!-- manual de usuario -->
-                    <a href="archivo/Instructivo_Administracion_Asesores.pdf" download="Instructivo Administración Noticias.pdf">
+                    <a href="archivo/Instructivo_Administracion_noticias.pdf" download="Instructivo Administración Noticias.pdf">
                         <li class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name="random-restored-page">
                             <div>
                                 <p class="icon-arrow-right"></p>
@@ -245,7 +245,7 @@ $sql = mysqli_query($con, $qry);
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Nombre de Asesor</th>
+                                        <th scope="col">Titulo de publicación</th>
                                         <th scope="col">Editar</th>
                                         <th scope="col">Eliminar</th>
                                     </tr>
@@ -870,7 +870,7 @@ $sql = mysqli_query($con, $qry);
         </div>
         <div class="col-12" style="position: absolute;bottom: 0; width: 100%; height: 40px;color:white">
             <p class="text-center px-2 text-justify"> Diseñado y Desarrollado por <a class="mx-1 hover_footer" target="blank" href="https://www.dexcondigital.com"> Dexcon Digital </a> ©Copyright 2020 para
-                Polania Inmobiliaria. Todos los derechos reservados. </p>
+                Nova Inmobiliaria. Todos los derechos reservados. </p>
         </div>
     </div>
 

@@ -46,6 +46,7 @@ $page = "Blog" ?>
         }
         ?>
     </section>
+    
     <!-- ÚLTIMAS NOTICIAS -->
 
     <!-- ÚLTIMAS NOTICIAS (MOVIL) -->

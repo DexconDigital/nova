@@ -139,11 +139,10 @@ $(document).ready(function () {
         'dataType': "json",
         success: function (operacion) {
             var operacion_resultados = " ";
+            
             for (var i = 0; i < operacion.length; i++) {
                 operacion_resultados +=
-                    '<option value="' + operacion[i].idTipoInm + '">' +
-                    operacion[i].Nombre +
-                    '</option>';
+                    '<option value="' + operacion[i].idTipoInm + '">' + operacion[i].Nombre + '</option>';
             }
             $('#tipo_inmueble_buscar').append(operacion_resultados);
         }

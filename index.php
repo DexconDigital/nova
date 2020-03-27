@@ -1,5 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
+require 'controllers/noticiasController.php';
 
 $page = "Inicio" ?>
 <!DOCTYPE html>
@@ -766,106 +767,17 @@ $page = "Inicio" ?>
     </section>
     <!-- NOVA TRANSACCIONAL -->
 
-
-
-
-
     <!-- ÚLTIMAS NOTICIAS -->
     <h2 class="font-weight-bold text-center my-5 "> Últimas Noticias </h2>
-    <section id="ultimas_noticias" class="container mt-5 d-flex flex-wrap">
-
-
-        <!-- CARD -->
-        <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0">
-            <div class="card">
-
-                <div class="imagen">
-                    <img src="images/copy1.jpg" class="card-img-top" alt="...">
-                </div>
-
-                <div class="">
-
-                    <div class="py-3 caja border-bottom d-flex align-items-baseline">
-                        <i class="mx-3 azul fas fa-calendar-alt"></i>
-                        <p class="pr-3 text-muted"> 02/02/2020 </p>
-                    </div>
-
-                    <div class="caja py-3 border-bottom">
-                        <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
-                        <p class="descripcion px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
-
-
-                </div>
-
-            </div>
-        </div>
-        <!-- CARD -->
-
-        <!-- CARD -->
-        <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0">
-            <div class="card">
-
-                <div class="imagen">
-                    <img src="images/copy2.jpg" class="card-img-top" alt="...">
-                </div>
-
-                <div class="">
-
-                    <div class="py-3 caja border-bottom d-flex align-items-baseline">
-                        <i class="mx-3 azul fas fa-calendar-alt"></i>
-                        <p class="pr-3 text-muted"> 02/02/2020 </p>
-                    </div>
-
-                    <div class="caja py-3 border-bottom">
-                        <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
-                        <p class="descripcion px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
-
-
-                </div>
-
-            </div>
-        </div>
-        <!-- CARD -->
-
-
-        <!-- CARD -->
-        <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0">
-            <div class="card">
-
-                <div class="imagen">
-                    <img src="images/copy3.jpg" class="card-img-top" alt="...">
-                </div>
-
-                <div class="">
-
-                    <div class="py-3 caja border-bottom d-flex align-items-baseline">
-                        <i class="mx-3 azul fas fa-calendar-alt"></i>
-                        <p class="pr-3 text-muted"> 02/02/2020 </p>
-                    </div>
-
-                    <div class="caja py-3 border-bottom">
-                        <h4 class="mb-2 px-3 font-weight-bold"> Titulo de Noticia </h4>
-                        <p class="descripcion px-3"> Descripción de la Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quis. </p>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-center"> <a href="" class="my-2 btn boton2"> Leer más </a></div>
-
-
-                </div>
-
-            </div>
-        </div>
-        <!-- CARD -->
-
-
-
-
+    <section id="ultimas_noticias" class="container mt-5 d-flex flex-wrap justify-content-center">
+        <?php if (isset($noticias_array)) {
+            modelo_ultimas_noticia($noticias_array);
+        } else {
+            echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+        }
+        ?>
 
     </section>
     <!-- ÚLTIMAS NOTICIAS -->
