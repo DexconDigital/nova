@@ -350,7 +350,7 @@ $page = "Inicio" ?>
 
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h4>
-                    <p class="text-center px-3 pb-5"> Somos capaces de ofrecer el mejor asesoramiento para la venta de tu inmueble... </p>
+                    <p class="text-center px-3 pb-5"> Somos capaces de ofrecer la mejor asesoría para la venta de tu inmueble... </p>
                     <a class="d-block btn boton1 text-center mb-5 p-2" href="servicios.php"> Leer más </a>
                 </div>
 
