@@ -177,11 +177,11 @@ $iconos_servicios = [
 $texto_servicios = [
 	"arriendos" => [
 		"titulo" => "Arriendos",
-			"parrafo" => "Somos capaces de ofrecer el mejor asesoramiento para la venta de tu inmueble, brindándote todo el acompañamiento necesario, para que logres tus objetivos con los mejores resultados y beneficios, colocaremos toda nuestra experiencia y recursos publicitarios a tu servicio.",
+			"parrafo" => "Una completa oferta inmobiliaria, contamos con una mezcla entre diseño y funcionalidad, para que encuentres el mejor inmueble, a un precio favorable, en el menor tiempo posible, te haremos vivir la mejor de las experiencia en la búsqueda de tu inmueble.",
 	],	
 	"ventas" =>[
 		"titulo" => "Ventas",
-		"parrafo" => "Una completa oferta inmobiliaria, contamos con una mezcla entre diseño y funcionalidad, para que encuentres el mejor inmueble, a un precio favorable, en el menor tiempo posible, te haremos vivir la mejor de las experiencia en la búsqueda de tu inmueble.",
+		"parrafo" => "Somos capaces de ofrecer la mejor asesoría para la venta de tu inmueble, brindándote todo el acompañamiento necesario, para que logres tus objetivos con los mejores resultados y beneficios, colocaremos toda nuestra experiencia y recursos publicitarios a tu servicio."
 	],
 	"avaluos" =>[
 		"titulo" => "Avalúos",

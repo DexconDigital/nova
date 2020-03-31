@@ -11,6 +11,7 @@ $page = "Inicio" ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include 'layout/archivos_header.php' ?>
+	<?php include 'variables/metaEtiquetas.php' ?>
     <link rel="stylesheet" type="text/css" href="css/rangos.css">
 
 
@@ -333,8 +334,8 @@ $page = "Inicio" ?>
 
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['arriendos']['titulo'] ?> </h4>
-                    <p class="text-center px-3 pb-5"> Somos capaces de ofrecer el mejor asesoramiento para la venta de tu inmueble... </p>
-                    <a class="d-block text-center btn boton1 blanco mb-5 p-2" href=""> Leer más </a>
+                    <p class="text-center px-3 pb-5"> Una completa oferta inmobiliaria, contamos con una mezcla entre diseño y funcionalidad... </p>
+                    <a class="d-block text-center btn boton1 blanco mb-5 p-2" href="servicios.php"> Leer más </a>
                 </div>
 
             </div>
@@ -349,8 +350,8 @@ $page = "Inicio" ?>
 
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h4>
-                    <p class="text-center px-3 pb-5"> Una completa oferta inmobiliaria, contamos con una mezcla entre diseño y funcionalidad... </p>
-                    <a class="d-block btn boton1 text-center mb-5 p-2" href=""> Leer más </a>
+                    <p class="text-center px-3 pb-5"> Somos capaces de ofrecer el mejor asesoramiento para la venta de tu inmueble... </p>
+                    <a class="d-block btn boton1 text-center mb-5 p-2" href="servicios.php"> Leer más </a>
                 </div>
 
             </div>
@@ -366,7 +367,7 @@ $page = "Inicio" ?>
                 <div class="d-flex align-items-center justify-content-center flex-column contenedor_texto position-relative">
                     <h4 class="text-center mb-3"> <?php echo $texto_servicios['avaluos']['titulo'] ?> </h4>
                     <p class="text-center px-3 pb-5"> Realizamos avalúos cumpliendo con toda la normatividad del país, asegurando... </p>
-                    <a class="d-block btn boton1 text-center mb-5 p-2" href=""> Leer más </a>
+                    <a class="d-block btn boton1 text-center mb-5 p-2" href="servicios.php"> Leer más </a>
                 </div>
 
             </div>
