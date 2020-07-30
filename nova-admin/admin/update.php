@@ -30,15 +30,19 @@ if ($tamanio <= $limite_kb * 1024) {
 // No actualizar ni archivos ni imagenes
 if ($destino == $comparador_fotos && $destinos == $comparador_archivo) {
     $con1 = Conect();
-    $qry1 = "SELECT * FROM noticias where id ='$id'";
-    $sql1 = mysqli_query($con1, $qry1);
-    $res =  mysqli_fetch_array($sql1);
-
-    $destino = $res[3];
+    $qry1 = "SELECT * FROM noticias where id = ?";
+    $resultado=$con1->prepare($qry1);
+    $resultado->execute(array($id));
+    // $sql1 = mysqli_query($con1, $qry1);
+    // $res =  mysqli_fetch_array($sql1);
+    $res =  $resultado->fetch(PDO::FETCH_ASSOC);
+    $destino = $res["imagen"];
     $con = Conect();
-    $qry = ("update noticias set nombre='$nombre', descripcion='$descripcion', video_url='', instagram_url='' , noticia='$noticia' where id='$id'");
-    $sql = mysqli_query($con, $qry);
-    if (!$sql) {
+    $qry = ("update noticias set nombre= ?, descripcion=?, video_url='', instagram_url='' , noticia=? where id=?");
+    $resultado=$con->prepare($qry);
+    $resultado->execute(array($nombre,$descripcion,$noticia,$id));
+    // $sql = mysqli_query($con, $qry);
+    if (!$resultado) {
     } else {
         echo  "<script language='javascript'>
             alert('Se inserto con exito');
@@ -50,15 +54,17 @@ if ($destino == $comparador_fotos && $destinos == $comparador_archivo) {
 }
 if ($destino != $comparador_fotos && $destinos == $comparador_archivo) {
     copy($ruta, $destino);
-    $con = Conect();
-    $qry = ("update noticias set nombre='$nombre', descripcion='$descripcion', video_url='', instagram_url='',  imagen='$destino',noticia='$noticia' where id='$id '");
-    $sql = mysqli_query($con, $qry);
+    $con2 = Conect();
+    $qry2 = ("update noticias set nombre=?, descripcion=?, video_url='', instagram_url='',  imagen=?, noticia=? where id=?");
+    $resultado=$con2->prepare($qry2);
+    $resultado->execute(array($nombre,$descripcion,$destino,$noticia,$id));
+    // $sql = mysqli_query($con, $qry);
 
-    if (!$sql) {
+    if (!$resultado) {
         
         echo  "<script language='javascript'>
-                    alert('No se logro insertar');
-                window.location.href='index.php'
+                    alert('No se logro insertar Imagen');
+                // window.location.href='index.php'
               </script>";
     } else {
         
@@ -73,11 +79,13 @@ if ($destino != $comparador_fotos && $destinos == $comparador_archivo) {
 if ($destino == $comparador_fotos && $destinos != $comparador_archivo) {
     copy($rutas, $destinos);
 
-    $con = Conect();
-    $qry = ("update noticias set nombre='$nombre', descripcion='$descripcion', archivo='$destinos',noticia='$noticia' where id='$id '");
-    $sql = mysqli_query($con, $qry);
+    $con3 = Conect();
+    $qry3 = ("update noticias set nombre=?, descripcion=?, archivo=?,noticia=? where id=?");
+    $resultado=$con3->prepare($qry3);
+    $resultado->execute(array($nombre,$descripcion,$destinos,$noticia,$id));
+    // $sql = mysqli_query($con, $qry);
 
-    if (!$sql) {
+    if (!$resultado) {
         
         echo  "<script language='javascript'>
                 alert('No se logro insertar');
@@ -93,12 +101,13 @@ if ($destino == $comparador_fotos && $destinos != $comparador_archivo) {
 // actualizar  ambas cosas
 if ($destino != $comparador_fotos && $destinos != $comparador_archivo) {
     copy($rutas, $destinos);
-    copy($ruta, $destino);
-    $con = Conect();
-    $qry = ("UPDATE `noticias` SET nombre='$nombre', descripcion='$descripcion', video_url='', instagram_url='',noticia='$noticia', imagen = '$destino', archivo = '$destinos' WHERE id = '$id'");
-
-    $sql = mysqli_query($con, $qry);
-    if (!$sql) {
+    copy($ruta, $destino); 
+    $con4 = Conect();
+    $qry4 = ("UPDATE `noticias` SET nombre=?, descripcion=?, video_url='', instagram_url='',noticia=?, imagen = ?, archivo = ? WHERE id = ?");
+    $resultado=$con4->prepare($qry4);
+    $resultado->execute(array($nombre,$descripcion,$noticia,$destino,$destinos,$id));
+    // $sql = mysqli_query($con, $qry);
+    if (!$resultado) {
         echo  "<script language='javascript'>
                 alert('No se logro insertar');
                 window.location.href='index.php'

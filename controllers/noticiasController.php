@@ -5,16 +5,26 @@ require_once("conexion.php");
 $link = Conect();
 $array = array();
 
-$sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 17 order by id desc";
-$result = mysqli_query($link, $sql) or die(mysqli_error($link));
-while ($field = mysqli_fetch_array($result)) {
-    $id = $field['id'];
-    $nombre = $field['nombre'];
-    $descripcion = $field['descripcion'];
-    $imagen = $field['imagen'];
-    $archivo = $field['archivo'];
-    $noticia = $field['noticia'];
-    $fecha = $field['fecha'];
+$sql = "SELECT * FROM noticias  where id_inmobiliaria2 = ? order by id desc";
+$resultado=$link->prepare($sql);
+$resultado->execute(array('17'));
+// $result = mysqli_query($link, $sql) or die(mysqli_error($link));
+
+while ($field = $resultado->fetch(PDO::FETCH_ASSOC)) {
+    // $id = $field['id'];
+    $id = "{$field['id']}";
+    // $nombre = $field['nombre'];
+    $nombre = "{$field['nombre']}";
+    // $descripcion = $field['descripcion'];
+    $descripcion = "{$field['descripcion']}";
+    // $imagen = $field['imagen'];
+    $imagen = "{$field['imagen']}";
+    // $archivo = $field['archivo'];
+    $archivo="{$field['archivo']}";
+    // $noticia = $field['noticia'];
+    $noticia = "{$field['noticia']}";
+    // $fecha = $field['fecha'];
+    $fecha ="{$field['fecha']}";
     $noticias_array[] = array(
         'titulo' => $nombre,
         'id' => $id,

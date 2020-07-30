@@ -8,6 +8,7 @@ AND password = '".$_POST['passlg']."'");
 if($usuarios->num_rows == 1):
     $datos = $usuarios->fetch_assoc();
     echo json_encode(array('error' => false, 'tipo' => $datos['id_user']));
+    
 else:
     echo json_encode(array('error' => true));
 endif;

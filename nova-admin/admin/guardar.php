@@ -1,9 +1,9 @@
 <?php
 require_once 'conexion.php';
 
-$nombre=$_REQUEST["titulo"];
-$descripcion=$_REQUEST["descripcion"];
-$fecha=$_REQUEST["fecha"];
+$nombre=$_POST["titulo"];
+$descripcion=$_POST["descripcion"];
+$fecha=$_POST["fecha"];
 $noticia= $_POST["noticia"];
 $foto=$_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
@@ -33,23 +33,28 @@ if($nombre_ar != ""){
 }
 
 
-
-
 $con = Conect();
     copy($ruta,$destino);
 
     if($nombre_ar!=""){
-        mysqli_query($con, "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `video_url`, `instagram_url`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '$destinos', '$noticia', '$fecha', '', '', $id_inmo)");
-                             
+        $pdoQuery = "INSERT INTO `noticias` (`nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (:nombre, :descripcion, :imagen, :archivo, :noticia, :fecha,:id_inmobiliaria2)";
+        $pdoResult = $con->prepare($pdoQuery);
+        $pdoExec = $pdoResult->execute(array(':nombre'=>$nombre, ':descripcion'=>$descripcion, ':imagen'=>$destino, ':archivo'=>$destinos, ':noticia'=>$noticia, ':fecha'=>$fecha, ':id_inmobiliaria2'=>$id_inmo,));
+        
+        // $pdoResult->execute(array(":id"=>NULL,":nombre"=>$nombre,":descripcion"=>$descripcion,":destino"=>$destino,":destinos"=>$destinos,"",":noticia"=>$noticia,":fecha"=>$fecha,":video_url"=>'',":instagram_url"=>'',":id_inmo"=>$id_inmo));
+        // mysqli_query($con, "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `video_url`, `instagram_url`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '$destinos', '$noticia', '$fecha', '', '', $id_inmo)");
         echo  "<script language='javascript'>
-        alert('Publicación Agregada Con Éxito1');
+        alert('Publicación Agregada Con Éxito');
         window.location.href='index.php'
         </script>";
             
     }else{
-        mysqli_query($con, "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `video_url`, `instagram_url`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '', '$noticia', '$fecha', '', '', $id_inmo)");
+        $pdoQuery = "INSERT INTO `noticias` (`nombre`, `descripcion`, `imagen`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (:nombre, :descripcion, :imagen, :noticia, :fecha,:id_inmobiliaria2)";
+        $pdoResult = $con->prepare($pdoQuery);
+        $pdoExec = $pdoResult->execute(array(':nombre'=>$nombre, ':descripcion'=>$descripcion, ':imagen'=>$destino, ':noticia'=>$noticia, ':fecha'=>$fecha, ':id_inmobiliaria2'=>$id_inmo,));
+        // mysqli_query($con, "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `video_url`, `instagram_url`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '', '$noticia', '$fecha', '', '', $id_inmo)");
         echo  "<script language='javascript'>
-        alert('Publicación Agregada Con Éxito2');
+        alert('Publicación Agregada Con Éxito');
         window.location.href='index.php'
         </script>";
     }

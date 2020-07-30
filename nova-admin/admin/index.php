@@ -7,28 +7,38 @@ $user = $_SESSION["usuarioactual"];
 // echo implode( $_SESSION) ; 
 $con = Conect();
 $qry = "SELECT * FROM usuarios where id_user ='$user'";
-$sql = mysqli_query($con, $qry);
-$usuario =  mysqli_fetch_array($sql);
-$imagen_inicio = $usuario[0];
+// $sql = mysqli_query($con, $qry);
+$resultado=$con->prepare($qry);
+$resultado->execute(array($user));
+// $usuario =  mysqli_fetch_array($resultado);
+$usuario =  $resultado->fetch(PDO::FETCH_ASSOC);
+// echo var_dump($usuario);
+$imagen_inicio = $usuario["usuario"];
 $page = "Inicio";
 $nombre_inmobiliaria = 'Polania Inmobiliaria';
 ?>
 <?php
 $id_inmobiliria = 17;
 $con = Conect();
-$qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
-$sql = mysqli_query($con, $qry);
+// $qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
+$qry = "select * from noticias where id_inmobiliaria2 = ? order by id DESC ";
+$resultado=$con->prepare($qry);
+$resultado->execute(array($id_inmobiliria));
+// $sql = mysqli_query($con, $qry);    
 ?>
 <?php
 $qry = "SELECT * FROM `usuarios` WHERE id_user = '$user'";
-$sql = mysqli_query($con, $qry);
-$usuario =  mysqli_fetch_array($sql);
+$resultado=$con->prepare($qry);
+// $sql = mysqli_query($con, $qry);
+$usuario =  $resultado->fetch(PDO::FETCH_ASSOC);
 ?>
 <?php
 $id_inmobiliria = 17;
 $con = Conect();
 $qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
-$sql = mysqli_query($con, $qry);
+$resultado=$con->prepare($qry);
+$resultado->execute(array($id_inmobiliria));
+// $sql = mysqli_query($con, $qry);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -225,7 +235,7 @@ $sql = mysqli_query($con, $qry);
                             <button type="button" class="btn btn_cancelar" data-dismiss="modal">Cerrar</button>
                             <button class="btn btn_publicar" value="crear">Crear Publicación</button>
                         </div>
-                        </form>
+                        </form> 
                     </div>
                 </div>
             </div>
@@ -250,9 +260,10 @@ $sql = mysqli_query($con, $qry);
                                         <th scope="col">Eliminar</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody> 
+                            
                                     <?php
-                                    while ($res =  mysqli_fetch_array($sql)) {
+                                    while ($res =  $resultado->fetch(PDO::FETCH_ASSOC)) {
 
                                         echo '<tr>
                                        <td>' . $res["id"] . '</td>

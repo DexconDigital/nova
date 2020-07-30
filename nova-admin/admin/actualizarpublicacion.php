@@ -29,9 +29,9 @@ $res =  mysqli_fetch_array($sql);
     }
 
     input[type]:focus {
-        border-color: #B58D10;
+        border-color: #B58D10
          !important;
-        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #B58D10;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #B58D10
          !important;
         outline: 0 none;
     }
