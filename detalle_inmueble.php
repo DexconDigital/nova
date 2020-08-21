@@ -1,4 +1,6 @@
 <?php require 'variables/variables.php';
+require_once 'variables/captcha.php';
+$WebK = Web_Key;
 require 'controllers/detalleInmuebleController.php';
 
 $page = "Detalle de Inmueble" ?>
@@ -648,7 +650,7 @@ $page = "Detalle de Inmueble" ?>
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1"> Confirmo que he leído, entendido y acepto la <a class="azul_oscuro" href="politica_de_datos.pdf" download="Politica de Datos">política de tratamiento de datos personales.</a> </label>
                 </div>
-                <div class="g-recaptcha col-12" data-sitekey="6LcQjsAZAAAAAH5DNhksrL_5c5ULIrUROJwxT6eq" required></div>
+                <div class="g-recaptcha col-12" data-sitekey="<?php echo $WebK ?>" required></div>
                 <div class="col-12 mb-4"><small id="tituloHepl" class="form-text text-muted">Este campo es obligatorio</small></div>
                 <select name="correo_asesor" style="display:none">
                     <option value="<?php echo $asesor['correo']; ?>"></option>

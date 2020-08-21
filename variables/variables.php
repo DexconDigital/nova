@@ -69,7 +69,7 @@ $datos_contacto = [
 
 //logos aliados
 $logos_aliados = [
-	0 => "images/libertador.png",
+	0 => "images/Libertador.png",
 	1 => "images/simi.png",
 	2 => "images/sura.png",
 	3 => "images/finca_raiz.png",

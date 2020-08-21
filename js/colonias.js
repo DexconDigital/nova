@@ -968,9 +968,6 @@ function change2(colonia, letra) {
 
   };
 
-
-
-
   for (option = 0; option < optionArray.length; option++) {
     var pair = optionArray[option].split("|");
     var newOption = document.createElement("option");

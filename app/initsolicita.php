@@ -1,7 +1,9 @@
 <?php
 use ReCaptcha\ReCaptcha;
+require_once '../variables/captcha.php';
 
-$recaptcha  = new ReCaptcha('6LcQjsAZAAAAAEy8NVJHO0z-YftGKQRRth-DB3b5');
+
+$recaptcha  = new ReCaptcha('Secret_Key');
 $response = $recaptcha->verify($_POST['g-recaptcha-response']);
 if ($response->isSuccess()) {
 

@@ -1,4 +1,6 @@
 <?php require 'variables/variables.php';
+require_once 'variables/captcha.php';
+$WebK = Web_Key;
 $page = "Consignar Inmueble" ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -449,7 +451,7 @@ $page = "Consignar Inmueble" ?>
                 <input type="checkbox" name="copia" value="lleno" class="" id=""></input>
                 <label for=""> Envíame una copia </label>
             </div>
-            <div class="g-recaptcha col-12" data-sitekey="6LcQjsAZAAAAAH5DNhksrL_5c5ULIrUROJwxT6eq" required></div>
+            <div class="g-recaptcha col-12" data-sitekey="<?php echo $WebK ?>" required></div>
             <div class="col-12 mb-4"><small id="tituloHepl" class="form-text text-muted">Este campo es obligatorio</small></div>
             <div class="col-12 text-center">
                 <button class="btn boton2" type="submit" value="Submit">Enviar</button>

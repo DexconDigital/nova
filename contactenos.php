@@ -1,4 +1,6 @@
 <?php require 'variables/variables.php';
+      require_once 'variables/captcha.php';
+      $WebK = Web_Key;
 $page = "Contáctanos" ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,8 +10,8 @@ $page = "Contáctanos" ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include 'layout/archivos_header.php' ?>
-
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
+    
 </head>
 
 <body>
@@ -31,6 +33,8 @@ $page = "Contáctanos" ?>
         </div>
 
     </section>
+
+    
     <!-- BANNER -->
 
     <section id="contactenos">
@@ -113,7 +117,7 @@ $page = "Contáctanos" ?>
                     <p>Confirmo que he leído, entendido y acepto la <a class="ml-1 color_a_contacto" href="archivos/tratamiento_datos.pdf" download="Politica de tratamiento de datos personales"> política de tratamiento de datos personales.</a></p>
                 </div>
 
-                <div class="g-recaptcha col-12" data-sitekey="6LcQjsAZAAAAAH5DNhksrL_5c5ULIrUROJwxT6eq"required></div>
+                <div class="g-recaptcha col-12" data-sitekey="<?php echo $WebK ?>"required></div>
                 <div class="col-12 mb-4"><small id="tituloHepl" class="form-text text-muted">Este campo es obligatorio</small></div>
                 
 
