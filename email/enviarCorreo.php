@@ -41,7 +41,7 @@ function activeCorreo()
         $mail->setFrom('Nova@NovaInmobiliaria.com', 'Nova@NovaInmobiliaria.com');
         //destinos
 
-        $mail->addAddress('wdsp9898@gmail.com');
+        // $mail->addAddress('wdsp9898@gmail.com');
         // $mail->addAddress('novainmpr@gmail.com');
         //  $mail->addAddress('desarrollo2@dexcondigital.com');
         // $mail->AddCC($email,"Persona Interesada");

@@ -5,7 +5,5 @@
     define('Web_Key', '6LcQjsAZAAAAAH5DNhksrL_5c5ULIrUROJwxT6eq');
 
 
-    
-
 
 ?>
