@@ -85,35 +85,40 @@ $page = "Contáctanos" ?>
 
             <!-- FORMULARIO DE CONTACTO -->
 
-            <form action="" class="d-flex flex-wrap formulario mt-5">
+            <form action="email/enviarCorreo.php" method="POST" autocomplete="off" class="d-flex flex-wrap formulario mt-5">
 
                 <div class="mb-3 nombre col-12 col-md-6 col-lg-6 col-xl-6">
-                    <input type="text" placeholder="Nombre" class="form-control">
+                    <input type="text" placeholder="Nombre" name="nombre" class="form-control" required>
                 </div>
 
 
                 <div class="mb-3 mail col-12 col-md-6 col-lg-6 col-xl-6">
-                    <input type="mail" placeholder="Mail" class="form-control">
+                    <input type="email" placeholder="Correo" name="email"  class="form-control">
                 </div>
 
 
 
                 <div class="mb-3 telefono col-12 col-md-6 col-lg-6 col-xl-6">
-                    <input type="number" placeholder="Teléfono" class="form-control">
+                    <input type="number" placeholder="Teléfono" name="tel" class="form-control" required>
                 </div>
 
 
 
                 <div class="mb-3 texto col-12">
-                    <textarea placeholder="Mensaje" class="form-control"></textarea>
+                    <textarea placeholder="Mensaje" name="mensaje" class="form-control" required></textarea >
                 </div>
 
                 <div class="d-flex align-items-baseline col-12 mb-4">
-                    <input type="checkbox" class="d-flex align-items-center justify-content-center mr-2"> <p>Confirmo que he leído, entendido y acepto la <a class="ml-1 color_a_contacto" href="archivos/tratamiento_datos.pdf" download="Politica de tratamiento de datos personales"> política de tratamiento de datos personales.</a></p>
+                    <input type="checkbox" class="d-flex align-items-center justify-content-center mr-2" required>
+                    <p>Confirmo que he leído, entendido y acepto la <a class="ml-1 color_a_contacto" href="archivos/tratamiento_datos.pdf" download="Politica de tratamiento de datos personales"> política de tratamiento de datos personales.</a></p>
                 </div>
 
+                <div class="g-recaptcha col-12" data-sitekey="6LcQjsAZAAAAAH5DNhksrL_5c5ULIrUROJwxT6eq"required></div>
+                <div class="col-12 mb-4"><small id="tituloHepl" class="form-text text-muted">Este campo es obligatorio</small></div>
+                
+
                 <div class="col-12 text-center">
-                    <button class="btn boton2"> Enviar </button>
+                    <button type="submit" class="btn boton2"> Enviar </button>
                 </div>
 
             </form>
@@ -124,7 +129,7 @@ $page = "Contáctanos" ?>
             <div class="horario mt-5 align-items-center d-flex justify-content-center">
 
                 <i class="icono mr-5 <?php echo  $datos_contacto['horario']['icono'] ?>"></i>
-                <p> De lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 5:00 p.m. <br/>Sábados de 8:00 a.m. a 12:00 p.m. </p>
+                <p> De lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 5:00 p.m. <br />Sábados de 8:00 a.m. a 12:00 p.m. </p>
 
 
             </div>
@@ -139,7 +144,7 @@ $page = "Contáctanos" ?>
     <!-- MAPA -->
 
     <section id="mapa" class="mb-n5 mt-5">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.21063995129!2d-75.60382848474922!3d6.235942528168255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442996e7a7331d%3A0x67741fcf63a67712!2sCl.%2032C%20%2380a-75%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1583247947367!5m2!1ses!2sco" class="w-100 h-100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.21063995129!2d-75.60382848474922!3d6.235942528168255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442996e7a7331d%3A0x67741fcf63a67712!2sCl.%2032C%20%2380a-75%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1583247947367!5m2!1ses!2sco" class="w-100 h-100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
 
     <!-- MAPA -->
@@ -163,6 +168,9 @@ $page = "Contáctanos" ?>
     </section>
     <!-- ARCHIVOS FOOTER -->
 
+    <!-- captcha -->
+    <!-- composer require google/recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </body>
 

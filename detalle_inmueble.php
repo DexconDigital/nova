@@ -72,13 +72,13 @@ $page = "Detalle de Inmueble" ?>
 
         <div class="order-md-1 col-6 precio py-3 justify-content-center">
             <p class="text-center blanco font-weight-bold"> <?php if ($r['Gestion'] == 'Arriendo') {
-                                                echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
-                                            } else if ($r['Gestion'] == 'Venta') {
-                                                echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
-                                            } else {
-                                                echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
-                                            }
-                                            ?> </p>
+                                                                echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
+                                                            } else if ($r['Gestion'] == 'Venta') {
+                                                                echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
+                                                            } else {
+                                                                echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
+                                                            }
+                                                            ?> </p>
         </div>
 
         <div class="order-md-2 col-6 border-top border-right d-flex align-items-center justify-content-center">
@@ -638,18 +638,29 @@ $page = "Detalle de Inmueble" ?>
                 <a class="color_asesor" href="mailto:<?php echo $asesor['correo']; ?>"><?php echo $asesor['correo']; ?></a>
             </div>
 
-            <form class="col-12 mb-3">
+            <form class="col-12 mb-3" action="email/correoasesor.php" method="POST" autocomplete="off">
 
-                <input type="text" class="my-2 border codigo_input form-control" placeholder="Nombre y Apellido">
-                <input type="email" class="my-2 border codigo_input form-control" placeholder="Correo Electrónico">
-                <input type="number" class="my-2 border codigo_input form-control" placeholder="Teléfono / Celular">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
+                <input type="text" class="my-2 border codigo_input form-control" name="nombre" placeholder="Nombre y Apellido" required>
+                <input type="email" class="my-2 border codigo_input form-control" name="correo" placeholder="Correo Electrónico">
+                <input type="number" class="my-2 border codigo_input form-control" name="telefono" placeholder="Teléfono / Celular" required>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="mensaje" placeholder="Mensaje" rows="3"></textarea>
                 <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1"> Confirmo que he leído, entendido y acepto la <a class="azul_oscuro" href="politica_de_datos.pdf" download="Politica de Datos">política de tratamiento de datos personales.</a> </label>
                 </div>
+                <div class="g-recaptcha col-12" data-sitekey="6LcQjsAZAAAAAH5DNhksrL_5c5ULIrUROJwxT6eq" required></div>
+                <div class="col-12 mb-4"><small id="tituloHepl" class="form-text text-muted">Este campo es obligatorio</small></div>
+                <select name="correo_asesor" style="display:none">
+                    <option value="<?php echo $asesor['correo']; ?>"></option>
+                </select>
+                <select name="nom_asesor" style="display:none">
+                    <option value=" <?php echo $asesor['ntercero']; ?>"> <?php echo $asesor['ntercero']; ?></option>
+                </select>
+                <select name="codigo" style="display:none">
+                    <option value=" <?php echo $co ?>"> <?php echo $co ?></option>
+                </select>
                 <div class="row justify-content-center">
-                    <button class="col-3 btn boton2"> Enviar </button>
+                    <button class="col-3 btn boton2" type="submit"> Enviar </button>
                 </div>
             </form>
         </div>
@@ -751,7 +762,9 @@ $page = "Detalle de Inmueble" ?>
             .openPopup();
     </script>
     <!-- mapa del inmueble -->
-
+    
+    <!-- composer require google/recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </body>
 
