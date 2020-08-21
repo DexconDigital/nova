@@ -57,11 +57,11 @@ if ($precioVenta ==! '') {
     $precioVenta =  " No Especificado";
 }
 
-if ($direccion ==! '') {
-    $direccion = $_POST['Direccion'];
-} else {
-    $direccion =  " No Especificado";
-}
+// if ($direccion ==! '') {
+//     $direccion = $_POST['Direccion'];
+// } else {
+//     $direccion =  " No Especificado";
+// }
 
 if ($precioArriendoUSD ==! '') {
     $precioArriendoUSD = $_POST['valorArriendoUSD'];
@@ -75,11 +75,11 @@ if ($precioVentaUSD ==! '') {
     $precioVentaUSD =  " No Especificado";
 }
 
-if ($area ==! '') {
-    $area = $_POST['area'];
-} else {
-   $area =  " No Especificado";
-}
+// if ($area ==! '') {
+//     $area = $_POST['area'];
+// } else {
+//    $area =  " No Especificado";
+// }
 
 // echo $tipoInmueble .'<br>'.$departamento.'<br>'.$tiposervi.'<br>'.$municipio.'<br>'.$precioArriendo.'<br>'.$barrio.'<br>'.$precioVenta
 // .'<br>'.$direccion.'<br>'.$precioArriendoUSD.'<br>'.$precioVentaUSD.'<br>'.$estrato.'<br>'.$area;
@@ -87,11 +87,11 @@ if ($area ==! '') {
 // die();
 
 
-if ($mensaje ==! '') {
-     $mensaje = $_POST['Mensaje_ob'];
-} else {
-    $mensaje =  " No Especificado";
-}
+// if ($mensaje ==! '') {
+//      $mensaje = $_POST['Mensaje_ob'];
+// } else {
+//     $mensaje =  " No Especificado";
+// }
 
 
 if (isset($_POST['option1'])) {

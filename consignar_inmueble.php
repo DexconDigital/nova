@@ -1,5 +1,5 @@
 <?php require 'variables/variables.php';
-$page = "Solicitar Inmueble" ?>
+$page = "Consignar Inmueble" ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -253,11 +253,18 @@ $page = "Solicitar Inmueble" ?>
 
 
                 <!-- ESTADO DEL INMUEBLE -->
-                <div class="form-group col-12">
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6 ">
                     <p class="mb-2"> Estado del Inmueble </p>
                     <textarea name="mensaje_estado_inmueble" class="form-control"></textarea>
                 </div>
                 <!-- ESTADO DEL INMUEBLE -->
+                
+                <!-- URL VIDEO -->
+                <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
+                    <p class="mb-2"> URL Video </p>
+                    <input type="text" name="url_video" class="form-control">
+                </div>
+                <!-- URL VIDEO -->
 
                 <!-- CODIGO FINCARAIZ -->
                 <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">

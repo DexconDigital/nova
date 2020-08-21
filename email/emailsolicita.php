@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
 
-function activaconsigna()
+function activasoli()
 {
 if ($_POST) {
     // Primera seccion
@@ -13,7 +13,7 @@ if ($_POST) {
     $apellido = $_POST['Apellido'];
     $email = $_POST['Correo'];
     $telefono = $_POST['Telefono'];
-    $mensaje = $_POST['Mensaje_ob'];
+    // $mensaje = $_POST['Mensaje_ob'];
     // segunda seccion
     $tipoInmueble = $_POST['Tipo_Inmueble'];
     $departamento = $_POST['Alcaldia'];
@@ -22,11 +22,11 @@ if ($_POST) {
     $precioArriendo = $_POST['valorArriendo'];
     $barrio = $_POST['Letra'];
     $precioVenta = $_POST['ValorVenta'];
-    $direccion = $_POST['Direccion'];
+    // $direccion = $_POST['Direccion'];
     $precioArriendoUSD = $_POST['valorArriendoUSD'];
     $precioVentaUSD = $_POST['ValorVentaUSD'];
-    $estrato = $_POST['Estrato'];
-    $area = $_POST['area'];
+    // $estrato = $_POST['Estrato'];
+    // $area = $_POST['area'];
     // tercera seccion
     $msestadoinmueble = $_POST['mensaje_estado_inmueble'];
     $urlvideo = $_POST['url_video'];
@@ -40,7 +40,7 @@ if ($_POST) {
 }
 
 // Importante 
-require '../emailvalida/consigna.php';
+require '../emailvalida/solicita.php';
 
 $mail = new PHPMailer(true);
 
@@ -69,13 +69,13 @@ try {
 
 
     $mail->Subject = 'Mensaje desde la página web Nova Inmobiliaria';
-    $mail->Body = '<span>Hola, '.$nombre.' '.$apellido.' quiere consignar un inmueble sus datos son: </span>
+    $mail->Body = '<span>Hola, '.$nombre.' '.$apellido.' quiere solicitar un inmueble sus datos son: </span>
                     <h4>Datos Básicos:</h4>
                     <ul>
                         <li>Nombre Completo: <strong>'.$nombre.' '.$apellido.'</strong></li>
                         <li>Correo Electrónico: <strong>'.$email.'</strong></li>
                         <li>Teléfono: <strong>'.$telefono.'</strong></li>
-                        <li>Observaciones: <strong>'.$mensaje.'</strong></li>
+                        
                         
                     </ul>
                     <h4>Datos Principales de Propiedad:</h4>
@@ -89,9 +89,9 @@ try {
                         <li>Valor de Venta: <strong>'.$precioVenta.'</strong></li>
                         <li>Valor de Arriendo (USD): <strong>'.$precioArriendoUSD.'</strong></li>
                         <li>Valor de Venta (USD): <strong>'.$precioVentaUSD.'</strong></li>
-                        <li>Dirección: <strong>'.$direccion.'</strong></li>
-                        <li>Estrato: <strong>'.$estrato.'</strong></li>
-                        <li>Área: <strong>'.$area.'m²</strong></li>
+                        
+                        
+                        
                     </ul>
                     <h4>Características de Propiedad:</h4>
                     <ul>
@@ -132,7 +132,7 @@ try {
     $mail->send();
     echo "<script language='javascript'>
     alert('Mensaje enviado, muchas gracias.');
-    window.location.href='../consignar_inmueble.php'
+    window.location.href='../solicitar_inmueble.php'
          </script>";
 } catch (Exception $e) {
 
@@ -140,4 +140,4 @@ try {
 }
 }
 
-require '../app/initconsigna.php';
+require '../app/initsolicita.php';
