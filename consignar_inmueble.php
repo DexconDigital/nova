@@ -124,7 +124,7 @@ $page = "Consignar Inmueble" ?>
                 <div class="form-group col-12 col-md-6 col-lg-6 col-xl-6">
 
                     <p class="mb-2"> Departamento <span class="rojo">*</span> </p>
-                    <select required="required" name="Alcaldia" id="Alcaldia" data-placeholder="- Seleccione Departamento -" class="form-control chosenAlcaldia" onchange="change(this.id, 'colonia')" onchange="change(this.id, 'letra')" value="<%= typeof Alcaldia != 'undefined' ? Alcaldia : '' %>">
+                    <select required="required" name="Alcaldia" id="Alcaldia" data-placeholder="- Seleccione Departamento -" class="form-control chosenAlcaldia" onchange="change(this.id, 'colonia')" onchange="change(this.id, 'letra')" value="">
                         <option value=""></option>
                         <option value="Antioquia">Antioquia</option>
                         <option value="Atlantico">Atlantico</option>
@@ -159,7 +159,7 @@ $page = "Consignar Inmueble" ?>
 
                     <p class="mb-2"> Municipio <span class="rojo">*</span> </p>
 
-                    <select required="required" id="colonia" name="Colonia" data-placeholder="- Seleccione Municipio -" class="form-control chosenColonia" onchange="change2(this.id, 'letra')" value="<%= typeof Colonia != 'undefined' ? Colonia : '' %>">
+                    <select required="required" id="colonia" name="Colonia" data-placeholder="- Seleccione Municipio -" class="form-control chosenColonia" onchange="change2(this.id, 'letra')" value="">
                         <option value=""></option>
                     </select>
 
@@ -179,7 +179,7 @@ $page = "Consignar Inmueble" ?>
 
                     <p class="mb-2"> Barrio <span class="rojo">*</span></p>
 
-                    <select required="required" id="letra" name="Letra" data-placeholder="- Seleccione Barrio -" class="form-control chosenLetra" value="<%= typeof Letra != 'undefined' ? Letra : '' %>">
+                    <select required="required" id="letra" name="Letra" data-placeholder="- Seleccione Barrio -" class="form-control chosenLetra" value="">
                         <option value=""></option>
                     </select>
 

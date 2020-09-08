@@ -59,10 +59,10 @@ try {
 
     $mail->isHTML(true);
     $mail->setFrom('Nova@NovaInmobiliaria.com', 'Nova@NovaInmobiliaria.com');
+    // $mail->addAddress('novainmpr@gmail.com');
     $mail->addAddress('wdsp9898@gmail.com');
     $mail->AddCC($copi,"Persona Interesada");
-    // $mail->addAddress('alexthunder7@gmail.com');
-    // $mail->addAddress('ceo@dexcondigital.com');
+    
     
 
 

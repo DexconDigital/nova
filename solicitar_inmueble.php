@@ -176,7 +176,7 @@ $page = "Solicitar Inmueble" ?>
 
                     <p class="mb-2"> Municipio <span class="rojo">*</span> </p>
 
-                    <select required="required" id="colonia" name="Colonia" data-placeholder="- Seleccione Municipio -" class="form-control chosenColonia" onchange="change2(this.id, 'letra')" value="<%= typeof Colonia != 'undefined' ? Colonia : '' %>">
+                    <select required="required" id="colonia" name="Colonia" data-placeholder="- Seleccione Municipio -" class="form-control chosenColonia" onchange="change2(this.id, 'letra')" value="">
                         <option value=""></option>
                     </select>
 
@@ -195,7 +195,7 @@ $page = "Solicitar Inmueble" ?>
 
                     <p class="mb-2"> Barrio <span class="rojo">*</span></p>
 
-                    <select required="required" id="letra" name="Letra" data-placeholder="- Seleccione Barrio -" class="form-control chosenLetra" value="<%= typeof Letra != 'undefined' ? Letra : '' %>">
+                    <select required="required" id="letra" name="Letra" data-placeholder="- Seleccione Barrio -" class="form-control chosenLetra" value="">
                         <option value=""></option>
                     </select>
 

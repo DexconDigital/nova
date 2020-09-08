@@ -97,7 +97,7 @@
 
             <!-- COPYRIGHT -->
             <section id="copy" class="col-12 text-center mt-5">
-                <p> Diseñado y Desarrollado por <a target="_blank" href="https://www.dexcondigital.com/">Dexcon Digital</a> ©Copyright 2020 para Inmobiliaria Nova. Todos
+                <p> Diseñado y Desarrollado por <a target="_blank" href="https://www.dexcondigital.com/">Dexcon Digital</a> ©Copyright 2020 para Nova Inmobiliaria. Todos
                     los derechos reservados. </p>
             </section>
             <!-- COPYRIGHT -->

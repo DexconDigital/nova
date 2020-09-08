@@ -29,8 +29,11 @@ $resultado->execute(array($id_inmobiliria));
 <?php
 $qry = "SELECT * FROM `usuarios` WHERE id_user = '$user'";
 $resultado=$con->prepare($qry);
+$resultado->execute(array($user));
 // $sql = mysqli_query($con, $qry);
-$usuario =  $resultado->fetch(PDO::FETCH_ASSOC);
+$usuario_admin =  $resultado->fetch(PDO::FETCH_ASSOC);
+// $usuario =  $resultado->fetch(PDO::FETCH_NUM);
+// echo var_dump($usuario_admin);
 ?>
 <?php
 $id_inmobiliria = 17;
@@ -98,7 +101,7 @@ $resultado->execute(array($id_inmobiliria));
 
                     <!-- manual de usuario -->
                     <a href="archivo/Instructivo_Administracion_noticias.pdf" download="Instructivo Administración Noticias.pdf">
-                        <li class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name="random-restored-page">
+                        <li class="tile tile-small tile tile-2 slideTextLeft" data-page-type="s-page" data-page-name="random-restored-page">
                             <div>
                                 <p class="icon-arrow-right"></p>
                             </div>
@@ -798,17 +801,17 @@ $resultado->execute(array($id_inmobiliria));
                         </div>
                         <div class="modal-body">
                             <form class="form-horizontal" method="post" action="updateperfil.php" enctype="multipart/form-data">
-                                <input type="hidden" name="id" value="<?php echo $usuario[0]; ?>">
-                                <input type="hidden" name="usuario" value="<?php echo $usuario[1]; ?>">
+                                <input type="hidden" name="id" value="<?php echo $usuario_admin['id_user']; ?>">
+                                <input type="hidden" name="usuario" value="<?php echo $usuario_admin['usuario']; ?>">
                                 <div class="form-group ">
                                     <label for="inputPassword" class="col-form-label">Nombre:</label>
-                                    <input type="text" class="form-control" name="usuario" id="usuario" value="<?php echo $usuario[1]; ?>">
+                                    <input type="text" class="form-control" name="usuario" id="usuario" value="<?php echo $usuario_admin['usuario'] ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Puede ingresar letras y numeros, recuerde que si lo cambia debe ingresar con este nuevo usuario</small>
 
                                 </div>
                                 <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">Contraseña:</label>
-                                    <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario[2]; ?>">
+                                    <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario_admin['password'] ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Puede ingresar caracteres especiales @$#%&</small>
                                 </div>
 

@@ -43,8 +43,7 @@ function activeCorreo()
 
         // $mail->addAddress('wdsp9898@gmail.com');
         // $mail->addAddress('novainmpr@gmail.com');
-        //  $mail->addAddress('desarrollo2@dexcondigital.com');
-        // $mail->AddCC($email,"Persona Interesada");
+        $mail->AddCC($email,"Persona Interesada");
         
 
 

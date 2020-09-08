@@ -37,8 +37,8 @@ function actiasesor()
 
         $mail->isHTML(true);
         $mail->setFrom('Nova@NovaInmobiliaria.com', 'Nova@NovaInmobiliaria.com');
-        // $mail->addAddress($correo_asesor);
-        // $mail->AddCC($email,"Persona Interesada");
+        $mail->addAddress($correo_asesor);
+        $mail->AddCC($email,"Persona Interesada");
 
 
 

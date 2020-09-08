@@ -133,7 +133,7 @@
 
                             <a class="dropdown-item" target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=2"> Arrendatarios </a>
                             <a class="dropdown-item" target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=978&tipo=1"> Propietarios </a>
-                            <a class="dropdown-item" href="#"> Pagos PSE </a>
+                            <a class="dropdown-item" href="https://gateway2.tucompra.com.co/sites/novainm" target="_blank"> Pagos PSE </a>
                         </div>
                     </li>
 
@@ -151,12 +151,10 @@
 
 
                     <!-- LOGO PSE -->
-                    <a class="logopse nav-link" href="#">
+                    <a class="logopse nav-link" href="https://gateway2.tucompra.com.co/sites/novainm" target="_blank">
                         <img class="w-100 h-100" src="images/logopse.png" alt="">
                     </a>
                     <!-- LOGO PSE -->
-
-
 
                 </ul>
 

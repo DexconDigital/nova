@@ -4,7 +4,7 @@ $con = Conect();
 $qry = "SELECT * FROM usuarios where usuario ='$user'";
 $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
-$imagen_inicio = $usuario[15];
+$imagen_inicio = $usuario[17];
 $page = "Inicio";
 $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
 ?>
