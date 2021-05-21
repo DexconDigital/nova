@@ -1,6 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
-require 'controllers/noticiasController.php';
+//require 'controllers/noticiasController.php';
 
 $page = "Inicio" ?>
 <!DOCTYPE html>
@@ -748,7 +748,7 @@ $page = "Inicio" ?>
             <!-- CARD -->
 
             <!-- CARD -->
-            <a target="_blank" href="https://gateway2.tucompra.com.co/sites/novainm" class="justify-content-between blanco col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0 d-flex flex-column align-items-center">
+            <a target="_blank" href="#" class="justify-content-between blanco col-12 col-md-4 col-lg-4 col-xl-4 mb-4 mb-md-0 mb-lg-0 mb-xl-0 d-flex flex-column align-items-center">
 
                 <h4 class="font-weight-bold mb-2 blanco"> Pagos PSE </h4>
 
