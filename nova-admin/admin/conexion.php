@@ -3,7 +3,7 @@
 function Conect()
 {
     try {
-        $echo2 = new PDO('mysql:host=localhost;dbname=dexcondigital_noticias_inmueble', 'root', '');
+        $echo2 = new PDO('mysql:host=localhost;dbname=2018noticias', 'root', '');
         $echo2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         return $echo2;

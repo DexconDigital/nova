@@ -6,9 +6,9 @@ include 'layout/layout.php';
 $id_inmobiliria = 12;
 $con = Conect();
 $qry = "select * from asesores where id_inmobiliaria = '$id_inmobiliria' order by id DESC ";
-$sql = mysqli_query($con, $qry);
-
-
+$result = $con->prepare( $qry );
+$result->execute();
+$datos = $result->fetchAll( PDO::FETCH_OBJ );
 ?>
 <style>
   .fondo_color {
@@ -49,16 +49,14 @@ $sql = mysqli_query($con, $qry);
           </tr>
         </thead>
         <tbody>
-
           <?php
-          while ($res =  mysqli_fetch_array($sql)) {
-
+          foreach ($datos as $res) {
             echo '<tr>
-                                <td>' . $res["id"] . '</td>
-                                <td>' . $res["nombre"] . '</td>
-                                <td><a href="actualizarasesor.php?id=' . $res["id"] . '"><i style="color: #B58D10;" class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-href="eliminar_asesor.php?id=' . $res["id"] . '" data-toggle="modal" data-target="#confirm-delete"><i style="color: #B58D10;"class="fas fa-trash-alt"></i></a></td>
-                    </tr>';
+                    <td>' . $res->id . '</td>
+                    <td>' . $res->nombre . '</td>
+                    <td><a href="actualizarasesor.php?id=' . $res->id . '"><i style="color:red;" class="fas fa-edit"></i></a></td>
+                    <td><a href="#" data-href="eliminar_asesor.php?id=' . $res->id . '" data-toggle="modal" data-target="#confirm-delete"><i style="color:red!important;"class="fas fa-trash-alt"></i></a></td>
+                </tr>';
           }
           ?>
         </tbody>
