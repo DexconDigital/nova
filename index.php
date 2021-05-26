@@ -1,6 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
-//require 'controllers/noticiasController.php';
+require 'controllers/noticiasController.php';
 
 $page = "Inicio" ?>
 <!DOCTYPE html>

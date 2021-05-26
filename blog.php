@@ -1,5 +1,5 @@
 <?php require 'variables/variables.php';
-//require 'controllers/noticiasController.php';
+require 'controllers/noticiasController.php';
 $page = "Blog" ?>
 <!DOCTYPE html>
 <html lang="es">
